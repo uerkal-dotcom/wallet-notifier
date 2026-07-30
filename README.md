@@ -1,17 +1,18 @@
-# Polymarket Cuzdan Takip Botu
+# Cuzdan Takip Botu
 
-Belirlediginiz Polymarket cuzdan adreslerinin actigi islemleri Telegram uzerinden
-bildirim olarak gonderir. Telegram hem telefonda hem bilgisayarda calistigi icin
-ayri bir uygulama gelistirmeye gerek kalmiyor.
+Belirlediginiz cuzdan adreslerinin actigi islemleri Telegram uzerinden bildirim
+olarak gonderir. Telegram hem telefonda hem bilgisayarda calistigi icin ayri
+bir uygulama gelistirmeye gerek kalmiyor.
 
 ## Nasil calisir
 
-- `data-api.polymarket.com/activity` uc noktasi belirli araliklarla (varsayilan 30s)
-  her cuzdan icin sorgulanir.
-- Daha once gorulmemis yeni islemler tespit edilir ve Telegram botunuz araciligiyla
-  size mesaj olarak gonderilir.
-- Hangi islemlerin daha once bildirildigi `data/state.json` dosyasinda tutulur,
-  boylece yeniden baslatmalarda ayni islem tekrar bildirilmez.
+- Belirli araliklarla (varsayilan: her 5 dakikada bir, GitHub Actions
+  uzerinden) her cuzdan icin islem gecmisi sorgulanir.
+- Daha once gorulmemis yeni islemler tespit edilir ve Telegram botunuz
+  araciligiyla size mesaj olarak gonderilir.
+- Hangi islemlerin daha once bildirildigi `state.json` dosyasinda tutulur ve
+  her calistirmadan sonra otomatik olarak repoya geri commit'lenir; boylece
+  yeniden calistirmalarda ayni islem tekrar bildirilmez.
 
 ## 1) Telegram botu olusturma
 
@@ -20,7 +21,7 @@ ayri bir uygulama gelistirmeye gerek kalmiyor.
 3. Olusturdugunuz bota Telegram'dan `/start` yazip bir mesaj gonderin (bildirim
    alacaginiz hesap bu olmali).
 
-## 2) Yerel kurulum
+## 2) Yerel kurulum ve test
 
 ```bash
 npm install
@@ -48,52 +49,46 @@ Calistirmak icin:
 npm start
 ```
 
-## 3) Fly.io'ya deploy (7/24 calisir, ucretsiz kotaya uygun)
+## 3) GitHub Actions ile 7/24 calistirma (ucretsiz)
 
-1. [Fly.io CLI'i kurun](https://fly.io/docs/flyctl/install/) ve `fly auth login` ile giris yapin.
-2. Bu klasorde:
+Repo `.github/workflows/poll.yml` isimli bir GitHub Actions workflow'u icerir.
+Bu workflow GitHub'in sunucularinda calisir; bilgisayariniz kapali olsa da
+calismaya devam eder.
 
-```bash
-fly launch --no-deploy
-```
+1. Bu kodu kendi GitHub reponuza push edin.
+2. Repo ayarlarindan asagidaki **Actions secrets**'lari tanimlayin
+   (Settings > Secrets and variables > Actions):
+   - `TELEGRAM_BOT_TOKEN`
+   - `TELEGRAM_CHAT_ID`
+   - `WALLETS`
+   - `MIN_USDC_SIZE` (opsiyonel)
+3. Workflow varsayilan olarak her 5 dakikada bir otomatik calisir. Elle
+   tetiklemek icin Actions sekmesinden "Wallet Poller" workflow'unu secip
+   "Run workflow" butonuna basabilirsiniz.
 
-   (mevcut `fly.toml` dosyasini kullanmasina izin verin, uzerine yazmasin)
+Not: Public (herkese acik) repolarda GitHub Actions calisma dakikasi
+sinirsiz ve ucretsizdir. Private (gizli) repolarda aylik 2000 dakikalik
+ucretsiz kota oldugu icin, gizliligi tercih ederseniz kontrol araligini
+(cron ifadesini) 20-30 dakikaya cikarmak gerekebilir.
 
-3. Kalici disk olusturun (state.json icin, restart sonrasi tekrar bildirim gitmesin diye):
-
-```bash
-fly volumes create polymarket_notifier_data --size 1 --region fra
-```
-
-4. Sirlari (secrets) tanimlayin:
-
-```bash
-fly secrets set TELEGRAM_BOT_TOKEN=xxxx TELEGRAM_CHAT_ID=xxxx WALLETS="0x...:Ahmet"
-```
-
-5. Deploy edin:
-
-```bash
-fly deploy
-```
-
-Loglari izlemek icin: `fly logs`
-
-## Ayarlar (.env)
+## Ayarlar (.env / Actions secrets)
 
 | Degisken | Aciklama | Varsayilan |
 |---|---|---|
 | `TELEGRAM_BOT_TOKEN` | BotFather token | - (zorunlu) |
 | `TELEGRAM_CHAT_ID` | Bildirim gidecek chat id | - (zorunlu) |
 | `WALLETS` | `adres:etiket` listesi, virgulle ayrilmis | - (zorunlu) |
-| `POLL_INTERVAL_SECONDS` | Kontrol araligi (saniye) | 30 |
+| `POLL_INTERVAL_SECONDS` | Yerel calistirmada kontrol araligi (saniye) | 30 |
 | `MIN_USDC_SIZE` | Bu tutarin altindaki islemler atlanir | 0 |
 | `STATE_PATH` | Durum dosyasi yolu | `./data/state.json` |
 
 ## Notlar
 
-- Sadece `TRADE` tipi islemler (al/sat) bildirilir; yatirma/cekme gibi diger
-  aktiviteler `src/polymarket.js` icindeki `type` parametresi degistirilerek
+- Sadece alim/satim islemleri bildirilir; yatirma/cekme gibi diger
+  aktiviteler `src/market.js` icindeki `type` parametresi degistirilerek
   eklenebilir.
 - Ilk calistirmada mevcut islem gecmisi icin bildirim gonderilmez; sadece o
   andan sonraki yeni islemler bildirilir.
+- Islem verisi `data-api.polymarket.com` adresinden cekilir; kullanici
+  adindan cuzdan adresi bulmak icin ilgili profil sayfasindaki
+  `/api/profile/userData?address=0x...` cagrisi kullanilabilir.

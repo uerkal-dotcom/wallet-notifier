@@ -1,5 +1,5 @@
 import { config } from "./config.js";
-import { fetchRecentTrades } from "./polymarket.js";
+import { fetchRecentTrades } from "./market.js";
 import { sendTelegramMessage } from "./telegram.js";
 import { loadState, saveState, getWalletState, updateWalletState } from "./state.js";
 

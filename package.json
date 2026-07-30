@@ -1,7 +1,7 @@
 {
-  "name": "polymarket-notifier",
+  "name": "wallet-notifier",
   "version": "1.0.0",
-  "description": "Takip edilen Polymarket cuzdanlarinin islemlerini Telegram bildirimi olarak gonderir",
+  "description": "Takip edilen cuzdan adreslerinin islemlerini Telegram bildirimi olarak gonderir",
   "type": "module",
   "main": "src/index.js",
   "scripts": {

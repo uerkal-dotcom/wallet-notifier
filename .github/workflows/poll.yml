@@ -1,4 +1,4 @@
-name: Polymarket Poller
+name: Wallet Poller
 
 on:
   schedule:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: polymarket-poll
+  group: wallet-poll
   cancel-in-progress: false
 
 jobs:
