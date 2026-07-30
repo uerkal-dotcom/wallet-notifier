@@ -71,6 +71,25 @@ sinirsiz ve ucretsizdir. Private (gizli) repolarda aylik 2000 dakikalik
 ucretsiz kota oldugu icin, gizliligi tercih ederseniz kontrol araligini
 (cron ifadesini) 20-30 dakikaya cikarmak gerekebilir.
 
+## 4) Kagit (paper) trading
+
+`WALLETS` listesindeki bir cuzdan `PAPER_TRADING_WALLETS` icinde de gecerse, o
+cuzdan icin ham islem bildirimi yerine **pozisyon buyuklugune gore kademeli
+kagit trading** calisir:
+
+- Her calistirmada cuzdanin guncel acik pozisyonlari (`data-api.polymarket.com/positions`)
+  cekilir; cozulmus/redeem edilebilir eski bahisler (`redeemable: true`) hariç
+  tutulur.
+- Her pozisyon icin, cuzdanin o pozisyona yatirdigi toplam tutara (`initialValue`)
+  gore `src/paperTrading.js` icindeki kademe tablosundan bir hedef pay
+  hesaplanir (ornek: $20.000+ -> $20, $15-20bin -> $15, ...).
+- Sanal portfoy bu hedefe gore acilir/artirilir/azaltilir; her degisiklikte
+  Telegram'a `[KAĞIT]` etiketli bir bildirim gonderilir.
+- Sanal bakiye ve acik kagit pozisyonlar `paper-portfolio.json` dosyasinda
+  tutulur ve `state.json` gibi otomatik commit'lenir.
+- Kademe tablosunu degistirmek icin `src/paperTrading.js` icindeki `TIERS`
+  dizisini duzenleyin.
+
 ## Ayarlar (.env / Actions secrets)
 
 | Degisken | Aciklama | Varsayilan |
@@ -79,8 +98,11 @@ ucretsiz kota oldugu icin, gizliligi tercih ederseniz kontrol araligini
 | `TELEGRAM_CHAT_ID` | Bildirim gidecek chat id | - (zorunlu) |
 | `WALLETS` | `adres:etiket` listesi, virgulle ayrilmis | - (zorunlu) |
 | `POLL_INTERVAL_SECONDS` | Yerel calistirmada kontrol araligi (saniye) | 30 |
-| `MIN_USDC_SIZE` | Bu tutarin altindaki islemler atlanir | 0 |
+| `MIN_USDC_SIZE` | Bu tutarin altindaki islemler atlanir (kagit trading uygulanmayan cuzdanlar icin) | 0 |
 | `STATE_PATH` | Durum dosyasi yolu | `./data/state.json` |
+| `PAPER_TRADING_WALLETS` | Kagit trading uygulanacak cuzdan adresleri, virgulle ayrilmis | - |
+| `PAPER_START_BALANCE` | Kagit portfoyun baslangic bakiyesi | 380 |
+| `PAPER_STATE_PATH` | Kagit portfoy durum dosyasi yolu | `./data/paper-portfolio.json` |
 
 ## Notlar
 
