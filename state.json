@@ -1,0 +1,16 @@
+{
+  "0x30c7ac0158499ddc6761047f7f69bcf7d036ac3b": {
+    "lastTimestamp": 1785448497,
+    "seenHashes": [
+      "0x4b2f19f1e25ba1d4ca5a9b1fdf7292541775eed983ebfe0c862b20605ad5b4d6"
+    ],
+    "initialized": true
+  },
+  "0xba389f76b0119aed07c53c9029852664bd97e406": {
+    "lastTimestamp": 1785410375,
+    "seenHashes": [
+      "0x8a24b42c0495a6709bb182e785db3d22c55a4a89bb374db7570ed6cc720a8ae1"
+    ],
+    "initialized": true
+  }
+}
