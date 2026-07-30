@@ -1,4 +1,4 @@
-function loadWallets() {
+function loadWallets(paperTradingAddresses) {
   const raw = process.env.WALLETS;
   if (!raw) {
     throw new Error(
@@ -7,11 +7,23 @@ function loadWallets() {
   }
   return raw.split(",").map((entry) => {
     const [address, label] = entry.trim().split(":");
+    const lowerAddress = address.toLowerCase();
     return {
-      address: address.toLowerCase(),
+      address: lowerAddress,
       label: label || address.slice(0, 8),
+      paper: paperTradingAddresses.has(lowerAddress),
     };
   });
+}
+
+function loadPaperTradingAddresses() {
+  const raw = process.env.PAPER_TRADING_WALLETS || "";
+  return new Set(
+    raw
+      .split(",")
+      .map((a) => a.trim().toLowerCase())
+      .filter(Boolean)
+  );
 }
 
 export const config = {
@@ -20,7 +32,9 @@ export const config = {
   pollIntervalSeconds: Number(process.env.POLL_INTERVAL_SECONDS || 30),
   minUsdcSize: Number(process.env.MIN_USDC_SIZE || 0),
   statePath: process.env.STATE_PATH || "./data/state.json",
-  wallets: loadWallets(),
+  paperStatePath: process.env.PAPER_STATE_PATH || "./data/paper-portfolio.json",
+  paperStartBalance: Number(process.env.PAPER_START_BALANCE || 380),
+  wallets: loadWallets(loadPaperTradingAddresses()),
 };
 
 if (!config.telegramBotToken) {

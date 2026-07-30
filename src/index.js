@@ -2,6 +2,8 @@ import { config } from "./config.js";
 import { fetchRecentTrades } from "./market.js";
 import { sendTelegramMessage } from "./telegram.js";
 import { loadState, saveState, getWalletState, updateWalletState } from "./state.js";
+import { loadPaperState, savePaperState } from "./paperState.js";
+import { checkPaperTrading } from "./paperTrading.js";
 
 function formatTrade(walletLabel, trade) {
   const sideEmoji = trade.side === "BUY" ? "🟢" : "🔴";
@@ -50,15 +52,20 @@ async function checkWallet(state, wallet) {
   }
 }
 
-async function pollOnce(state) {
+async function pollOnce(state, paperState) {
   for (const wallet of config.wallets) {
     try {
-      await checkWallet(state, wallet);
+      if (wallet.paper) {
+        await checkPaperTrading(paperState, wallet);
+      } else {
+        await checkWallet(state, wallet);
+      }
     } catch (err) {
       console.error(`[${wallet.label}] hata:`, err.message);
     }
   }
   saveState(state);
+  savePaperState(paperState);
 }
 
 async function main() {
@@ -67,15 +74,16 @@ async function main() {
     `Baslatildi. ${config.wallets.length} cuzdan izleniyor, her ${config.pollIntervalSeconds}s kontrol edilecek.`
   );
   const state = loadState();
+  const paperState = loadPaperState();
 
-  await pollOnce(state);
+  await pollOnce(state, paperState);
 
   if (runOnce) {
     console.log("Tek seferlik calisma tamamlandi.");
     return;
   }
 
-  setInterval(() => pollOnce(state), config.pollIntervalSeconds * 1000);
+  setInterval(() => pollOnce(state, paperState), config.pollIntervalSeconds * 1000);
 }
 
 main().catch((err) => {
