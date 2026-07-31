@@ -168,7 +168,13 @@ export async function checkPaperTrading(paperState, wallet) {
   for (const key of Object.keys(paperState.positions)) {
     if (seenKeys.has(key)) continue;
     const existing = paperState.positions[key];
-    const closed = await isMarketClosed(existing.slug);
+
+    // Son bilinen fiyat zaten 0c veya 100c'ye çok yakinsa, bu fiyat tek
+    // basina cozulmus (kazanmis/kaybetmis) oldugunun guclu kaniti - Gamma'ya
+    // sormaya bile gerek yok, panik satis kategorisine hic girmez.
+    const nearResolved = existing.lastPrice >= 0.98 || existing.lastPrice <= 0.02;
+    const closed = nearResolved ? true : await isMarketClosed(existing.slug);
+
     // Sadece marketin KESIN olarak hala acik oldugunu biliyorsak (closed:false)
     // panik satis say. Bilinmiyorsa (API hatasi) veya kapandiysa (normal
     // cozum, kazanmis olabilir) sessiz kal - yanlis alarm vermemek daha onemli.
