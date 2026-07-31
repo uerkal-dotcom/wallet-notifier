@@ -1,6 +1,6 @@
 {
-  "balance": 288.1144525942264,
-  "realizedPnl": -2.8855474057735595,
+  "balance": 311.7547561794384,
+  "realizedPnl": 0.7547561794384503,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
       "title": "Will Spirit Win BLAST Bounty 2026 Season 2?",
@@ -12,16 +12,6 @@
       "size": 15.748031496062993,
       "lastPrice": 0.635
     },
-    "0x07ed66dac08bc9333603b34994b3ab8382346fdc372a7dbe90efc00b9edef36c:1": {
-      "title": "Will The MongolZ Win BLAST Bounty 2026 Season 2?",
-      "outcome": "No",
-      "slug": "will-the-mongolz-win-blast-bounty-2026-season-2-20260709030045123",
-      "eventSlug": "blast-bounty-2026-season-2-winner-20260709030103861",
-      "stake": 20,
-      "entryPrice": 0.9665149186931767,
-      "size": 20.692903558117827,
-      "lastPrice": 0.9995
-    },
     "0x0a54a4fb700e568ebc95465a260bbff9905b60ecda59681a049fe68f9a55a07c:1": {
       "title": "Counter-Strike: paiN vs Astralis (BO3) - BLAST Bounty Playoffs",
       "outcome": "Astralis",
@@ -30,7 +20,7 @@
       "stake": 6,
       "entryPrice": 0.5649,
       "size": 10.621348911311737,
-      "lastPrice": 0.615
+      "lastPrice": 0.66
     },
     "0xc3a395d1a33daf48b56529062f14cb46ffad6d3694bf0a2c59fd85a0aaec16be:0": {
       "title": "Will MOUZ Win BLAST Bounty 2026 Season 2?",
@@ -40,7 +30,7 @@
       "stake": 6,
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
-      "lastPrice": 0.186
+      "lastPrice": 0.19
     },
     "0x05e3e2c6312d0646746260b6f68ec2fc3b4372eb4d4f7553a064be67d62a0d50:1": {
       "title": "Will paiN Win BLAST Bounty 2026 Season 2?",
@@ -50,7 +40,7 @@
       "stake": 20,
       "entryPrice": 0.979,
       "size": 20.42900919305414,
-      "lastPrice": 0.9775
+      "lastPrice": 0.9805
     },
     "0x4503230100911988a551566b2ead980149e2678b80ff26096abcc2977c96c2d5:1": {
       "title": "Counter-Strike: GenOne vs ENJOY (BO3) - CCT Europe Series #6 Group Stage",
@@ -60,7 +50,7 @@
       "stake": 3,
       "entryPrice": 0.245,
       "size": 12.244897959183673,
-      "lastPrice": 0.255
+      "lastPrice": 0.0005
     },
     "0xb650d446fb272130df9e63e622e0c346590120ed4dad01ca559aa20465119904:1": {
       "title": "Map Handicap: G1 (-1.5) vs ENJOY (+1.5)",
@@ -70,17 +60,7 @@
       "stake": 3,
       "entryPrice": 0.5,
       "size": 6,
-      "lastPrice": 0.515
-    },
-    "0xd72459b2ddb156817099a0fd6cbce8a66431a43dae1ef23421e0a4e26578ec27:1": {
-      "title": "Counter-Strike: Lavked vs megoshort (BO3) - Thunderpick World Championship European Series #2 Playoffs",
-      "outcome": "megoshort",
-      "slug": "cs2-lavked-meg1-2026-07-31",
-      "eventSlug": "cs2-lavked-meg1-2026-07-31",
-      "stake": 3,
-      "entryPrice": 0.355,
-      "size": 8.450704225352114,
-      "lastPrice": 0.705
+      "lastPrice": 0.0005
     },
     "0xca1d58e1e9087152b4db548b32ecdea04fab952f3daeb669d630ee6130b85da6:0": {
       "title": "Counter-Strike: JiJieHao vs Black Phoenix (BO3) - CCT Europe Series #5 Playoffs",
@@ -90,7 +70,7 @@
       "stake": 3,
       "entryPrice": 0.67,
       "size": 4.477611940298507,
-      "lastPrice": 0.625
+      "lastPrice": 0.28
     },
     "0x8b084eddd56af949452f0086e613c30a58aa3009c4c3fba8ed706abfd601f572:1": {
       "title": "Counter-Strike: CYBERSHOKE Esports vs STATE (BO3) - Thunderpick World Championship European Series #2 Playoffs",
@@ -100,7 +80,7 @@
       "stake": 3,
       "entryPrice": 0.245,
       "size": 12.244897959183673,
-      "lastPrice": 0.24
+      "lastPrice": 0.0005
     },
     "0xe836fd1165e29747f7291c3a7b67da75a971548776a8bc671d3c43e3daaea5c7:1": {
       "title": "Map Handicap: MIBR (-1.5) vs Evil Geniuses (+1.5)",
@@ -127,10 +107,10 @@
       "outcome": "Team Heretics",
       "slug": "val-gx-th1-2026-07-31",
       "eventSlug": "val-gx-th1-2026-07-31",
-      "stake": 3,
-      "entryPrice": 0.745,
-      "size": 4.026845637583893,
-      "lastPrice": 0.745
+      "stake": 6,
+      "entryPrice": 0.759703947368421,
+      "size": 7.897813379519377,
+      "lastPrice": 0.775
     },
     "0x1c6c148c41ec06ddb65fff127b4a8a44d8f8ff184a1d6b2972db852fca867a57:0": {
       "title": "Valorant: Cloud9 vs LOUD (BO3) - VCT Americas Stage 2 Group Omega",
