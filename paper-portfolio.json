@@ -1,6 +1,6 @@
 {
-  "balance": 287,
-  "realizedPnl": 0,
+  "balance": 288.1144525942264,
+  "realizedPnl": -2.8855474057735595,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
       "title": "Will Spirit Win BLAST Bounty 2026 Season 2?",
@@ -10,17 +10,17 @@
       "stake": 10,
       "entryPrice": 0.635,
       "size": 15.748031496062993,
-      "lastPrice": 0.63
+      "lastPrice": 0.635
     },
     "0x07ed66dac08bc9333603b34994b3ab8382346fdc372a7dbe90efc00b9edef36c:1": {
       "title": "Will The MongolZ Win BLAST Bounty 2026 Season 2?",
       "outcome": "No",
       "slug": "will-the-mongolz-win-blast-bounty-2026-season-2-20260709030045123",
       "eventSlug": "blast-bounty-2026-season-2-winner-20260709030103861",
-      "stake": 15,
-      "entryPrice": 0.9559984317825405,
-      "size": 15.690402307492516,
-      "lastPrice": 0.955
+      "stake": 20,
+      "entryPrice": 0.9665149186931767,
+      "size": 20.692903558117827,
+      "lastPrice": 0.9995
     },
     "0x0a54a4fb700e568ebc95465a260bbff9905b60ecda59681a049fe68f9a55a07c:1": {
       "title": "Counter-Strike: paiN vs Astralis (BO3) - BLAST Bounty Playoffs",
@@ -30,27 +30,17 @@
       "stake": 6,
       "entryPrice": 0.5649,
       "size": 10.621348911311737,
-      "lastPrice": 0.575
+      "lastPrice": 0.5699
     },
     "0xc3a395d1a33daf48b56529062f14cb46ffad6d3694bf0a2c59fd85a0aaec16be:0": {
       "title": "Will MOUZ Win BLAST Bounty 2026 Season 2?",
       "outcome": "Yes",
       "slug": "will-mouz-win-blast-bounty-2026-season-2-20260709030045122",
       "eventSlug": "blast-bounty-2026-season-2-winner-20260709030103861",
-      "stake": 3,
-      "entryPrice": 0.2315,
-      "size": 12.958963282937365,
-      "lastPrice": 0.228
-    },
-    "0xc4a443813088a7ca7b14a135eb923d9ae0bef398d9642fce1719e7df78e2cf0f:0": {
-      "title": "Counter-Strike: HAVU vs BC.Game Esports (BO1) - Elisa BreakOut Series #1 Group B",
-      "outcome": "HAVU",
-      "slug": "cs2-havu-bcg-2026-07-31",
-      "eventSlug": "cs2-havu-bcg-2026-07-31",
-      "stake": 3,
-      "entryPrice": 0.155,
-      "size": 19.35483870967742,
-      "lastPrice": 0.135
+      "stake": 6,
+      "entryPrice": 0.20627065868263472,
+      "size": 29.08799554100188,
+      "lastPrice": 0.186
     },
     "0x05e3e2c6312d0646746260b6f68ec2fc3b4372eb4d4f7553a064be67d62a0d50:1": {
       "title": "Will paiN Win BLAST Bounty 2026 Season 2?",
@@ -60,27 +50,7 @@
       "stake": 20,
       "entryPrice": 0.979,
       "size": 20.42900919305414,
-      "lastPrice": 0.9725
-    },
-    "0xc355d71f07bac4f5b0e7eba2acc5946d09e87b7004741c3aa51fb9725e82435c:0": {
-      "title": "Counter-Strike: Esport Academy Copenhagen vs G2 Ares (BO3) - Stake Pulse Beat I Group A",
-      "outcome": "Esport Academy Copenhagen",
-      "slug": "cs2-eac-g2a-2026-07-31",
-      "eventSlug": "cs2-eac-g2a-2026-07-31",
-      "stake": 6,
-      "entryPrice": 0.575,
-      "size": 10.434782608695652,
-      "lastPrice": 0.575
-    },
-    "0xdcca67d4d3feb728791b6bee5131c2759c1b70a88feefa8a209b27f5619ce23a:0": {
-      "title": "Valorant: Global Esports vs Gen.G Esports (BO3) - VCT Pacific Group Alpha",
-      "outcome": "Global Esports",
-      "slug": "val-ge1-geng-2026-07-31",
-      "eventSlug": "val-ge1-geng-2026-07-31",
-      "stake": 6,
-      "entryPrice": 0.505,
-      "size": 11.881188118811881,
-      "lastPrice": 0.515
+      "lastPrice": 0.959
     },
     "0x4503230100911988a551566b2ead980149e2678b80ff26096abcc2977c96c2d5:1": {
       "title": "Counter-Strike: GenOne vs ENJOY (BO3) - CCT Europe Series #6 Group Stage",
@@ -90,7 +60,7 @@
       "stake": 3,
       "entryPrice": 0.245,
       "size": 12.244897959183673,
-      "lastPrice": 0.245
+      "lastPrice": 0.255
     },
     "0xb650d446fb272130df9e63e622e0c346590120ed4dad01ca559aa20465119904:1": {
       "title": "Map Handicap: G1 (-1.5) vs ENJOY (+1.5)",
@@ -100,7 +70,7 @@
       "stake": 3,
       "entryPrice": 0.5,
       "size": 6,
-      "lastPrice": 0.5
+      "lastPrice": 0.515
     },
     "0xd72459b2ddb156817099a0fd6cbce8a66431a43dae1ef23421e0a4e26578ec27:1": {
       "title": "Counter-Strike: Lavked vs megoshort (BO3) - Thunderpick World Championship European Series #2 Playoffs",
@@ -110,7 +80,7 @@
       "stake": 3,
       "entryPrice": 0.355,
       "size": 8.450704225352114,
-      "lastPrice": 0.405
+      "lastPrice": 0.775
     },
     "0xca1d58e1e9087152b4db548b32ecdea04fab952f3daeb669d630ee6130b85da6:0": {
       "title": "Counter-Strike: JiJieHao vs Black Phoenix (BO3) - CCT Europe Series #5 Playoffs",
@@ -120,7 +90,7 @@
       "stake": 3,
       "entryPrice": 0.67,
       "size": 4.477611940298507,
-      "lastPrice": 0.67
+      "lastPrice": 0.63
     },
     "0x8b084eddd56af949452f0086e613c30a58aa3009c4c3fba8ed706abfd601f572:1": {
       "title": "Counter-Strike: CYBERSHOKE Esports vs STATE (BO3) - Thunderpick World Championship European Series #2 Playoffs",
@@ -130,37 +100,47 @@
       "stake": 3,
       "entryPrice": 0.245,
       "size": 12.244897959183673,
-      "lastPrice": 0.235
+      "lastPrice": 0.24
     },
-    "0x60f5e471195439320b674c93b0de3cead1ba144a0f9e543230b70bce5f4fd6b5:1": {
-      "title": "Counter-Strike: Sinners vs Rune Eaters (BO3) - CCT Europe Series #5 Playoffs",
-      "outcome": "Rune Eaters",
-      "slug": "cs2-sin2-run2-2026-07-31",
-      "eventSlug": "cs2-sin2-run2-2026-07-31",
+    "0xe836fd1165e29747f7291c3a7b67da75a971548776a8bc671d3c43e3daaea5c7:1": {
+      "title": "Map Handicap: MIBR (-1.5) vs Evil Geniuses (+1.5)",
+      "outcome": "Evil Geniuses",
+      "slug": "val-eg2-mibr-2026-07-31-map-handicap-home-1pt5",
+      "eventSlug": "val-eg2-mibr-2026-07-31",
       "stake": 3,
-      "entryPrice": 0.295,
-      "size": 10.16949152542373,
-      "lastPrice": 0.295
+      "entryPrice": 0.465,
+      "size": 6.451612903225806,
+      "lastPrice": 0.465
     },
-    "0xd24ed3e3a9f6aa21ed42346fea5554e023cd8b9b37b4d172648bd6a05ee956c5:0": {
-      "title": "Counter-Strike: ex-RUSTEC vs ex-MANA eSports (BO3) - CCT Europe Series #6 Group Stage",
-      "outcome": "ex-RUSTEC",
-      "slug": "cs2-rustec-mana1-2026-07-31",
-      "eventSlug": "cs2-rustec-mana1-2026-07-31",
+    "0x601012d8b0c2ad23d6948b3bbcd00c4c4763fd9f65fe240fa6f64d54bf1b89d3:1": {
+      "title": "Counter-Strike: Marsborne vs regain (BO3) - StarLadder StarSeries North American Qualifier Playoffs",
+      "outcome": "regain",
+      "slug": "cs2-mars-regain-2026-07-31",
+      "eventSlug": "cs2-mars-regain-2026-07-31",
       "stake": 3,
-      "entryPrice": 0.89,
-      "size": 3.3707865168539324,
-      "lastPrice": 0.9995
+      "entryPrice": 0.245,
+      "size": 12.244897959183673,
+      "lastPrice": 0.245
     },
-    "0xd24ed3e3a9f6aa21ed42346fea5554e023cd8b9b37b4d172648bd6a05ee956c5:1": {
-      "title": "Counter-Strike: ex-RUSTEC vs ex-MANA eSports (BO3) - CCT Europe Series #6 Group Stage",
-      "outcome": "ex-MANA eSports",
-      "slug": "cs2-rustec-mana1-2026-07-31",
-      "eventSlug": "cs2-rustec-mana1-2026-07-31",
+    "0xcb085b09e9f670b85467e6faaac8dedef7b8d7e7274c45e923626999df6ab739:1": {
+      "title": "Valorant: GIANTX vs Team Heretics (BO3) - VCT EMEA Group Omega",
+      "outcome": "Team Heretics",
+      "slug": "val-gx-th1-2026-07-31",
+      "eventSlug": "val-gx-th1-2026-07-31",
       "stake": 3,
-      "entryPrice": 0.11,
-      "size": 27.272727272727273,
-      "lastPrice": 0.0005
+      "entryPrice": 0.745,
+      "size": 4.026845637583893,
+      "lastPrice": 0.745
+    },
+    "0x1c6c148c41ec06ddb65fff127b4a8a44d8f8ff184a1d6b2972db852fca867a57:0": {
+      "title": "Valorant: Cloud9 vs LOUD (BO3) - VCT Americas Stage 2 Group Omega",
+      "outcome": "Cloud9",
+      "slug": "val-c9-loud-2026-07-31",
+      "eventSlug": "val-c9-loud-2026-07-31",
+      "stake": 3,
+      "entryPrice": 0.455,
+      "size": 6.593406593406593,
+      "lastPrice": 0.455
     }
   }
 }
