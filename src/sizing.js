@@ -16,15 +16,16 @@ export function classifyMarketType(title) {
 export function priceBandLabel(price) {
   if (price >= 0.75 && price <= 0.9) return "0.75-0.90";
   if (price > 0.9) return "0.90-1.00";
-  if (price < 0.4) return "0.00-0.40";
-  return "0.40-0.75";
+  return "0.00-0.75";
 }
 
 function baseSizeForPrice(price, bankroll) {
-  if (price >= 0.75 && price <= 0.9) return bankroll * 0.035; // en verimli bant (~%23 ROI)
-  if (price > 0.9) return bankroll * 0.01; // buyuk ama dolar-basina zayif getiri (~%7 ROI)
-  if (price < 0.4) return bankroll * 0.02; // ikinci en verimli bant (~%11 ROI)
-  return bankroll * 0.01; // en zayif orta bant (~%2 ROI)
+  // 0.00-0.75 tek bant birakildi: elimizde sadece bandin TOPLAM kar rakami
+  // var, islem bazli dagilim yok - 0.00-0.40 ile 0.40-0.75'i ayri oranlarla
+  // ayirmak ozetin ozetini almak olurdu (bkz. sizing modulu bolum 8).
+  if (price >= 0.75 && price <= 0.9) return bankroll * 0.035; // guclu kanitli bant (~%97.6 isabet, n=42)
+  if (price > 0.9) return bankroll * 0.01; // buyuk pozisyon ama dolar-basina zayif getiri, n=6 zayif ornek
+  return bankroll * 0.015; // 0.00-0.75 flat oran
 }
 
 // title/price/bankroll: pozisyonun bilgileri ve kasa buyuklugu.
