@@ -16,6 +16,23 @@ function polymarketUrl(eventSlug, slug) {
   return `https://polymarket.com/event/${eventSlug || slug}`;
 }
 
+// Kazanan pozisyonlar cogunlukla hizlica redeem edildigi icin `redeemable:true`
+// durumunu hic yakalayamadan positions API'sinden kayboluyor - sadece bu
+// endpoint'e bakmak "kazandi, hizli redeem edildi" ile "sattı" (panik) ayirt
+// edemiyor. Gamma'dan marketin gercekten kapanip kapanmadigini sormak daha
+// guvenilir: market hala acik gorunuyorsa (closed:false) ve pozisyon yine de
+// kayboldu ise, gercekten satmis olma ihtimali yuksek.
+async function isMarketClosed(slug) {
+  try {
+    const res = await fetch(`https://gamma-api.polymarket.com/markets/slug/${slug}`);
+    if (!res.ok) return null;
+    const market = await res.json();
+    return Boolean(market.closed);
+  } catch {
+    return null;
+  }
+}
+
 function computeBankroll(paperState) {
   const staked = Object.values(paperState.positions).reduce((s, p) => s + p.stake, 0);
   return paperState.balance + staked;
@@ -139,12 +156,13 @@ export async function checkPaperTrading(paperState, wallet) {
 
   for (const key of Object.keys(paperState.positions)) {
     if (seenKeys.has(key)) continue;
-    // Pozisyon hala redeemable=true olarak (cozulmus ama redeem edilmemis)
-    // allPositions icinde goruluyorsa normal cozum demektir. Hic gorunmuyorsa
-    // trader'in hisseleri satmis olmasi (panik/erken cikis) daha olasidir.
-    const stillResolving = allPositions.some((p) => positionKey(p) === key && p.redeemable);
-    await closePosition(paperState, wallet, key, paperState.positions[key], {
-      panicSell: !stillResolving,
+    const existing = paperState.positions[key];
+    const closed = await isMarketClosed(existing.slug);
+    // Sadece marketin KESIN olarak hala acik oldugunu biliyorsak (closed:false)
+    // panik satis say. Bilinmiyorsa (API hatasi) veya kapandiysa (normal
+    // cozum, kazanmis olabilir) sessiz kal - yanlis alarm vermemek daha onemli.
+    await closePosition(paperState, wallet, key, existing, {
+      panicSell: closed === false,
     });
   }
 }
