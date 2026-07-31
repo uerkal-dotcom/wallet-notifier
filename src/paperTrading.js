@@ -2,6 +2,8 @@ import { fetchOpenPositions } from "./positions.js";
 import { sendTelegramMessage } from "./telegram.js";
 import { suggestedStake } from "./sizing.js";
 
+const ENTRY_NOTIFY_THRESHOLD = 500; // sadece bunun ustundeki gercek girisler bildirilir
+
 function fmt(n) {
   return `$${Number(n).toLocaleString("tr-TR", { maximumFractionDigits: 2 })}`;
 }
@@ -15,26 +17,20 @@ function computeBankroll(paperState) {
   return paperState.balance + staked;
 }
 
-function eventExposure(paperState, eventSlug) {
-  return Object.values(paperState.positions)
-    .filter((p) => p.eventSlug === eventSlug)
-    .reduce((s, p) => s + p.stake, 0);
+function eventExposure(paperState, eventSlug, excludeKey) {
+  return Object.entries(paperState.positions)
+    .filter(([key, p]) => key !== excludeKey && p.eventSlug === eventSlug)
+    .reduce((s, [, p]) => s + p.stake, 0);
 }
 
+// Sanal takip (bankroll/olay tavani hesabi icin) her zaman sessizce calisir.
+// Telegram bildirimi sadece uc durumda gider: gercek giris 500$ ustundeyse,
+// onerilen tutar arttiysa, veya trader panik yapip satarsa.
 async function openPosition(paperState, wallet, position, suggestion) {
   const { stake, marketType, band, cap, currentEventExposure } = suggestion;
-
-  if (paperState.balance < stake) {
-    await sendTelegramMessage(
-      `⚠️ <b>${wallet.label}</b> [KAĞIT] Bakiye yetersiz — ${position.title} (${position.outcome}) icin ${fmt(
-        stake
-      )} onerilmisti, mevcut bakiye ${fmt(paperState.balance)}.`
-    );
-    return;
-  }
-
   const key = positionKey(position);
   const size = stake / position.curPrice;
+
   paperState.balance -= stake;
   paperState.positions[key] = {
     title: position.title,
@@ -45,20 +41,29 @@ async function openPosition(paperState, wallet, position, suggestion) {
     entryPrice: position.curPrice,
     size,
     lastPrice: position.curPrice,
+    lastNotifiedAmount: stake,
   };
 
+  if (position.initialValue <= ENTRY_NOTIFY_THRESHOLD) return; // sessiz - sadece sanal takip
+
   await sendTelegramMessage(
-    `📝 <b>${wallet.label}</b> [KAĞIT] Yeni pozisyon\n` +
+    `📝 <b>${wallet.label}</b> Yeni giris (${fmt(position.initialValue)})\n` +
       `[TÜR: ${marketType}] [BANT: ${band}]\n` +
       `${position.title} — ${position.outcome}\n` +
       `Fiyat: ${(position.curPrice * 100).toFixed(1)}c\n` +
       `Olay: ${position.eventSlug} — maruziyet: ${fmt(currentEventExposure + stake)} / tavan: ${fmt(cap)}\n` +
-      `Onerilen tutar: ${fmt(stake)}\n` +
-      `Bakiye: ${fmt(paperState.balance)}`
+      `Onerilen tutar: ${fmt(stake)}`
   );
 }
 
-async function closePosition(paperState, wallet, key, existing) {
+async function notifySuggestionIncrease(wallet, existing, newAmount) {
+  await sendTelegramMessage(
+    `📈 <b>${wallet.label}</b> Onerilen tutar artti\n${existing.title} — ${existing.outcome}\n` +
+      `${fmt(existing.lastNotifiedAmount)} → ${fmt(newAmount)}`
+  );
+}
+
+async function closePosition(paperState, wallet, key, existing, { panicSell }) {
   const proceeds = existing.size * existing.lastPrice;
   const realized = proceeds - existing.stake;
 
@@ -66,11 +71,12 @@ async function closePosition(paperState, wallet, key, existing) {
   paperState.realizedPnl += realized;
   delete paperState.positions[key];
 
-  const emoji = realized >= 0 ? "✅" : "❌";
+  if (!panicSell) return; // normal cozum - sessiz, sadece sanal takip guncellenir
+
   await sendTelegramMessage(
-    `${emoji} <b>${wallet.label}</b> [KAĞIT] Pozisyon kapandi\n${existing.title} — ${existing.outcome}\n` +
-      `Tahmini kapanis fiyati: ${(existing.lastPrice * 100).toFixed(1)}c (son bilinen)\n` +
-      `Gerceklesen K/Z: ${fmt(realized)} — Bakiye: ${fmt(paperState.balance)}`
+    `🚨 <b>${wallet.label}</b> PANIK SATIS suphesi\n${existing.title} — ${existing.outcome}\n` +
+      `Pozisyon cozulmeden ortadan kayboldu - trader muhtemelen sattı.\n` +
+      `Son bilinen fiyat: ${(existing.lastPrice * 100).toFixed(1)}c`
   );
 }
 
@@ -84,31 +90,54 @@ export async function checkPaperTrading(paperState, wallet) {
   for (const position of positions) {
     const key = positionKey(position);
     seenKeys.add(key);
+    const existing = paperState.positions[key];
 
-    if (paperState.positions[key]) {
-      // Zaten acik: boyut giriste sabitlenir, fiyat dalgalanmasiyla tekrar
-      // hesaplanmaz. Sadece son fiyati guncelle (kapanista kullanilacak).
-      paperState.positions[key].lastPrice = position.curPrice;
+    if (!existing) {
+      const bankroll = computeBankroll(paperState);
+      const currentEventExposure = eventExposure(paperState, position.eventSlug);
+      const suggestion = suggestedStake({
+        title: position.title,
+        price: position.curPrice,
+        bankroll,
+        currentEventExposure,
+      });
+
+      if (suggestion.stake <= 0) continue; // map_number veya olay tavani - sanal takibe bile girmiyor
+
+      await openPosition(paperState, wallet, position, suggestion);
       continue;
     }
 
+    existing.lastPrice = position.curPrice;
+
+    // Boyut sabit kalir ama "onerilen tutar" arttiysa kullaniciya bildir
+    // (kasa buyudukce veya olay tavaninda yer acildikca artabilir).
     const bankroll = computeBankroll(paperState);
-    const currentEventExposure = eventExposure(paperState, position.eventSlug);
-    const suggestion = suggestedStake({
-      title: position.title,
-      price: position.curPrice,
+    const currentEventExposure = eventExposure(paperState, position.eventSlug, key);
+    const freshSuggestion = suggestedStake({
+      title: existing.title,
+      price: existing.entryPrice,
       bankroll,
       currentEventExposure,
     });
 
-    if (suggestion.stake <= 0) continue; // map_number veya olay tavani - sessizce atla
-
-    await openPosition(paperState, wallet, position, suggestion);
+    const lastNotifiedAmount = existing.lastNotifiedAmount ?? existing.stake;
+    if (freshSuggestion.stake > lastNotifiedAmount) {
+      await notifySuggestionIncrease(wallet, existing, freshSuggestion.stake);
+      existing.lastNotifiedAmount = freshSuggestion.stake;
+    } else if (existing.lastNotifiedAmount === undefined) {
+      existing.lastNotifiedAmount = lastNotifiedAmount;
+    }
   }
 
   for (const key of Object.keys(paperState.positions)) {
-    if (!seenKeys.has(key)) {
-      await closePosition(paperState, wallet, key, paperState.positions[key]);
-    }
+    if (seenKeys.has(key)) continue;
+    // Pozisyon hala redeemable=true olarak (cozulmus ama redeem edilmemis)
+    // allPositions icinde goruluyorsa normal cozum demektir. Hic gorunmuyorsa
+    // trader'in hisseleri satmis olmasi (panik/erken cikis) daha olasidir.
+    const stillResolving = allPositions.some((p) => positionKey(p) === key && p.redeemable);
+    await closePosition(paperState, wallet, key, paperState.positions[key], {
+      panicSell: !stillResolving,
+    });
   }
 }

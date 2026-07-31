@@ -97,6 +97,23 @@ raporundaki geriye donuk analize dayanir):
   tutulur ve `state.json` gibi otomatik commit'lenir.
 - Kurallari degistirmek icin `src/sizing.js` dosyasini duzenleyin.
 
+### Bildirimler artik secici
+
+Sanal takip her calistirmada sessizce devam eder (bankroll/olay tavani
+hesabi icin gerekli), ama Telegram bildirimi **sadece** su uc durumda gider:
+
+1. **Giris**: trader'in o pozisyona gercekten yatirdigi tutar (`initialValue`)
+   500$'in ustundeyse - bildirimde onerilen yatirim tutari da gosterilir.
+2. **Onerilen tutar artisi**: ayni pozisyon icin sonradan hesaplanan onerilen
+   tutar (kasa buyudukce veya olay tavaninda yer actikca) daha once bildirilen
+   tutardan yuksekse.
+3. **Panik satis suphesi**: takip edilen bir pozisyon, market henuz cozulmeden
+   (yani `redeemable` olmadan) ortadan kayboluyorsa - trader'in hisseleri
+   sattigi anlamina gelir, bu nadir goruldugu icin ayrica isaretlenir.
+
+Normal cozum (market kapanip pozisyon dogal olarak bitmesi) veya 500$'in
+altindaki girisler icin bildirim gitmez, sadece sessizce kayit guncellenir.
+
 ## Ayarlar (.env / Actions secrets)
 
 | Degisken | Aciklama | Varsayilan |
