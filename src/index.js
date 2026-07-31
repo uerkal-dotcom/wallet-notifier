@@ -37,10 +37,14 @@ async function checkWallet(state, wallet) {
   if (!isFirstRun) {
     for (const trade of newTrades) {
       if (Number(trade.usdcSize || 0) < config.minUsdcSize) continue;
-      const buttonUrl = trade.slug
-        ? `https://polymarket.com/event/${trade.eventSlug || trade.slug}`
-        : undefined;
-      await sendTelegramMessage(formatTrade(wallet.label, trade), { buttonUrl });
+      const buttons = [
+        {
+          text: "Polymarket'te Ac",
+          url: `https://polymarket.com/event/${trade.eventSlug || trade.slug}`,
+        },
+        { text: `${wallet.label} Profili`, url: `https://polymarket.com/@${wallet.label}` },
+      ];
+      await sendTelegramMessage(formatTrade(wallet.label, trade), { buttons });
     }
   }
 

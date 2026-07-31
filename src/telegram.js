@@ -22,7 +22,9 @@ export async function sendTelegramMessage(text, options = {}) {
     disable_web_page_preview: true,
   };
 
-  if (options.buttonUrl) {
+  if (options.buttons?.length) {
+    payload.reply_markup = { inline_keyboard: [options.buttons] };
+  } else if (options.buttonUrl) {
     payload.reply_markup = {
       inline_keyboard: [[{ text: options.buttonText || "Polymarket'te Ac", url: options.buttonUrl }]],
     };

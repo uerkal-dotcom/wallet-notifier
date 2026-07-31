@@ -16,6 +16,17 @@ function polymarketUrl(eventSlug, slug) {
   return `https://polymarket.com/event/${eventSlug || slug}`;
 }
 
+function profileUrl(wallet) {
+  return `https://polymarket.com/@${wallet.label}`;
+}
+
+function notificationButtons(wallet, eventSlug, slug) {
+  return [
+    { text: "Polymarket'te Ac", url: polymarketUrl(eventSlug, slug) },
+    { text: `${wallet.label} Profili`, url: profileUrl(wallet) },
+  ];
+}
+
 // Kazanan pozisyonlar cogunlukla hizlica redeem edildigi icin `redeemable:true`
 // durumunu hic yakalayamadan positions API'sinden kayboluyor - sadece bu
 // endpoint'e bakmak "kazandi, hizli redeem edildi" ile "sattı" (panik) ayirt
@@ -74,7 +85,7 @@ async function openPosition(paperState, wallet, position, suggestion) {
       `Fiyat: ${(position.curPrice * 100).toFixed(1)}c\n` +
       `Olay: ${position.eventSlug} — maruziyet: ${fmt(currentEventExposure + stake)} / tavan: ${fmt(cap)}\n` +
       `Onerilen tutar: ${fmt(stake)}`,
-    { buttonUrl: polymarketUrl(position.eventSlug, position.slug) }
+    { buttons: notificationButtons(wallet, position.eventSlug, position.slug) }
   );
 }
 
@@ -82,7 +93,7 @@ async function notifySuggestionIncrease(wallet, existing, newAmount) {
   await sendTelegramMessage(
     `📈 <b>${wallet.label}</b> Onerilen tutar artti\n${existing.title} — ${existing.outcome}\n` +
       `${fmt(existing.lastNotifiedAmount)} → ${fmt(newAmount)}`,
-    { buttonUrl: polymarketUrl(existing.eventSlug, existing.slug) }
+    { buttons: notificationButtons(wallet, existing.eventSlug, existing.slug) }
   );
 }
 
@@ -100,7 +111,7 @@ async function closePosition(paperState, wallet, key, existing, { panicSell }) {
     `🚨 <b>${wallet.label}</b> PANIK SATIS suphesi\n${existing.title} — ${existing.outcome}\n` +
       `Pozisyon cozulmeden ortadan kayboldu - trader muhtemelen sattı.\n` +
       `Son bilinen fiyat: ${(existing.lastPrice * 100).toFixed(1)}c`,
-    { buttonUrl: polymarketUrl(existing.eventSlug, existing.slug) }
+    { buttons: notificationButtons(wallet, existing.eventSlug, existing.slug) }
   );
 }
 
