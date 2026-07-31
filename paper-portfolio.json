@@ -1,6 +1,6 @@
 {
-  "balance": 330.43254323284964,
-  "realizedPnl": -6.192927191318523,
+  "balance": 338.32640770567923,
+  "realizedPnl": -4.299062718488905,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
       "title": "Will Spirit Win BLAST Bounty 2026 Season 2?",
@@ -21,7 +21,7 @@
       "stake": 6,
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
-      "lastPrice": 0.2005,
+      "lastPrice": 0.205,
       "lastNotifiedAmount": 6
     },
     "0xe836fd1165e29747f7291c3a7b67da75a971548776a8bc671d3c43e3daaea5c7:1": {
@@ -46,17 +46,6 @@
       "lastPrice": 0.255,
       "lastNotifiedAmount": 7.615095123588768
     },
-    "0xcb085b09e9f670b85467e6faaac8dedef7b8d7e7274c45e923626999df6ab739:1": {
-      "title": "Valorant: GIANTX vs Team Heretics (BO3) - VCT EMEA Group Omega",
-      "outcome": "Team Heretics",
-      "slug": "val-gx-th1-2026-07-31",
-      "eventSlug": "val-gx-th1-2026-07-31",
-      "stake": 6,
-      "entryPrice": 0.759703947368421,
-      "size": 7.897813379519377,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 13.326416466280346
-    },
     "0x1c6c148c41ec06ddb65fff127b4a8a44d8f8ff184a1d6b2972db852fca867a57:0": {
       "title": "Valorant: Cloud9 vs LOUD (BO3) - VCT Americas Stage 2 Group Omega",
       "outcome": "Cloud9",
@@ -65,7 +54,7 @@
       "stake": 3,
       "entryPrice": 0.455,
       "size": 6.593406593406593,
-      "lastPrice": 0.315,
+      "lastPrice": 0.215,
       "lastNotifiedAmount": 9.518868904485961
     },
     "0xca875250718612cea929ae059e61d312e3de82f0d43f8850d724df5cc1e7e629:0": {
@@ -76,7 +65,7 @@
       "stake": 6.663208233140173,
       "entryPrice": 0.385,
       "size": 17.307034371792657,
-      "lastPrice": 0.265,
+      "lastPrice": 0.365,
       "lastNotifiedAmount": 9.518868904485961
     },
     "0xc9846d4ab626b7cfbe41b3398a91ab9e35ffc8de08c2670300a63711123003d6:0": {
