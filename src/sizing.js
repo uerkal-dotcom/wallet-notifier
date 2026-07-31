@@ -16,13 +16,15 @@ export function classifyMarketType(title) {
 export function priceBandLabel(price) {
   if (price >= 0.75 && price <= 0.9) return "0.75-0.90";
   if (price > 0.9) return "0.90-1.00";
-  return "0.00-0.75";
+  if (price < 0.4) return "0.00-0.40";
+  return "0.40-0.75";
 }
 
 function baseSizeForPrice(price, bankroll) {
-  if (price >= 0.75 && price <= 0.9) return bankroll * 0.035; // en verimli bant
-  if (price > 0.9) return bankroll * 0.01; // en zayif dolar-basina getiri
-  return bankroll * 0.0175; // genis orta bant
+  if (price >= 0.75 && price <= 0.9) return bankroll * 0.035; // en verimli bant (~%23 ROI)
+  if (price > 0.9) return bankroll * 0.01; // buyuk ama dolar-basina zayif getiri (~%7 ROI)
+  if (price < 0.4) return bankroll * 0.02; // ikinci en verimli bant (~%11 ROI)
+  return bankroll * 0.01; // en zayif orta bant (~%2 ROI)
 }
 
 // title/price/bankroll: pozisyonun bilgileri ve kasa buyuklugu.

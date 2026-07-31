@@ -85,9 +85,10 @@ raporundaki geriye donuk analize dayanir):
   o anki fiyat bandina ve market tipine gore hesaplanir:
   - `map_number` (Map 2/3 kazanani) turu tamamen atlanir (analizde net kaybeden kategori)
   - `tournament_winner` (sampiyonluk marketi): sabit kucuk tutar (kasa'nin %1'i, max $4)
-  - fiyat 0.75-0.90 arasi: kasa'nin %3.5'i (en verimli bant)
-  - fiyat 0.90 ustu: kasa'nin %1'i (en zayif dolar-basina getiri)
-  - diger (0-0.75): kasa'nin %1.75'i
+  - fiyat 0.75-0.90 arasi: kasa'nin %3.5'i (raporun en verimli bandi, ~%23 ROI)
+  - fiyat 0.00-0.40 arasi: kasa'nin %2'si (ikinci en verimli bant, ~%11 ROI)
+  - fiyat 0.40-0.75 arasi: kasa'nin %1'i (en zayif orta bant, ~%2 ROI)
+  - fiyat 0.90 ustu: kasa'nin %1'i (buyuk ama dolar-basina zayif getiri, ~%7 ROI)
   - Ayrica ayni `eventSlug` altindaki toplam maruziyet kasa'nin %12.5'ini
     gecemez (korelasyon tavani) - asarsa tutar kirpilir veya atlanir.
 - Boyut sadece pozisyon **ilk acildiginda** hesaplanir ve sabit kalir (trader'in
