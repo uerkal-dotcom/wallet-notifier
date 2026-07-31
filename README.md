@@ -86,11 +86,13 @@ raporundaki geriye donuk analize dayanir):
   - `map_number` (Map 2/3 kazanani) turu tamamen atlanir (analizde net kaybeden kategori)
   - `tournament_winner` (sampiyonluk marketi): sabit kucuk tutar (kasa'nin %1'i, max $4)
   - fiyat 0.75-0.90 arasi: kasa'nin %3.5'i (guclu kanitli bant, ~%97.6 isabet, n=42)
+  - fiyat 0.30-0.60 arasi: kasa'nin %2.5'i (tutarli pozitif, n=447, ~%15 ROI)
   - fiyat 0.90 ustu: kasa'nin %1'i (buyuk pozisyon ama dolar-basina zayif getiri, n=6 zayif ornek)
-  - diger (0.00-0.75, tek flat bant): kasa'nin %1.5'i - elimizde bu araligin
-    sadece toplam kar rakami var, islem bazli dagilim yok; 0.00-0.40 ile
-    0.40-0.75'i ayirmak ozetin ozetini almak olur (ham veri geldiginde
-    netlesecek, bkz. Notlar)
+  - fiyat 0.00-0.30 arasi: kasa'nin %0.75'i (gurultulu/zayif, n=85)
+  - **fiyat 0.60-0.75 arasi: tamamen atlanir** - ham (satir bazli, 873 pozisyon)
+    veriyle dogrulandi: 3 ayri 0.05'lik dilimde tutarli negatif ROI (-%4 ila
+    -%24, n=195), market tipi karisimindan kaynaklanmiyor (map_number haric
+    tutulunca daha da kotulesiyor)
   - Ayrica ayni `eventSlug` altindaki toplam maruziyet kasa'nin %12.5'ini
     gecemez (korelasyon tavani) - asarsa tutar kirpilir veya atlanir.
 - Boyut sadece pozisyon **ilk acildiginda** hesaplanir ve sabit kalir (trader'in
@@ -113,6 +115,10 @@ hesabi icin gerekli), ama Telegram bildirimi **sadece** su uc durumda gider:
 3. **Panik satis suphesi**: takip edilen bir pozisyon, market henuz cozulmeden
    (yani `redeemable` olmadan) ortadan kayboluyorsa - trader'in hisseleri
    sattigi anlamina gelir, bu nadir goruldugu icin ayrica isaretlenir.
+
+Her bildirimde, ilgili marketi doğrudan acan bir **"Polymarket'te Ac" butonu**
+(Telegram inline keyboard) bulunur - `src/telegram.js` icindeki
+`sendTelegramMessage(text, { buttonUrl })` parametresiyle eklenir.
 
 Normal cozum (market kapanip pozisyon dogal olarak bitmesi) veya 500$'in
 altindaki girisler icin bildirim gitmez, sadece sessizce kayit guncellenir.

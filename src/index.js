@@ -11,13 +11,11 @@ function formatTrade(walletLabel, trade) {
     ? `$${Number(trade.usdcSize).toLocaleString("tr-TR", { maximumFractionDigits: 0 })}`
     : "";
   const priceStr = trade.price ? `${(Number(trade.price) * 100).toFixed(1)}c` : "";
-  const link = trade.slug ? `https://polymarket.com/event/${trade.eventSlug || trade.slug}` : "";
 
   return (
     `${sideEmoji} <b>${walletLabel}</b> ${trade.side} — ${trade.outcome}\n` +
     `${trade.title}\n` +
-    `${sizeStr} @ ${priceStr}` +
-    (link ? `\n${link}` : "")
+    `${sizeStr} @ ${priceStr}`
   );
 }
 
@@ -39,7 +37,10 @@ async function checkWallet(state, wallet) {
   if (!isFirstRun) {
     for (const trade of newTrades) {
       if (Number(trade.usdcSize || 0) < config.minUsdcSize) continue;
-      await sendTelegramMessage(formatTrade(wallet.label, trade));
+      const buttonUrl = trade.slug
+        ? `https://polymarket.com/event/${trade.eventSlug || trade.slug}`
+        : undefined;
+      await sendTelegramMessage(formatTrade(wallet.label, trade), { buttonUrl });
     }
   }
 

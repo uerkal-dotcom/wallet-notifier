@@ -13,14 +13,22 @@ async function throttle() {
   lastSendAt = Date.now();
 }
 
-export async function sendTelegramMessage(text) {
+export async function sendTelegramMessage(text, options = {}) {
   const url = `https://api.telegram.org/bot${config.telegramBotToken}/sendMessage`;
-  const body = JSON.stringify({
+  const payload = {
     chat_id: config.telegramChatId,
     text,
     parse_mode: "HTML",
     disable_web_page_preview: true,
-  });
+  };
+
+  if (options.buttonUrl) {
+    payload.reply_markup = {
+      inline_keyboard: [[{ text: options.buttonText || "Polymarket'te Ac", url: options.buttonUrl }]],
+    };
+  }
+
+  const body = JSON.stringify(payload);
 
   for (let attempt = 0; attempt < 3; attempt++) {
     await throttle();

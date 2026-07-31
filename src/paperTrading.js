@@ -12,6 +12,10 @@ function positionKey(position) {
   return `${position.conditionId}:${position.outcomeIndex}`;
 }
 
+function polymarketUrl(eventSlug, slug) {
+  return `https://polymarket.com/event/${eventSlug || slug}`;
+}
+
 function computeBankroll(paperState) {
   const staked = Object.values(paperState.positions).reduce((s, p) => s + p.stake, 0);
   return paperState.balance + staked;
@@ -52,14 +56,16 @@ async function openPosition(paperState, wallet, position, suggestion) {
       `${position.title} — ${position.outcome}\n` +
       `Fiyat: ${(position.curPrice * 100).toFixed(1)}c\n` +
       `Olay: ${position.eventSlug} — maruziyet: ${fmt(currentEventExposure + stake)} / tavan: ${fmt(cap)}\n` +
-      `Onerilen tutar: ${fmt(stake)}`
+      `Onerilen tutar: ${fmt(stake)}`,
+    { buttonUrl: polymarketUrl(position.eventSlug, position.slug) }
   );
 }
 
 async function notifySuggestionIncrease(wallet, existing, newAmount) {
   await sendTelegramMessage(
     `📈 <b>${wallet.label}</b> Onerilen tutar artti\n${existing.title} — ${existing.outcome}\n` +
-      `${fmt(existing.lastNotifiedAmount)} → ${fmt(newAmount)}`
+      `${fmt(existing.lastNotifiedAmount)} → ${fmt(newAmount)}`,
+    { buttonUrl: polymarketUrl(existing.eventSlug, existing.slug) }
   );
 }
 
@@ -76,7 +82,8 @@ async function closePosition(paperState, wallet, key, existing, { panicSell }) {
   await sendTelegramMessage(
     `🚨 <b>${wallet.label}</b> PANIK SATIS suphesi\n${existing.title} — ${existing.outcome}\n` +
       `Pozisyon cozulmeden ortadan kayboldu - trader muhtemelen sattı.\n` +
-      `Son bilinen fiyat: ${(existing.lastPrice * 100).toFixed(1)}c`
+      `Son bilinen fiyat: ${(existing.lastPrice * 100).toFixed(1)}c`,
+    { buttonUrl: polymarketUrl(existing.eventSlug, existing.slug) }
   );
 }
 
