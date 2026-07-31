@@ -22,7 +22,7 @@
       "entryPrice": 0.5649,
       "size": 10.621348911311737,
       "lastPrice": 0.9995,
-      "lastNotifiedAmount": 6.663208233140173
+      "lastNotifiedAmount": 9.518868904485961
     },
     "0xc3a395d1a33daf48b56529062f14cb46ffad6d3694bf0a2c59fd85a0aaec16be:0": {
       "title": "Will MOUZ Win BLAST Bounty 2026 Season 2?",
@@ -32,7 +32,7 @@
       "stake": 6,
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
-      "lastPrice": 0.2034,
+      "lastPrice": 0.2,
       "lastNotifiedAmount": 6
     },
     "0x05e3e2c6312d0646746260b6f68ec2fc3b4372eb4d4f7553a064be67d62a0d50:1": {
@@ -66,7 +66,7 @@
       "entryPrice": 0.5,
       "size": 6,
       "lastPrice": 0.0005,
-      "lastNotifiedAmount": 6.663208233140173
+      "lastNotifiedAmount": 9.518868904485961
     },
     "0xca1d58e1e9087152b4db548b32ecdea04fab952f3daeb669d630ee6130b85da6:0": {
       "title": "Counter-Strike: JiJieHao vs Black Phoenix (BO3) - CCT Europe Series #5 Playoffs",
@@ -99,7 +99,7 @@
       "entryPrice": 0.465,
       "size": 6.451612903225806,
       "lastPrice": 0.465,
-      "lastNotifiedAmount": 6.663208233140173
+      "lastNotifiedAmount": 9.518868904485961
     },
     "0x601012d8b0c2ad23d6948b3bbcd00c4c4763fd9f65fe240fa6f64d54bf1b89d3:1": {
       "title": "Counter-Strike: Marsborne vs regain (BO3) - StarLadder StarSeries North American Qualifier Playoffs",
@@ -120,7 +120,7 @@
       "stake": 6,
       "entryPrice": 0.759703947368421,
       "size": 7.897813379519377,
-      "lastPrice": 0.895,
+      "lastPrice": 0.935,
       "lastNotifiedAmount": 13.326416466280346
     },
     "0x1c6c148c41ec06ddb65fff127b4a8a44d8f8ff184a1d6b2972db852fca867a57:0": {
@@ -132,7 +132,7 @@
       "entryPrice": 0.455,
       "size": 6.593406593406593,
       "lastPrice": 0.455,
-      "lastNotifiedAmount": 6.663208233140173
+      "lastNotifiedAmount": 9.518868904485961
     },
     "0xca875250718612cea929ae059e61d312e3de82f0d43f8850d724df5cc1e7e629:0": {
       "title": "Counter-Strike: largadosypelados vs BESTIA (BO3) - StarLadder StarSeries South American Qualifier Playoffs",
@@ -142,8 +142,8 @@
       "stake": 6.663208233140173,
       "entryPrice": 0.385,
       "size": 17.307034371792657,
-      "lastPrice": 0.385,
-      "lastNotifiedAmount": 7.615095123588768
+      "lastPrice": 0.415,
+      "lastNotifiedAmount": 9.518868904485961
     },
     "0xc9846d4ab626b7cfbe41b3398a91ab9e35ffc8de08c2670300a63711123003d6:0": {
       "title": "Counter-Strike: LAG Gaming vs SportsBetExpert (BO3) - StarLadder StarSeries North American Qualifier Playoffs",
@@ -153,8 +153,8 @@
       "stake": 5.711321342691575,
       "entryPrice": 0.365,
       "size": 15.647455733401577,
-      "lastPrice": 0.365,
-      "lastNotifiedAmount": 5.711321342691575
+      "lastPrice": 0.375,
+      "lastNotifiedAmount": 9.518868904485961
     }
   }
 }
