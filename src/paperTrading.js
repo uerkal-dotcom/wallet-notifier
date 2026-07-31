@@ -1,23 +1,6 @@
 import { fetchOpenPositions } from "./positions.js";
 import { sendTelegramMessage } from "./telegram.js";
-
-// skyman44'in bir marketteki toplam yatirdigi tutara (initialValue) gore
-// bizim ne kadarlik kagit pozisyon acacagimizi belirleyen kademe tablosu.
-const TIERS = [
-  { min: 20000, stake: 20 },
-  { min: 15000, stake: 15 },
-  { min: 10000, stake: 10 },
-  { min: 5000, stake: 6 },
-  { min: 0, stake: 3 },
-];
-
-function tierStake(investedUsd) {
-  if (!investedUsd || investedUsd <= 0) return 0;
-  for (const tier of TIERS) {
-    if (investedUsd >= tier.min) return tier.stake;
-  }
-  return 0;
-}
+import { suggestedStake } from "./sizing.js";
 
 function fmt(n) {
   return `$${Number(n).toLocaleString("tr-TR", { maximumFractionDigits: 2 })}`;
@@ -27,85 +10,51 @@ function positionKey(position) {
   return `${position.conditionId}:${position.outcomeIndex}`;
 }
 
-async function openPosition(paperState, wallet, position, targetStake) {
-  if (paperState.balance < targetStake) {
+function computeBankroll(paperState) {
+  const staked = Object.values(paperState.positions).reduce((s, p) => s + p.stake, 0);
+  return paperState.balance + staked;
+}
+
+function eventExposure(paperState, eventSlug) {
+  return Object.values(paperState.positions)
+    .filter((p) => p.eventSlug === eventSlug)
+    .reduce((s, p) => s + p.stake, 0);
+}
+
+async function openPosition(paperState, wallet, position, suggestion) {
+  const { stake, marketType, band, cap, currentEventExposure } = suggestion;
+
+  if (paperState.balance < stake) {
     await sendTelegramMessage(
       `⚠️ <b>${wallet.label}</b> [KAĞIT] Bakiye yetersiz — ${position.title} (${position.outcome}) icin ${fmt(
-        targetStake
-      )} gerekiyordu, mevcut bakiye ${fmt(paperState.balance)}.`
+        stake
+      )} onerilmisti, mevcut bakiye ${fmt(paperState.balance)}.`
     );
     return;
   }
 
   const key = positionKey(position);
-  const size = targetStake / position.curPrice;
-  paperState.balance -= targetStake;
+  const size = stake / position.curPrice;
+  paperState.balance -= stake;
   paperState.positions[key] = {
     title: position.title,
     outcome: position.outcome,
     slug: position.slug,
     eventSlug: position.eventSlug,
-    stake: targetStake,
+    stake,
     entryPrice: position.curPrice,
     size,
     lastPrice: position.curPrice,
   };
 
   await sendTelegramMessage(
-    `📝 <b>${wallet.label}</b> [KAĞIT] Yeni pozisyon\n${position.title} — ${position.outcome}\n` +
-      `Onun yatirdigi: ${fmt(position.initialValue)} → Bizim pay: ${fmt(targetStake)} @ ${(
-        position.curPrice * 100
-      ).toFixed(1)}c\n` +
+    `📝 <b>${wallet.label}</b> [KAĞIT] Yeni pozisyon\n` +
+      `[TÜR: ${marketType}] [BANT: ${band}]\n` +
+      `${position.title} — ${position.outcome}\n` +
+      `Fiyat: ${(position.curPrice * 100).toFixed(1)}c\n` +
+      `Olay: ${position.eventSlug} — maruziyet: ${fmt(currentEventExposure + stake)} / tavan: ${fmt(cap)}\n` +
+      `Onerilen tutar: ${fmt(stake)}\n` +
       `Bakiye: ${fmt(paperState.balance)}`
-  );
-}
-
-async function increasePosition(paperState, wallet, position, existing, targetStake) {
-  const delta = targetStake - existing.stake;
-  if (paperState.balance < delta) {
-    await sendTelegramMessage(
-      `⚠️ <b>${wallet.label}</b> [KAĞIT] Bakiye yetersiz — ${position.title} pozisyonunu ${fmt(
-        targetStake
-      )}'a cikaramadik (gereken ek: ${fmt(delta)}, bakiye: ${fmt(paperState.balance)}).`
-    );
-    return;
-  }
-
-  const addedSize = delta / position.curPrice;
-  const newSize = existing.size + addedSize;
-  paperState.balance -= delta;
-  existing.stake = targetStake;
-  existing.size = newSize;
-  existing.entryPrice = targetStake / newSize;
-  existing.lastPrice = position.curPrice;
-
-  await sendTelegramMessage(
-    `📈 <b>${wallet.label}</b> [KAĞIT] Pozisyon artirildi\n${position.title} — ${position.outcome}\n` +
-      `+${fmt(delta)} @ ${(position.curPrice * 100).toFixed(1)}c → toplam ${fmt(targetStake)}\n` +
-      `Bakiye: ${fmt(paperState.balance)}`
-  );
-}
-
-async function reducePosition(paperState, wallet, position, existing, targetStake) {
-  const sellFraction = (existing.stake - targetStake) / existing.stake;
-  const soldSize = existing.size * sellFraction;
-  const proceeds = soldSize * position.curPrice;
-  const soldCost = existing.stake * sellFraction;
-  const realized = proceeds - soldCost;
-
-  paperState.balance += proceeds;
-  paperState.realizedPnl += realized;
-  existing.stake = targetStake;
-  existing.size = existing.size - soldSize;
-  existing.lastPrice = position.curPrice;
-
-  const emoji = realized >= 0 ? "📉" : "📉🔻";
-  await sendTelegramMessage(
-    `${emoji} <b>${wallet.label}</b> [KAĞIT] Pozisyon azaltildi\n${position.title} — ${position.outcome}\n` +
-      `${fmt(soldCost)}'lik kisim satildi @ ${(position.curPrice * 100).toFixed(1)}c, gerceklesen K/Z: ${fmt(
-        realized
-      )}\n` +
-      `Kalan: ${fmt(targetStake)} — Bakiye: ${fmt(paperState.balance)}`
   );
 }
 
@@ -135,18 +84,26 @@ export async function checkPaperTrading(paperState, wallet) {
   for (const position of positions) {
     const key = positionKey(position);
     seenKeys.add(key);
-    const targetStake = tierStake(position.initialValue);
-    const existing = paperState.positions[key];
 
-    if (!existing && targetStake > 0) {
-      await openPosition(paperState, wallet, position, targetStake);
-    } else if (existing && targetStake > existing.stake) {
-      await increasePosition(paperState, wallet, position, existing, targetStake);
-    } else if (existing && targetStake < existing.stake && targetStake > 0) {
-      await reducePosition(paperState, wallet, position, existing, targetStake);
-    } else if (existing) {
-      existing.lastPrice = position.curPrice;
+    if (paperState.positions[key]) {
+      // Zaten acik: boyut giriste sabitlenir, fiyat dalgalanmasiyla tekrar
+      // hesaplanmaz. Sadece son fiyati guncelle (kapanista kullanilacak).
+      paperState.positions[key].lastPrice = position.curPrice;
+      continue;
     }
+
+    const bankroll = computeBankroll(paperState);
+    const currentEventExposure = eventExposure(paperState, position.eventSlug);
+    const suggestion = suggestedStake({
+      title: position.title,
+      price: position.curPrice,
+      bankroll,
+      currentEventExposure,
+    });
+
+    if (suggestion.stake <= 0) continue; // map_number veya olay tavani - sessizce atla
+
+    await openPosition(paperState, wallet, position, suggestion);
   }
 
   for (const key of Object.keys(paperState.positions)) {

@@ -74,21 +74,28 @@ ucretsiz kota oldugu icin, gizliligi tercih ederseniz kontrol araligini
 ## 4) Kagit (paper) trading
 
 `WALLETS` listesindeki bir cuzdan `PAPER_TRADING_WALLETS` icinde de gecerse, o
-cuzdan icin ham islem bildirimi yerine **pozisyon buyuklugune gore kademeli
-kagit trading** calisir:
+cuzdan icin ham islem bildirimi yerine **fiyat bandina ve market tipine gore
+boyutlandirilmis kagit trading** calisir (bkz. `src/sizing.js` - wallet-analytics
+raporundaki geriye donuk analize dayanir):
 
 - Her calistirmada cuzdanin guncel acik pozisyonlari (`data-api.polymarket.com/positions`)
   cekilir; cozulmus/redeem edilebilir eski bahisler (`redeemable: true`) hariç
   tutulur.
-- Her pozisyon icin, cuzdanin o pozisyona yatirdigi toplam tutara (`initialValue`)
-  gore `src/paperTrading.js` icindeki kademe tablosundan bir hedef pay
-  hesaplanir (ornek: $20.000+ -> $20, $15-20bin -> $15, ...).
-- Sanal portfoy bu hedefe gore acilir/artirilir/azaltilir; her degisiklikte
-  Telegram'a `[KAĞIT]` etiketli bir bildirim gonderilir.
+- Yeni bir pozisyon ilk goruldugunde, boyut **trader'in yatirdigi tutara degil**,
+  o anki fiyat bandina ve market tipine gore hesaplanir:
+  - `map_number` (Map 2/3 kazanani) turu tamamen atlanir (analizde net kaybeden kategori)
+  - `tournament_winner` (sampiyonluk marketi): sabit kucuk tutar (kasa'nin %1'i, max $4)
+  - fiyat 0.75-0.90 arasi: kasa'nin %3.5'i (en verimli bant)
+  - fiyat 0.90 ustu: kasa'nin %1'i (en zayif dolar-basina getiri)
+  - diger (0-0.75): kasa'nin %1.75'i
+  - Ayrica ayni `eventSlug` altindaki toplam maruziyet kasa'nin %12.5'ini
+    gecemez (korelasyon tavani) - asarsa tutar kirpilir veya atlanir.
+- Boyut sadece pozisyon **ilk acildiginda** hesaplanir ve sabit kalir (trader'in
+  o pozisyona sonradan ekleme yapmasi boyutu degistirmez); pozisyon trader
+  kapatana/market cozulene kadar acik kalir.
 - Sanal bakiye ve acik kagit pozisyonlar `paper-portfolio.json` dosyasinda
   tutulur ve `state.json` gibi otomatik commit'lenir.
-- Kademe tablosunu degistirmek icin `src/paperTrading.js` icindeki `TIERS`
-  dizisini duzenleyin.
+- Kurallari degistirmek icin `src/sizing.js` dosyasini duzenleyin.
 
 ## Ayarlar (.env / Actions secrets)
 
