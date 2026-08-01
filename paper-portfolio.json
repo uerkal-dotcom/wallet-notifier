@@ -1,5 +1,5 @@
 {
-  "balance": 338.35552990945973,
+  "balance": 329.49664166172323,
   "realizedPnl": -25.644470090540146,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
@@ -21,8 +21,19 @@
       "stake": 6,
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
-      "lastPrice": 0.212,
+      "lastPrice": 0.209,
       "lastNotifiedAmount": 6
+    },
+    "0x05603820020477788f38e54cac3f4fef7f0f887107c9526c4e13588fe0221c76:0": {
+      "title": "Valorant: Karmine Corp vs Team Liquid (BO3) - VCT EMEA Group Omega",
+      "outcome": "Karmine Corp",
+      "slug": "val-kc3-tl1-2026-08-01",
+      "eventSlug": "val-kc3-tl1-2026-08-01",
+      "stake": 8.858888247736493,
+      "entryPrice": 0.465,
+      "size": 19.051372575777403,
+      "lastPrice": 0.465,
+      "lastNotifiedAmount": 8.858888247736493
     }
   }
 }
