@@ -1,6 +1,6 @@
 {
-  "balance": 338.34940746048017,
-  "realizedPnl": -22.65059253951974,
+  "balance": 338.35552990945973,
+  "realizedPnl": -25.644470090540146,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
       "title": "Will Spirit Win BLAST Bounty 2026 Season 2?",
@@ -23,17 +23,6 @@
       "size": 29.08799554100188,
       "lastPrice": 0.1995,
       "lastNotifiedAmount": 6
-    },
-    "0x601012d8b0c2ad23d6948b3bbcd00c4c4763fd9f65fe240fa6f64d54bf1b89d3:1": {
-      "title": "Counter-Strike: Marsborne vs regain (BO3) - StarLadder StarSeries North American Qualifier Playoffs",
-      "outcome": "regain",
-      "slug": "cs2-mars-regain-2026-07-31",
-      "eventSlug": "cs2-mars-regain-2026-07-31",
-      "stake": 3,
-      "entryPrice": 0.245,
-      "size": 12.244897959183673,
-      "lastPrice": 0.0005,
-      "lastNotifiedAmount": 7.615095123588768
     }
   }
 }
