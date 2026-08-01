@@ -10,7 +10,7 @@
       "stake": 10,
       "entryPrice": 0.635,
       "size": 15.748031496062993,
-      "lastPrice": 0.615,
+      "lastPrice": 0.61,
       "lastNotifiedAmount": 10,
       "entryNotified": true
     },
@@ -22,7 +22,7 @@
       "stake": 6,
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
-      "lastPrice": 0.249,
+      "lastPrice": 0.255,
       "lastNotifiedAmount": 6,
       "entryNotified": true
     },
@@ -46,7 +46,7 @@
       "stake": 8.858888247736493,
       "entryPrice": 0.445,
       "size": 19.907614039857286,
-      "lastPrice": 0.445,
+      "lastPrice": 0.435,
       "lastNotifiedAmount": 8.858888247736495,
       "entryNotified": false
     },
@@ -106,7 +106,7 @@
       "stake": 3.5435552990945975,
       "entryPrice": 0.355,
       "size": 9.981845912942529,
-      "lastPrice": 0.385,
+      "lastPrice": 0.39,
       "lastNotifiedAmount": 3.543555299094598,
       "entryNotified": true
     },
@@ -132,7 +132,7 @@
       "size": 9.664241724803446,
       "lastPrice": 0.2849,
       "lastNotifiedAmount": 2.657666474320948,
-      "entryNotified": false
+      "entryNotified": true
     },
     "0xc974a9a803088d6c080e6e9ddd9ae3278895eba67bb1564b75f7b36eff81d41c:1": {
       "title": "Valorant: T1 vs DetonatioN FocusMe (BO3) - VCT Pacific Group Omega",
@@ -142,7 +142,7 @@
       "stake": 8.858888247736495,
       "entryPrice": 0.445,
       "size": 19.90761403985729,
-      "lastPrice": 0.575,
+      "lastPrice": 0.77,
       "lastNotifiedAmount": 8.858888247736495,
       "entryNotified": false
     },
