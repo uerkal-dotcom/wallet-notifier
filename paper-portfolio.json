@@ -1,6 +1,6 @@
 {
-  "balance": 323.2983304685495,
-  "realizedPnl": 14.79347903862292,
+  "balance": 342.34017735803906,
+  "realizedPnl": 24.976437680375945,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
       "title": "Will Spirit Win BLAST Bounty 2026 Season 2?",
@@ -27,18 +27,6 @@
       "lastNotifiedAmount": 6,
       "entryNotified": true
     },
-    "0x05603820020477788f38e54cac3f4fef7f0f887107c9526c4e13588fe0221c76:0": {
-      "title": "Valorant: Karmine Corp vs Team Liquid (BO3) - VCT EMEA Group Omega",
-      "outcome": "Karmine Corp",
-      "slug": "val-kc3-tl1-2026-08-01",
-      "eventSlug": "val-kc3-tl1-2026-08-01",
-      "stake": 8.858888247736493,
-      "entryPrice": 0.465,
-      "size": 19.051372575777403,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 9.869836975965573,
-      "entryNotified": true
-    },
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:1": {
       "title": "Will Spirit Win BLAST Bounty 2026 Season 2?",
       "outcome": "No",
@@ -60,7 +48,7 @@
       "stake": 2.657666474320948,
       "entryPrice": 0.275,
       "size": 9.664241724803446,
-      "lastPrice": 0.315,
+      "lastPrice": 0.375,
       "lastNotifiedAmount": 2.9609510927896716,
       "entryNotified": true
     },
@@ -96,7 +84,7 @@
       "stake": 9.287103029760235,
       "entryPrice": 0.5649,
       "size": 16.440260275730637,
-      "lastPrice": 0.585,
+      "lastPrice": 0.575,
       "lastNotifiedAmount": 9.869836975965573,
       "entryNotified": true
     },
