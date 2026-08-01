@@ -1,6 +1,6 @@
 {
-  "balance": 338.33835792616185,
-  "realizedPnl": -13.950320731146478,
+  "balance": 338.34618165402856,
+  "realizedPnl": -19.653818345971352,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
       "title": "Will Spirit Win BLAST Bounty 2026 Season 2?",
@@ -21,7 +21,7 @@
       "stake": 6,
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
-      "lastPrice": 0.205,
+      "lastPrice": 0.1995,
       "lastNotifiedAmount": 6
     },
     "0xe836fd1165e29747f7291c3a7b67da75a971548776a8bc671d3c43e3daaea5c7:1": {
@@ -45,17 +45,6 @@
       "size": 12.244897959183673,
       "lastPrice": 0.0005,
       "lastNotifiedAmount": 7.615095123588768
-    },
-    "0xc9846d4ab626b7cfbe41b3398a91ab9e35ffc8de08c2670300a63711123003d6:0": {
-      "title": "Counter-Strike: LAG Gaming vs SportsBetExpert (BO3) - StarLadder StarSeries North American Qualifier Playoffs",
-      "outcome": "LAG Gaming",
-      "slug": "cs2-lag-spo-2026-07-31",
-      "eventSlug": "cs2-lag-spo-2026-07-31",
-      "stake": 5.711321342691575,
-      "entryPrice": 0.365,
-      "size": 15.647455733401577,
-      "lastPrice": 0.0005,
-      "lastNotifiedAmount": 9.518868904485961
     }
   }
 }
