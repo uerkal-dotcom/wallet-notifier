@@ -171,6 +171,15 @@ async function notifySuggestionIncrease(wallet, existing, newAmount) {
   );
 }
 
+async function notifyHedgeIncrease(wallet, existing, siblingLeg, topUp, hedgeRatio) {
+  await sendTelegramMessage(
+    `🔀📈 <b>${wallet.label}</b> HEDGE buyudu\n${existing.title} — ${existing.outcome}\n` +
+      `+${fmt(topUp)} (yeni toplam: ${fmt(existing.stake)})\n` +
+      `Trader'in guncel hedge orani: ${(hedgeRatio * 100).toFixed(1)}% (${siblingLeg.outcome} tarafina gore)`,
+    { buttons: notificationButtons(wallet, existing.eventSlug, existing.slug) }
+  );
+}
+
 async function closePosition(paperState, wallet, key, existing, { panicSell }) {
   const proceeds = existing.size * existing.lastPrice;
   const realized = proceeds - existing.stake;
@@ -234,6 +243,31 @@ export async function checkPaperTrading(paperState, wallet) {
       existing.entryNotified = true;
     } else if (existing.entryNotified === undefined) {
       existing.entryNotified = position.initialValue > ENTRY_NOTIFY_THRESHOLD;
+    }
+
+    // Kars taraf (hedge) hala aciksa, boyutu fiyat bandina gore degil,
+    // trader'in GUNCEL iki bacaktaki gercek oranina gore takip et - trader
+    // hedge'ini buyutebilir, biz de orantili artiralim. Eski (fix'ten once
+    // acilmis) pozisyonlar icin de burada geriye donuk isHedge etiketlenir.
+    const sibling = findHedgeLeg(paperState, position);
+    if (sibling) {
+      const realSibling = findRealLeg(positions, position.conditionId, sibling.existingOutcomeIndex);
+      if (realSibling && realSibling.initialValue > 0 && position.initialValue > 0) {
+        const currentRatio = position.initialValue / realSibling.initialValue;
+        const targetStake = sibling.existingLeg.stake * currentRatio;
+        const topUp = targetStake - existing.stake;
+
+        if (targetStake > existing.stake * 1.05 && topUp >= 1 && paperState.balance >= topUp) {
+          paperState.balance -= topUp;
+          existing.size += topUp / position.curPrice;
+          existing.stake = targetStake;
+          existing.isHedge = true;
+          await notifyHedgeIncrease(wallet, existing, sibling.existingLeg, topUp, currentRatio);
+        } else if (!existing.isHedge) {
+          existing.isHedge = true;
+        }
+      }
+      continue;
     }
 
     // Boyut sabit kalir ama "onerilen tutar" arttiysa kullaniciya bildir
