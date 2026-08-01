@@ -1,6 +1,6 @@
 {
-  "balance": 240.84707957656798,
-  "realizedPnl": -8.515878809590589,
+  "balance": 272.0557634938273,
+  "realizedPnl": -8.767272359526935,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
       "title": "Will Spirit Win BLAST Bounty 2026 Season 2?",
@@ -10,7 +10,7 @@
       "stake": 10,
       "entryPrice": 0.635,
       "size": 15.748031496062993,
-      "lastPrice": 0.78,
+      "lastPrice": 0.785,
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "isHedge": true
@@ -23,7 +23,7 @@
       "stake": 6,
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
-      "lastPrice": 0.2275,
+      "lastPrice": 0.228,
       "lastNotifiedAmount": 6,
       "entryNotified": true
     },
@@ -35,35 +35,9 @@
       "stake": 8.858888247736493,
       "entryPrice": 0.465,
       "size": 19.051372575777403,
-      "lastPrice": 0.59,
+      "lastPrice": 0.705,
       "lastNotifiedAmount": 9.600193850974085,
       "entryNotified": true
-    },
-    "0x036649e3853c12205e60fbcaffebccd0ab87e2cfc78c0153756d11aad710df0c:0": {
-      "title": "Counter-Strike: Liquid vs Atputies (BO3) - Stake Pulse Beat I Group B",
-      "outcome": "Liquid",
-      "slug": "cs2-tl1-atp1-2026-08-01",
-      "eventSlug": "cs2-tl1-atp1-2026-08-01",
-      "stake": 22.601189219459226,
-      "entryPrice": 0.755,
-      "size": 36.62261353087389,
-      "lastPrice": 0.505,
-      "lastNotifiedAmount": 13.44027139136372,
-      "entryNotified": true,
-      "isHedge": true
-    },
-    "0x036649e3853c12205e60fbcaffebccd0ab87e2cfc78c0153756d11aad710df0c:1": {
-      "title": "Counter-Strike: Liquid vs Atputies (BO3) - Stake Pulse Beat I Group B",
-      "outcome": "Atputies",
-      "slug": "cs2-tl1-atp1-2026-08-01",
-      "eventSlug": "cs2-tl1-atp1-2026-08-01",
-      "stake": 8.858888247736493,
-      "entryPrice": 0.3449,
-      "size": 25.685381988218303,
-      "lastPrice": 0.495,
-      "lastNotifiedAmount": 9.600193850974085,
-      "entryNotified": true,
-      "isHedge": true
     },
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:1": {
       "title": "Will Spirit Win BLAST Bounty 2026 Season 2?",
@@ -73,7 +47,7 @@
       "stake": 3.5435552990945975,
       "entryPrice": 0.355,
       "size": 9.981845912942529,
-      "lastPrice": 0.22,
+      "lastPrice": 0.215,
       "lastNotifiedAmount": 3.8400775403896334,
       "entryNotified": true,
       "isHedge": true

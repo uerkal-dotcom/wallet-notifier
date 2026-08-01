@@ -7,8 +7,9 @@
     "initialized": true
   },
   "0xba389f76b0119aed07c53c9029852664bd97e406": {
-    "lastTimestamp": 1785610299,
+    "lastTimestamp": 1785610925,
     "seenHashes": [
+      "0x960b244b5ff66ca917d34b7a6d2bd14b5555c958674cb347eba3cde8e4040afc",
       "0xa6dadd3ef895ec3ca210e174f700008d1fad6548ad0143aff52a1edb69f15465",
       "0x992cd4aeaecde9922c3988a8001c8c3dcf05d5a303044aeb1213852ff7873a48",
       "0xfcbab746f77ed226cfb6b09d2d2e593f24d24b4014c5303a49002358cfdb623c",
