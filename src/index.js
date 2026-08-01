@@ -20,9 +20,9 @@ function formatTrade(walletLabel, trade) {
 }
 
 async function checkWallet(state, wallet) {
-  const trades = await fetchRecentTrades(wallet.address);
   const wState = getWalletState(state, wallet.address);
   const isFirstRun = !wState.initialized;
+  const trades = await fetchRecentTrades(wallet.address, { start: wState.lastTimestamp });
 
   const sorted = [...trades].sort((a, b) => a.timestamp - b.timestamp);
 
