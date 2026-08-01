@@ -102,6 +102,15 @@ raporundaki geriye donuk analize dayanir):
   tutulur ve `state.json` gibi otomatik commit'lenir.
 - Kurallari degistirmek icin `src/sizing.js` dosyasini duzenleyin.
 
+### Hedge tespiti
+
+Trader ayni `conditionId`'de (ayni mac/market) daha once acilmis bir
+pozisyonun **karsi tarafina** girerse, bu bagimsiz bir yeni sinyal olarak
+degil, **hedge** olarak islenir (`src/paperTrading.js` icindeki
+`findHedgeLeg`): boyut fiyat bandi formulunden degil, trader'in iki bacaktaki
+gercek dolar oranindan hesaplanir (bizim mevcut payimiz × trader'in hedge
+orani) ve bildirim `[HEDGE]` olarak ayrica isaretlenir.
+
 ### Bildirimler artik secici
 
 Sanal takip her calistirmada sessizce devam eder (bankroll/olay tavani
