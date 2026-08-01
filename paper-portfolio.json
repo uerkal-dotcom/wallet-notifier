@@ -1,5 +1,5 @@
 {
-  "balance": 320.63775341398673,
+  "balance": 308.23530986715565,
   "realizedPnl": -25.644470090540146,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
@@ -21,7 +21,7 @@
       "stake": 6,
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
-      "lastPrice": 0.223,
+      "lastPrice": 0.2225,
       "lastNotifiedAmount": 6
     },
     "0x05603820020477788f38e54cac3f4fef7f0f887107c9526c4e13588fe0221c76:0": {
@@ -45,6 +45,17 @@
       "size": 19.907614039857286,
       "lastPrice": 0.445,
       "lastNotifiedAmount": 8.858888247736493
+    },
+    "0x036649e3853c12205e60fbcaffebccd0ab87e2cfc78c0153756d11aad710df0c:0": {
+      "title": "Counter-Strike: Liquid vs Atputies (BO3) - Stake Pulse Beat I Group B",
+      "outcome": "Liquid",
+      "slug": "cs2-tl1-atp1-2026-08-01",
+      "eventSlug": "cs2-tl1-atp1-2026-08-01",
+      "stake": 12.402443546831092,
+      "entryPrice": 0.755,
+      "size": 16.427077545471644,
+      "lastPrice": 0.755,
+      "lastNotifiedAmount": 12.402443546831092
     }
   }
 }
