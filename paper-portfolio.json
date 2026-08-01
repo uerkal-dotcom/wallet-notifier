@@ -1,6 +1,6 @@
 {
-  "balance": 282.613784816013,
-  "realizedPnl": 4.007754038963391,
+  "balance": 282.6219755503809,
+  "realizedPnl": -8.515878809590589,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
       "title": "Will Spirit Win BLAST Bounty 2026 Season 2?",
@@ -10,7 +10,7 @@
       "stake": 10,
       "entryPrice": 0.635,
       "size": 15.748031496062993,
-      "lastPrice": 0.79,
+      "lastPrice": 0.75,
       "lastNotifiedAmount": 10,
       "entryNotified": true
     },
@@ -22,7 +22,7 @@
       "stake": 6,
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
-      "lastPrice": 0.2065,
+      "lastPrice": 0.226,
       "lastNotifiedAmount": 6,
       "entryNotified": true
     },
@@ -70,7 +70,7 @@
       "stake": 3.5435552990945975,
       "entryPrice": 0.355,
       "size": 9.981845912942529,
-      "lastPrice": 0.21,
+      "lastPrice": 0.25,
       "lastNotifiedAmount": 3.8400775403896334,
       "entryNotified": true
     },
@@ -98,18 +98,6 @@
       "lastNotifiedAmount": 9.600193850974085,
       "entryNotified": true
     },
-    "0xaaddde75e2e670294cb721dcfc9e4cae2e4653a74c2f83f27048b358b1a66b55:0": {
-      "title": "Counter-Strike: INOX Division vs Sinners (BO3) - CCT Europe Series #5 Playoffs",
-      "outcome": "INOX Division",
-      "slug": "cs2-inox-sin2-2026-08-01",
-      "eventSlug": "cs2-inox-sin2-2026-08-01",
-      "stake": 12.531823582921902,
-      "entryPrice": 0.765,
-      "size": 16.381468735845623,
-      "lastPrice": 0.0005,
-      "lastNotifiedAmount": 13.44027139136372,
-      "entryNotified": true
-    },
     "0x15a6b0c063423d0a91dd8b4a003948bf06dcdf1b292854712b789c594f8258de:1": {
       "title": "Counter-Strike: ex-RUSTEC vs SPARTA (BO3) - CCT Europe Series #5 Playoffs",
       "outcome": "SPARTA",
@@ -130,7 +118,7 @@
       "stake": 9.22727185885745,
       "entryPrice": 0.595,
       "size": 15.508019930852857,
-      "lastPrice": 0.635,
+      "lastPrice": 0.745,
       "lastNotifiedAmount": 9.600193850974085,
       "entryNotified": true
     },
@@ -142,7 +130,7 @@
       "stake": 9.22727185885745,
       "entryPrice": 0.5649,
       "size": 16.3343456520755,
-      "lastPrice": 0.83,
+      "lastPrice": 0.755,
       "lastNotifiedAmount": 9.600193850974085,
       "entryNotified": false
     }
