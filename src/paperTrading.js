@@ -55,6 +55,23 @@ function eventExposure(paperState, eventSlug, excludeKey) {
     .reduce((s, [, p]) => s + p.stake, 0);
 }
 
+// Ayni conditionId'de zaten takip ettigimiz baska bir outcome (kars taraf)
+// var mi diye bakar - varsa bu yeni bacak bagimsiz bir bahis degil, mevcut
+// pozisyonun hedge'idir.
+function findHedgeLeg(paperState, position) {
+  const prefix = `${position.conditionId}:`;
+  for (const [key, existingLeg] of Object.entries(paperState.positions)) {
+    if (key !== positionKey(position) && key.startsWith(prefix)) {
+      return { key, existingLeg, existingOutcomeIndex: Number(key.split(":")[1]) };
+    }
+  }
+  return null;
+}
+
+function findRealLeg(positions, conditionId, outcomeIndex) {
+  return positions.find((p) => p.conditionId === conditionId && p.outcomeIndex === outcomeIndex);
+}
+
 // Sanal takip (bankroll/olay tavani hesabi icin) her zaman sessizce calisir.
 // Telegram bildirimi sadece uc durumda gider: gercek giris 500$ ustundeyse,
 // onerilen tutar arttiysa, veya trader panik yapip satarsa.
@@ -87,6 +104,49 @@ async function openPosition(paperState, wallet, position, suggestion) {
       `Fiyat: ${(position.curPrice * 100).toFixed(1)}c\n` +
       `Olay: ${position.eventSlug} — maruziyet: ${fmt(currentEventExposure + stake)} / tavan: ${fmt(cap)}\n` +
       `Onerilen tutar: ${fmt(stake)}`,
+    { buttons: notificationButtons(wallet, position.eventSlug, position.slug) }
+  );
+}
+
+// Hedge: trader'in ayni conditionId'deki karsi tarafa girisi. Yeni bagimsiz
+// bir sinyal degil, mevcut pozisyonu ayarlama - boyutu trader'in iki
+// bacaktaki gercek oranina gore, bizim mevcut payimizin uzerinden hesaplanir.
+async function openHedgePosition(paperState, wallet, position, hedge, hedgeRatio) {
+  const hedgeStake = hedge.existingLeg.stake * hedgeRatio;
+  if (hedgeStake < 1) return; // ihmal edilebilir kadar kucuk, sessizce atla
+
+  if (paperState.balance < hedgeStake) {
+    await sendTelegramMessage(
+      `⚠️ <b>${wallet.label}</b> Hedge icin bakiye yetersiz — ${position.title} (${position.outcome}) icin ${fmt(
+        hedgeStake
+      )} gerekiyordu.`
+    );
+    return;
+  }
+
+  const key = positionKey(position);
+  const size = hedgeStake / position.curPrice;
+  paperState.balance -= hedgeStake;
+  paperState.positions[key] = {
+    title: position.title,
+    outcome: position.outcome,
+    slug: position.slug,
+    eventSlug: position.eventSlug,
+    stake: hedgeStake,
+    entryPrice: position.curPrice,
+    size,
+    lastPrice: position.curPrice,
+    lastNotifiedAmount: hedgeStake,
+    entryNotified: true,
+    isHedge: true,
+  };
+
+  await sendTelegramMessage(
+    `🔀 <b>${wallet.label}</b> HEDGE tespit edildi\n` +
+      `${position.title}\n` +
+      `Var olan: ${hedge.existingLeg.outcome} (${fmt(hedge.existingLeg.stake)})\n` +
+      `Hedge: ${position.outcome} (${fmt(hedgeStake)}) @ ${(position.curPrice * 100).toFixed(1)}c\n` +
+      `Trader'in hedge orani: ${(hedgeRatio * 100).toFixed(1)}%`,
     { buttons: notificationButtons(wallet, position.eventSlug, position.slug) }
   );
 }
@@ -142,6 +202,16 @@ export async function checkPaperTrading(paperState, wallet) {
     const existing = paperState.positions[key];
 
     if (!existing) {
+      const hedge = findHedgeLeg(paperState, position);
+      if (hedge) {
+        const realExistingLeg = findRealLeg(positions, position.conditionId, hedge.existingOutcomeIndex);
+        if (realExistingLeg && realExistingLeg.initialValue > 0) {
+          const hedgeRatio = position.initialValue / realExistingLeg.initialValue;
+          await openHedgePosition(paperState, wallet, position, hedge, hedgeRatio);
+          continue;
+        }
+      }
+
       const bankroll = computeBankroll(paperState);
       const currentEventExposure = eventExposure(paperState, position.eventSlug);
       const suggestion = suggestedStake({
