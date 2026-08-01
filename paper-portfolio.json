@@ -1,6 +1,6 @@
 {
-  "balance": 247.1089809577739,
-  "realizedPnl": -25.644470090540146,
+  "balance": 263.2079969643423,
+  "realizedPnl": -21.947897630802824,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
       "title": "Will Spirit Win BLAST Bounty 2026 Season 2?",
@@ -10,7 +10,7 @@
       "stake": 10,
       "entryPrice": 0.635,
       "size": 15.748031496062993,
-      "lastPrice": 0.725,
+      "lastPrice": 0.72,
       "lastNotifiedAmount": 10,
       "entryNotified": true
     },
@@ -22,7 +22,7 @@
       "stake": 6,
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
-      "lastPrice": 0.2405,
+      "lastPrice": 0.229,
       "lastNotifiedAmount": 6,
       "entryNotified": true
     },
@@ -46,7 +46,7 @@
       "stake": 8.858888247736493,
       "entryPrice": 0.445,
       "size": 19.907614039857286,
-      "lastPrice": 0.315,
+      "lastPrice": 0.26,
       "lastNotifiedAmount": 8.858888247736495,
       "entryNotified": false
     },
@@ -70,7 +70,7 @@
       "stake": 3.5435552990945975,
       "entryPrice": 0.925,
       "size": 3.830870593615781,
-      "lastPrice": 0.965,
+      "lastPrice": 0.932,
       "lastNotifiedAmount": 3.543555299094598,
       "entryNotified": true
     },
@@ -94,7 +94,7 @@
       "stake": 12.402443546831092,
       "entryPrice": 0.775,
       "size": 16.003152963653022,
-      "lastPrice": 0.915,
+      "lastPrice": 0.805,
       "lastNotifiedAmount": 12.402443546831094,
       "entryNotified": false
     },
@@ -106,20 +106,8 @@
       "stake": 3.5435552990945975,
       "entryPrice": 0.355,
       "size": 9.981845912942529,
-      "lastPrice": 0.275,
+      "lastPrice": 0.28,
       "lastNotifiedAmount": 3.543555299094598,
-      "entryNotified": true
-    },
-    "0x515ef6aaee338aba6153efc32fdf4858380742d769449d36fe6ec174cbcf8223:0": {
-      "title": "Counter-Strike: ENCE vs HAVU (BO3) - Elisa BreakOut Series #1 Playoffs",
-      "outcome": "ENCE",
-      "slug": "cs2-ence-havu-2026-08-01",
-      "eventSlug": "cs2-ence-havu-2026-08-01",
-      "stake": 12.402443546831094,
-      "entryPrice": 0.77,
-      "size": 16.107069541339083,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 12.402443546831094,
       "entryNotified": true
     },
     "0x662356b8dcc1fbdee87914432e4f446704f32e08520d157c73fb154d68686dff:1": {
