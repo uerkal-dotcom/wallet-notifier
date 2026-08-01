@@ -1,6 +1,6 @@
 {
-  "balance": 338.34618165402856,
-  "realizedPnl": -19.653818345971352,
+  "balance": 338.34940746048017,
+  "realizedPnl": -22.65059253951974,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
       "title": "Will Spirit Win BLAST Bounty 2026 Season 2?",
@@ -23,17 +23,6 @@
       "size": 29.08799554100188,
       "lastPrice": 0.1995,
       "lastNotifiedAmount": 6
-    },
-    "0xe836fd1165e29747f7291c3a7b67da75a971548776a8bc671d3c43e3daaea5c7:1": {
-      "title": "Map Handicap: MIBR (-1.5) vs Evil Geniuses (+1.5)",
-      "outcome": "Evil Geniuses",
-      "slug": "val-eg2-mibr-2026-07-31-map-handicap-home-1pt5",
-      "eventSlug": "val-eg2-mibr-2026-07-31",
-      "stake": 3,
-      "entryPrice": 0.465,
-      "size": 6.451612903225806,
-      "lastPrice": 0.0005,
-      "lastNotifiedAmount": 9.518868904485961
     },
     "0x601012d8b0c2ad23d6948b3bbcd00c4c4763fd9f65fe240fa6f64d54bf1b89d3:1": {
       "title": "Counter-Strike: Marsborne vs regain (BO3) - StarLadder StarSeries North American Qualifier Playoffs",
