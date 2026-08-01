@@ -1,6 +1,6 @@
 {
-  "balance": 288.3819419730768,
-  "realizedPnl": -1.6683657391349236,
+  "balance": 303.8822078939642,
+  "realizedPnl": 4.604628322895058,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
       "title": "Will Spirit Win BLAST Bounty 2026 Season 2?",
@@ -84,19 +84,7 @@
       "stake": 9.227271858857451,
       "entryPrice": 0.475,
       "size": 19.425835492331476,
-      "lastPrice": 0.83,
-      "lastNotifiedAmount": 9.600193850974085,
-      "entryNotified": true
-    },
-    "0xd84963be97e72177c524743869f429204449e3fa6404b9c31db8c14f1fc19c21:0": {
-      "title": "Counter-Strike: Sashi Esport vs Just Players (BO3) - CCT Europe Series #5 Playoffs",
-      "outcome": "Sashi Esport",
-      "slug": "cs2-sashi-justpl-2026-08-01",
-      "eventSlug": "cs2-sashi-justpl-2026-08-01",
-      "stake": 9.22727185885745,
-      "entryPrice": 0.595,
-      "size": 15.508019930852857,
-      "lastPrice": 0.9995,
+      "lastPrice": 0.765,
       "lastNotifiedAmount": 9.600193850974085,
       "entryNotified": true
     },
@@ -109,7 +97,7 @@
       "entryPrice": 0.795,
       "size": 16.354646844860792,
       "lastPrice": 0.835,
-      "lastNotifiedAmount": 13.00194424166433,
+      "lastNotifiedAmount": 13.241607199130277,
       "entryNotified": true
     },
     "0x264f530e4a76c51cf61c232ce7405e367b76331389075c9f3051106809fe39e8:1": {
@@ -121,7 +109,7 @@
       "entryPrice": 0.5649,
       "size": 16.440260275730637,
       "lastPrice": 0.585,
-      "lastNotifiedAmount": 9.287103029760235,
+      "lastNotifiedAmount": 9.458290856521627,
       "entryNotified": false
     },
     "0x99c3d9a145eb116fd37f1e165822da6585f85008ca9e3fc9f66d14b0cdde21e7:1": {
@@ -133,7 +121,7 @@
       "entryPrice": 0.485,
       "size": 19.148666040742754,
       "lastPrice": 0.545,
-      "lastNotifiedAmount": 9.287103029760235,
+      "lastNotifiedAmount": 9.458290856521627,
       "entryNotified": true
     }
   }
