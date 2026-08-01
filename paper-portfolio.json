@@ -1,6 +1,6 @@
 {
-  "balance": 262.7896782705228,
-  "realizedPnl": 0.1296463393989118,
+  "balance": 282.613784816013,
+  "realizedPnl": 4.007754038963391,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
       "title": "Will Spirit Win BLAST Bounty 2026 Season 2?",
@@ -22,7 +22,7 @@
       "stake": 6,
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
-      "lastPrice": 0.1395,
+      "lastPrice": 0.146,
       "lastNotifiedAmount": 6,
       "entryNotified": true
     },
@@ -50,18 +50,6 @@
       "lastNotifiedAmount": 13.30453762187896,
       "entryNotified": true
     },
-    "0x103e4a7a7f4f0be80c0d160c216705cd035b8ee7046476538991c7933aeebb11:1": {
-      "title": "Counter-Strike: SINQU vs BC.Game Esports (BO3) - Elisa BreakOut Series #1 Playoffs",
-      "outcome": "BC.Game Esports",
-      "slug": "cs2-sinqu-bcg-2026-08-01",
-      "eventSlug": "cs2-sinqu-bcg-2026-08-01",
-      "stake": 3.5435552990945975,
-      "entryPrice": 0.925,
-      "size": 3.830870593615781,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 3.8012964633939887,
-      "entryNotified": true
-    },
     "0x036649e3853c12205e60fbcaffebccd0ab87e2cfc78c0153756d11aad710df0c:1": {
       "title": "Counter-Strike: Liquid vs Atputies (BO3) - Stake Pulse Beat I Group B",
       "outcome": "Atputies",
@@ -73,18 +61,6 @@
       "lastPrice": 0.495,
       "lastNotifiedAmount": 9.503241158484972,
       "entryNotified": true
-    },
-    "0x3f81b61978d6e2ac61b443f990a41cac4dd57e685e0209d35fa3bfa45f1a0f60:0": {
-      "title": "Map Handicap: BCG (-1.5) vs SINQU (+1.5)",
-      "outcome": "BC.Game Esports",
-      "slug": "cs2-sinqu-bcg-2026-08-01-map-handicap-home-1pt5",
-      "eventSlug": "cs2-sinqu-bcg-2026-08-01",
-      "stake": 12.402443546831092,
-      "entryPrice": 0.775,
-      "size": 16.003152963653022,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 13.30453762187896,
-      "entryNotified": false
     },
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:1": {
       "title": "Will Spirit Win BLAST Bounty 2026 Season 2?",
@@ -166,7 +142,7 @@
       "stake": 9.22727185885745,
       "entryPrice": 0.5649,
       "size": 16.3343456520755,
-      "lastPrice": 0.765,
+      "lastPrice": 0.805,
       "lastNotifiedAmount": 9.503241158484972,
       "entryNotified": false
     }
