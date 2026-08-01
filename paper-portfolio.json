@@ -1,6 +1,6 @@
 {
-  "balance": 338.33506122286514,
-  "realizedPnl": -10.953617434443181,
+  "balance": 338.33835792616185,
+  "realizedPnl": -13.950320731146478,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
       "title": "Will Spirit Win BLAST Bounty 2026 Season 2?",
@@ -32,7 +32,7 @@
       "stake": 3,
       "entryPrice": 0.465,
       "size": 6.451612903225806,
-      "lastPrice": 0.055,
+      "lastPrice": 0.035,
       "lastNotifiedAmount": 9.518868904485961
     },
     "0x601012d8b0c2ad23d6948b3bbcd00c4c4763fd9f65fe240fa6f64d54bf1b89d3:1": {
@@ -43,19 +43,8 @@
       "stake": 3,
       "entryPrice": 0.245,
       "size": 12.244897959183673,
-      "lastPrice": 0.0205,
+      "lastPrice": 0.02,
       "lastNotifiedAmount": 7.615095123588768
-    },
-    "0x1c6c148c41ec06ddb65fff127b4a8a44d8f8ff184a1d6b2972db852fca867a57:0": {
-      "title": "Valorant: Cloud9 vs LOUD (BO3) - VCT Americas Stage 2 Group Omega",
-      "outcome": "Cloud9",
-      "slug": "val-c9-loud-2026-07-31",
-      "eventSlug": "val-c9-loud-2026-07-31",
-      "stake": 3,
-      "entryPrice": 0.455,
-      "size": 6.593406593406593,
-      "lastPrice": 0.0005,
-      "lastNotifiedAmount": 9.518868904485961
     },
     "0xc9846d4ab626b7cfbe41b3398a91ab9e35ffc8de08c2670300a63711123003d6:0": {
       "title": "Counter-Strike: LAG Gaming vs SportsBetExpert (BO3) - StarLadder StarSeries North American Qualifier Playoffs",
