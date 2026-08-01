@@ -1,5 +1,5 @@
 {
-  "balance": 250.1341826063282,
+  "balance": 240.84707957656798,
   "realizedPnl": -8.515878809590589,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
@@ -23,7 +23,7 @@
       "stake": 6,
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
-      "lastPrice": 0.2345,
+      "lastPrice": 0.234,
       "lastNotifiedAmount": 6,
       "entryNotified": true
     },
@@ -35,7 +35,7 @@
       "stake": 8.858888247736493,
       "entryPrice": 0.465,
       "size": 19.051372575777403,
-      "lastPrice": 0.445,
+      "lastPrice": 0.465,
       "lastNotifiedAmount": 9.600193850974085,
       "entryNotified": true
     },
@@ -110,7 +110,7 @@
       "stake": 9.227271858857451,
       "entryPrice": 0.475,
       "size": 19.425835492331476,
-      "lastPrice": 0.445,
+      "lastPrice": 0.485,
       "lastNotifiedAmount": 9.600193850974085,
       "entryNotified": true
     },
@@ -158,9 +158,21 @@
       "stake": 9.287103029760235,
       "entryPrice": 0.5649,
       "size": 16.440260275730637,
-      "lastPrice": 0.5649,
+      "lastPrice": 0.575,
       "lastNotifiedAmount": 9.287103029760235,
       "entryNotified": false
+    },
+    "0x99c3d9a145eb116fd37f1e165822da6585f85008ca9e3fc9f66d14b0cdde21e7:1": {
+      "title": "Valorant: Fnatic vs Team Heretics (BO3) - VCT EMEA Group Omega",
+      "outcome": "Team Heretics",
+      "slug": "val-fnc1-th1-2026-08-02",
+      "eventSlug": "val-fnc1-th1-2026-08-02",
+      "stake": 9.287103029760235,
+      "entryPrice": 0.485,
+      "size": 19.148666040742754,
+      "lastPrice": 0.485,
+      "lastNotifiedAmount": 9.287103029760235,
+      "entryNotified": true
     }
   }
 }
