@@ -1,6 +1,6 @@
 {
-  "balance": 272.0557634938273,
-  "realizedPnl": -8.767272359526935,
+  "balance": 288.3819419730768,
+  "realizedPnl": -1.6683657391349236,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
       "title": "Will Spirit Win BLAST Bounty 2026 Season 2?",
@@ -35,7 +35,7 @@
       "stake": 8.858888247736493,
       "entryPrice": 0.465,
       "size": 19.051372575777403,
-      "lastPrice": 0.835,
+      "lastPrice": 0.89,
       "lastNotifiedAmount": 9.600193850974085,
       "entryNotified": true
     },
@@ -72,7 +72,7 @@
       "stake": 8.858888247736495,
       "entryPrice": 0.495,
       "size": 17.896743934821203,
-      "lastPrice": 0.455,
+      "lastPrice": 0.445,
       "lastNotifiedAmount": 9.600193850974085,
       "entryNotified": true
     },
@@ -84,7 +84,7 @@
       "stake": 9.227271858857451,
       "entryPrice": 0.475,
       "size": 19.425835492331476,
-      "lastPrice": 0.755,
+      "lastPrice": 0.83,
       "lastNotifiedAmount": 9.600193850974085,
       "entryNotified": true
     },
@@ -99,18 +99,6 @@
       "lastPrice": 0.9995,
       "lastNotifiedAmount": 9.600193850974085,
       "entryNotified": true
-    },
-    "0xac09f0798d21e90728b1ae8f6b0c8318efe44aee5d31b6c5a9dbcceb032135f4:1": {
-      "title": "Valorant: FUT Esports vs Team Vitality (BO3) - VCT EMEA Group Alpha",
-      "outcome": "Team Vitality",
-      "slug": "val-fut1-vit-2026-08-01",
-      "eventSlug": "val-fut1-vit-2026-08-01",
-      "stake": 9.22727185885745,
-      "entryPrice": 0.5649,
-      "size": 16.3343456520755,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 9.600193850974085,
-      "entryNotified": false
     },
     "0x4b7d150516db043f3a24a2cccde48a80b2536b17ebbce542561b0f1309beb1ab:1": {
       "title": "Valorant: ZETA DIVISION vs Nongshim RedForce (BO3) - VCT Pacific Group Alpha",
