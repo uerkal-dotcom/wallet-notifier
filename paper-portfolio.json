@@ -1,5 +1,5 @@
 {
-  "balance": 329.49664166172323,
+  "balance": 320.63775341398673,
   "realizedPnl": -25.644470090540146,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
@@ -21,7 +21,7 @@
       "stake": 6,
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
-      "lastPrice": 0.2175,
+      "lastPrice": 0.217,
       "lastNotifiedAmount": 6
     },
     "0x05603820020477788f38e54cac3f4fef7f0f887107c9526c4e13588fe0221c76:0": {
@@ -33,6 +33,17 @@
       "entryPrice": 0.465,
       "size": 19.051372575777403,
       "lastPrice": 0.465,
+      "lastNotifiedAmount": 8.858888247736493
+    },
+    "0x524fb6a91e7943182abfaba978daa2ade64138246c7d1669d43165e164ed34e4:1": {
+      "title": "Map Handicap: TS (-1.5) vs FaZe (+1.5)",
+      "outcome": "FaZe",
+      "slug": "cs2-faze-ts7-2026-08-01-map-handicap-home-1pt5",
+      "eventSlug": "cs2-faze-ts7-2026-08-01",
+      "stake": 8.858888247736493,
+      "entryPrice": 0.445,
+      "size": 19.907614039857286,
+      "lastPrice": 0.445,
       "lastNotifiedAmount": 8.858888247736493
     }
   }
