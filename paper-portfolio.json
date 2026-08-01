@@ -1,5 +1,5 @@
 {
-  "balance": 255.9678692055104,
+  "balance": 247.1089809577739,
   "realizedPnl": -25.644470090540146,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
@@ -21,7 +21,7 @@
       "stake": 6,
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
-      "lastPrice": 0.249,
+      "lastPrice": 0.2485,
       "lastNotifiedAmount": 6
     },
     "0x05603820020477788f38e54cac3f4fef7f0f887107c9526c4e13588fe0221c76:0": {
@@ -65,7 +65,7 @@
       "stake": 3.5435552990945975,
       "entryPrice": 0.925,
       "size": 3.830870593615781,
-      "lastPrice": 0.9635,
+      "lastPrice": 0.963,
       "lastNotifiedAmount": 3.543555299094598
     },
     "0x036649e3853c12205e60fbcaffebccd0ab87e2cfc78c0153756d11aad710df0c:1": {
@@ -131,7 +131,18 @@
       "stake": 8.858888247736495,
       "entryPrice": 0.445,
       "size": 19.90761403985729,
-      "lastPrice": 0.5649,
+      "lastPrice": 0.555,
+      "lastNotifiedAmount": 8.858888247736495
+    },
+    "0xd6917fac70068ff7ef6c96306cc44e0c25dc50bc0617e933ed9974879125b095:0": {
+      "title": "Counter-Strike: Fluxo W7M vs BESTIA (BO3) - StarLadder StarSeries South American Qualifier Playoffs",
+      "outcome": "Fluxo W7M",
+      "slug": "cs2-fxw7-bst-2026-08-01",
+      "eventSlug": "cs2-fxw7-bst-2026-08-01",
+      "stake": 8.858888247736495,
+      "entryPrice": 0.495,
+      "size": 17.896743934821203,
+      "lastPrice": 0.495,
       "lastNotifiedAmount": 8.858888247736495
     }
   }
