@@ -1,6 +1,6 @@
 {
-  "balance": 242.89201803768543,
-  "realizedPnl": -10.909125645701955,
+  "balance": 262.7896782705228,
+  "realizedPnl": 0.1296463393989118,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
       "title": "Will Spirit Win BLAST Bounty 2026 Season 2?",
@@ -22,7 +22,7 @@
       "stake": 6,
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
-      "lastPrice": 0.135,
+      "lastPrice": 0.1414,
       "lastNotifiedAmount": 6,
       "entryNotified": true
     },
@@ -37,18 +37,6 @@
       "lastPrice": 0.475,
       "lastNotifiedAmount": 9.227271858857451,
       "entryNotified": true
-    },
-    "0x524fb6a91e7943182abfaba978daa2ade64138246c7d1669d43165e164ed34e4:1": {
-      "title": "Map Handicap: TS (-1.5) vs FaZe (+1.5)",
-      "outcome": "FaZe",
-      "slug": "cs2-faze-ts7-2026-08-01-map-handicap-home-1pt5",
-      "eventSlug": "cs2-faze-ts7-2026-08-01",
-      "stake": 8.858888247736493,
-      "entryPrice": 0.445,
-      "size": 19.907614039857286,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 9.227271858857451,
-      "entryNotified": false
     },
     "0x036649e3853c12205e60fbcaffebccd0ab87e2cfc78c0153756d11aad710df0c:0": {
       "title": "Counter-Strike: Liquid vs Atputies (BO3) - Stake Pulse Beat I Group B",
@@ -178,7 +166,7 @@
       "stake": 9.22727185885745,
       "entryPrice": 0.5649,
       "size": 16.3343456520755,
-      "lastPrice": 0.755,
+      "lastPrice": 0.675,
       "lastNotifiedAmount": 9.22727185885745,
       "entryNotified": false
     }
