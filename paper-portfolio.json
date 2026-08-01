@@ -22,7 +22,7 @@
       "stake": 6,
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
-      "lastPrice": 0.176,
+      "lastPrice": 0.1744,
       "lastNotifiedAmount": 6,
       "entryNotified": true
     },
@@ -166,7 +166,7 @@
       "stake": 9.22727185885745,
       "entryPrice": 0.595,
       "size": 15.508019930852857,
-      "lastPrice": 0.595,
+      "lastPrice": 0.535,
       "lastNotifiedAmount": 9.22727185885745,
       "entryNotified": true
     }
