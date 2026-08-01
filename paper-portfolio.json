@@ -1,5 +1,5 @@
 {
-  "balance": 261.34656175540033,
+  "balance": 252.11928989654288,
   "realizedPnl": -10.909125645701955,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
@@ -22,7 +22,7 @@
       "stake": 6,
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
-      "lastPrice": 0.1775,
+      "lastPrice": 0.176,
       "lastNotifiedAmount": 6,
       "entryNotified": true
     },
@@ -156,6 +156,18 @@
       "size": 19.425835492331476,
       "lastPrice": 0.495,
       "lastNotifiedAmount": 9.227271858857451,
+      "entryNotified": true
+    },
+    "0xd84963be97e72177c524743869f429204449e3fa6404b9c31db8c14f1fc19c21:0": {
+      "title": "Counter-Strike: Sashi Esport vs Just Players (BO3) - CCT Europe Series #5 Playoffs",
+      "outcome": "Sashi Esport",
+      "slug": "cs2-sashi-justpl-2026-08-01",
+      "eventSlug": "cs2-sashi-justpl-2026-08-01",
+      "stake": 9.22727185885745,
+      "entryPrice": 0.595,
+      "size": 15.508019930852857,
+      "lastPrice": 0.595,
+      "lastNotifiedAmount": 9.22727185885745,
       "entryNotified": true
     }
   }
