@@ -1,5 +1,5 @@
 {
-  "balance": 263.2079969643423,
+  "balance": 250.67617338142043,
   "realizedPnl": -21.947897630802824,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
@@ -10,7 +10,7 @@
       "stake": 10,
       "entryPrice": 0.635,
       "size": 15.748031496062993,
-      "lastPrice": 0.72,
+      "lastPrice": 0.68,
       "lastNotifiedAmount": 10,
       "entryNotified": true
     },
@@ -22,7 +22,7 @@
       "stake": 6,
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
-      "lastPrice": 0.2265,
+      "lastPrice": 0.2255,
       "lastNotifiedAmount": 6,
       "entryNotified": true
     },
@@ -46,7 +46,7 @@
       "stake": 8.858888247736493,
       "entryPrice": 0.445,
       "size": 19.907614039857286,
-      "lastPrice": 0.585,
+      "lastPrice": 0.845,
       "lastNotifiedAmount": 8.951302559229928,
       "entryNotified": false
     },
@@ -94,7 +94,7 @@
       "stake": 12.402443546831092,
       "entryPrice": 0.775,
       "size": 16.003152963653022,
-      "lastPrice": 0.535,
+      "lastPrice": 0.585,
       "lastNotifiedAmount": 12.531823582921902,
       "entryNotified": false
     },
@@ -106,7 +106,7 @@
       "stake": 3.5435552990945975,
       "entryPrice": 0.355,
       "size": 9.981845912942529,
-      "lastPrice": 0.28,
+      "lastPrice": 0.32,
       "lastNotifiedAmount": 3.5805210236919716,
       "entryNotified": true
     },
@@ -144,6 +144,18 @@
       "size": 17.896743934821203,
       "lastPrice": 0.445,
       "lastNotifiedAmount": 8.951302559229928,
+      "entryNotified": true
+    },
+    "0xaaddde75e2e670294cb721dcfc9e4cae2e4653a74c2f83f27048b358b1a66b55:0": {
+      "title": "Counter-Strike: INOX Division vs Sinners (BO3) - CCT Europe Series #5 Playoffs",
+      "outcome": "INOX Division",
+      "slug": "cs2-inox-sin2-2026-08-01",
+      "eventSlug": "cs2-inox-sin2-2026-08-01",
+      "stake": 12.531823582921902,
+      "entryPrice": 0.765,
+      "size": 16.381468735845623,
+      "lastPrice": 0.765,
+      "lastNotifiedAmount": 12.531823582921902,
       "entryNotified": true
     }
   }
