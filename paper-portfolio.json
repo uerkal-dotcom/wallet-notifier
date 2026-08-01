@@ -1,5 +1,5 @@
 {
-  "balance": 272.42322987775276,
+  "balance": 259.42128563608844,
   "realizedPnl": -8.515878809590589,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
@@ -23,7 +23,7 @@
       "stake": 6,
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
-      "lastPrice": 0.2075,
+      "lastPrice": 0.2125,
       "lastNotifiedAmount": 6,
       "entryNotified": true
     },
@@ -35,7 +35,7 @@
       "stake": 8.858888247736493,
       "entryPrice": 0.465,
       "size": 19.051372575777403,
-      "lastPrice": 0.485,
+      "lastPrice": 0.505,
       "lastNotifiedAmount": 9.600193850974085,
       "entryNotified": true
     },
@@ -110,7 +110,7 @@
       "stake": 9.227271858857451,
       "entryPrice": 0.475,
       "size": 19.425835492331476,
-      "lastPrice": 0.51,
+      "lastPrice": 0.475,
       "lastNotifiedAmount": 9.600193850974085,
       "entryNotified": true
     },
@@ -137,6 +137,18 @@
       "lastPrice": 0.9995,
       "lastNotifiedAmount": 9.600193850974085,
       "entryNotified": false
+    },
+    "0x4b7d150516db043f3a24a2cccde48a80b2536b17ebbce542561b0f1309beb1ab:1": {
+      "title": "Valorant: ZETA DIVISION vs Nongshim RedForce (BO3) - VCT Pacific Group Alpha",
+      "outcome": "Nongshim RedForce",
+      "slug": "val-zeta2-ns1-2026-08-02",
+      "eventSlug": "val-zeta2-ns1-2026-08-02",
+      "stake": 13.00194424166433,
+      "entryPrice": 0.795,
+      "size": 16.354646844860792,
+      "lastPrice": 0.795,
+      "lastNotifiedAmount": 13.00194424166433,
+      "entryNotified": true
     }
   }
 }
