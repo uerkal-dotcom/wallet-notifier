@@ -11,7 +11,8 @@
       "entryPrice": 0.635,
       "size": 15.748031496062993,
       "lastPrice": 0.63,
-      "lastNotifiedAmount": 10
+      "lastNotifiedAmount": 10,
+      "entryNotified": true
     },
     "0xc3a395d1a33daf48b56529062f14cb46ffad6d3694bf0a2c59fd85a0aaec16be:0": {
       "title": "Will MOUZ Win BLAST Bounty 2026 Season 2?",
@@ -22,7 +23,8 @@
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
       "lastPrice": 0.2485,
-      "lastNotifiedAmount": 6
+      "lastNotifiedAmount": 6,
+      "entryNotified": true
     },
     "0x05603820020477788f38e54cac3f4fef7f0f887107c9526c4e13588fe0221c76:0": {
       "title": "Valorant: Karmine Corp vs Team Liquid (BO3) - VCT EMEA Group Omega",
@@ -33,7 +35,8 @@
       "entryPrice": 0.465,
       "size": 19.051372575777403,
       "lastPrice": 0.475,
-      "lastNotifiedAmount": 8.858888247736495
+      "lastNotifiedAmount": 8.858888247736495,
+      "entryNotified": true
     },
     "0x524fb6a91e7943182abfaba978daa2ade64138246c7d1669d43165e164ed34e4:1": {
       "title": "Map Handicap: TS (-1.5) vs FaZe (+1.5)",
@@ -44,7 +47,8 @@
       "entryPrice": 0.445,
       "size": 19.907614039857286,
       "lastPrice": 0.455,
-      "lastNotifiedAmount": 8.858888247736495
+      "lastNotifiedAmount": 8.858888247736495,
+      "entryNotified": false
     },
     "0x036649e3853c12205e60fbcaffebccd0ab87e2cfc78c0153756d11aad710df0c:0": {
       "title": "Counter-Strike: Liquid vs Atputies (BO3) - Stake Pulse Beat I Group B",
@@ -55,7 +59,8 @@
       "entryPrice": 0.755,
       "size": 16.427077545471644,
       "lastPrice": 0.505,
-      "lastNotifiedAmount": 12.402443546831094
+      "lastNotifiedAmount": 12.402443546831094,
+      "entryNotified": true
     },
     "0x103e4a7a7f4f0be80c0d160c216705cd035b8ee7046476538991c7933aeebb11:1": {
       "title": "Counter-Strike: SINQU vs BC.Game Esports (BO3) - Elisa BreakOut Series #1 Playoffs",
@@ -66,7 +71,8 @@
       "entryPrice": 0.925,
       "size": 3.830870593615781,
       "lastPrice": 0.964,
-      "lastNotifiedAmount": 3.543555299094598
+      "lastNotifiedAmount": 3.543555299094598,
+      "entryNotified": true
     },
     "0x036649e3853c12205e60fbcaffebccd0ab87e2cfc78c0153756d11aad710df0c:1": {
       "title": "Counter-Strike: Liquid vs Atputies (BO3) - Stake Pulse Beat I Group B",
@@ -77,7 +83,8 @@
       "entryPrice": 0.3449,
       "size": 25.685381988218303,
       "lastPrice": 0.495,
-      "lastNotifiedAmount": 8.858888247736495
+      "lastNotifiedAmount": 8.858888247736495,
+      "entryNotified": true
     },
     "0x3f81b61978d6e2ac61b443f990a41cac4dd57e685e0209d35fa3bfa45f1a0f60:0": {
       "title": "Map Handicap: BCG (-1.5) vs SINQU (+1.5)",
@@ -88,7 +95,8 @@
       "entryPrice": 0.775,
       "size": 16.003152963653022,
       "lastPrice": 0.86,
-      "lastNotifiedAmount": 12.402443546831094
+      "lastNotifiedAmount": 12.402443546831094,
+      "entryNotified": false
     },
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:1": {
       "title": "Will Spirit Win BLAST Bounty 2026 Season 2?",
@@ -99,7 +107,8 @@
       "entryPrice": 0.355,
       "size": 9.981845912942529,
       "lastPrice": 0.37,
-      "lastNotifiedAmount": 3.543555299094598
+      "lastNotifiedAmount": 3.543555299094598,
+      "entryNotified": true
     },
     "0x515ef6aaee338aba6153efc32fdf4858380742d769449d36fe6ec174cbcf8223:0": {
       "title": "Counter-Strike: ENCE vs HAVU (BO3) - Elisa BreakOut Series #1 Playoffs",
@@ -110,7 +119,8 @@
       "entryPrice": 0.77,
       "size": 16.107069541339083,
       "lastPrice": 0.9995,
-      "lastNotifiedAmount": 12.402443546831094
+      "lastNotifiedAmount": 12.402443546831094,
+      "entryNotified": true
     },
     "0x662356b8dcc1fbdee87914432e4f446704f32e08520d157c73fb154d68686dff:1": {
       "title": "Counter-Strike: NRG vs Voca (BO3) - StarLadder StarSeries North American Qualifier Playoffs",
@@ -121,7 +131,8 @@
       "entryPrice": 0.275,
       "size": 9.664241724803446,
       "lastPrice": 0.2849,
-      "lastNotifiedAmount": 2.657666474320948
+      "lastNotifiedAmount": 2.657666474320948,
+      "entryNotified": false
     },
     "0xc974a9a803088d6c080e6e9ddd9ae3278895eba67bb1564b75f7b36eff81d41c:1": {
       "title": "Valorant: T1 vs DetonatioN FocusMe (BO3) - VCT Pacific Group Omega",
@@ -132,7 +143,8 @@
       "entryPrice": 0.445,
       "size": 19.90761403985729,
       "lastPrice": 0.455,
-      "lastNotifiedAmount": 8.858888247736495
+      "lastNotifiedAmount": 8.858888247736495,
+      "entryNotified": false
     },
     "0xd6917fac70068ff7ef6c96306cc44e0c25dc50bc0617e933ed9974879125b095:0": {
       "title": "Counter-Strike: Fluxo W7M vs BESTIA (BO3) - StarLadder StarSeries South American Qualifier Playoffs",
@@ -143,7 +155,8 @@
       "entryPrice": 0.495,
       "size": 17.896743934821203,
       "lastPrice": 0.465,
-      "lastNotifiedAmount": 8.858888247736495
+      "lastNotifiedAmount": 8.858888247736495,
+      "entryNotified": true
     }
   }
 }
