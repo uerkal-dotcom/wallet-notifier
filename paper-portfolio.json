@@ -1,5 +1,5 @@
 {
-  "balance": 267.48442392756783,
+  "balance": 264.8267574532469,
   "realizedPnl": -25.644470090540146,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
@@ -43,7 +43,7 @@
       "stake": 8.858888247736493,
       "entryPrice": 0.445,
       "size": 19.907614039857286,
-      "lastPrice": 0.455,
+      "lastPrice": 0.465,
       "lastNotifiedAmount": 8.858888247736495
     },
     "0x036649e3853c12205e60fbcaffebccd0ab87e2cfc78c0153756d11aad710df0c:0": {
@@ -54,7 +54,7 @@
       "stake": 12.402443546831092,
       "entryPrice": 0.755,
       "size": 16.427077545471644,
-      "lastPrice": 0.58,
+      "lastPrice": 0.5649,
       "lastNotifiedAmount": 12.402443546831094
     },
     "0x103e4a7a7f4f0be80c0d160c216705cd035b8ee7046476538991c7933aeebb11:1": {
@@ -76,7 +76,7 @@
       "stake": 8.858888247736493,
       "entryPrice": 0.3449,
       "size": 25.685381988218303,
-      "lastPrice": 0.42,
+      "lastPrice": 0.435,
       "lastNotifiedAmount": 8.858888247736495
     },
     "0x3f81b61978d6e2ac61b443f990a41cac4dd57e685e0209d35fa3bfa45f1a0f60:0": {
@@ -111,6 +111,17 @@
       "size": 16.107069541339083,
       "lastPrice": 0.795,
       "lastNotifiedAmount": 12.402443546831094
+    },
+    "0x662356b8dcc1fbdee87914432e4f446704f32e08520d157c73fb154d68686dff:1": {
+      "title": "Counter-Strike: NRG vs Voca (BO3) - StarLadder StarSeries North American Qualifier Playoffs",
+      "outcome": "Voca",
+      "slug": "cs2-nrg-voc-2026-08-01",
+      "eventSlug": "cs2-nrg-voc-2026-08-01",
+      "stake": 2.657666474320948,
+      "entryPrice": 0.275,
+      "size": 9.664241724803446,
+      "lastPrice": 0.275,
+      "lastNotifiedAmount": 2.657666474320948
     }
   }
 }
