@@ -1,6 +1,6 @@
 {
-  "balance": 303.8822078939642,
-  "realizedPnl": 4.604628322895058,
+  "balance": 323.2983304685495,
+  "realizedPnl": 14.79347903862292,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
       "title": "Will Spirit Win BLAST Bounty 2026 Season 2?",
@@ -60,7 +60,7 @@
       "stake": 2.657666474320948,
       "entryPrice": 0.275,
       "size": 9.664241724803446,
-      "lastPrice": 0.215,
+      "lastPrice": 0.185,
       "lastNotifiedAmount": 2.884534712421712,
       "entryNotified": true
     },
@@ -72,19 +72,7 @@
       "stake": 8.858888247736495,
       "entryPrice": 0.495,
       "size": 17.896743934821203,
-      "lastPrice": 0.105,
-      "lastNotifiedAmount": 9.615115708072375,
-      "entryNotified": true
-    },
-    "0x15a6b0c063423d0a91dd8b4a003948bf06dcdf1b292854712b789c594f8258de:1": {
-      "title": "Counter-Strike: ex-RUSTEC vs SPARTA (BO3) - CCT Europe Series #5 Playoffs",
-      "outcome": "SPARTA",
-      "slug": "cs2-rustec-sparta-2026-08-01",
-      "eventSlug": "cs2-rustec-sparta-2026-08-01",
-      "stake": 9.227271858857451,
-      "entryPrice": 0.475,
-      "size": 19.425835492331476,
-      "lastPrice": 0.9995,
+      "lastPrice": 0.1,
       "lastNotifiedAmount": 9.615115708072375,
       "entryNotified": true
     },
