@@ -1,5 +1,5 @@
 {
-  "balance": 283.4304227734935,
+  "balance": 279.8868674743989,
   "realizedPnl": -25.644470090540146,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
@@ -10,7 +10,7 @@
       "stake": 10,
       "entryPrice": 0.635,
       "size": 15.748031496062993,
-      "lastPrice": 0.655,
+      "lastPrice": 0.645,
       "lastNotifiedAmount": 10
     },
     "0xc3a395d1a33daf48b56529062f14cb46ffad6d3694bf0a2c59fd85a0aaec16be:0": {
@@ -21,7 +21,7 @@
       "stake": 6,
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
-      "lastPrice": 0.2365,
+      "lastPrice": 0.2355,
       "lastNotifiedAmount": 6
     },
     "0x05603820020477788f38e54cac3f4fef7f0f887107c9526c4e13588fe0221c76:0": {
@@ -44,7 +44,7 @@
       "entryPrice": 0.445,
       "size": 19.907614039857286,
       "lastPrice": 0.445,
-      "lastNotifiedAmount": 8.858888247736493
+      "lastNotifiedAmount": 8.858888247736495
     },
     "0x036649e3853c12205e60fbcaffebccd0ab87e2cfc78c0153756d11aad710df0c:0": {
       "title": "Counter-Strike: Liquid vs Atputies (BO3) - Stake Pulse Beat I Group B",
@@ -54,7 +54,7 @@
       "stake": 12.402443546831092,
       "entryPrice": 0.755,
       "size": 16.427077545471644,
-      "lastPrice": 0.595,
+      "lastPrice": 0.5699,
       "lastNotifiedAmount": 12.402443546831092
     },
     "0x103e4a7a7f4f0be80c0d160c216705cd035b8ee7046476538991c7933aeebb11:1": {
@@ -65,7 +65,7 @@
       "stake": 3.5435552990945975,
       "entryPrice": 0.925,
       "size": 3.830870593615781,
-      "lastPrice": 0.957,
+      "lastPrice": 0.965,
       "lastNotifiedAmount": 3.5435552990945975
     },
     "0x036649e3853c12205e60fbcaffebccd0ab87e2cfc78c0153756d11aad710df0c:1": {
@@ -76,8 +76,8 @@
       "stake": 8.858888247736493,
       "entryPrice": 0.3449,
       "size": 25.685381988218303,
-      "lastPrice": 0.405,
-      "lastNotifiedAmount": 8.858888247736493
+      "lastPrice": 0.43,
+      "lastNotifiedAmount": 8.858888247736495
     },
     "0x3f81b61978d6e2ac61b443f990a41cac4dd57e685e0209d35fa3bfa45f1a0f60:0": {
       "title": "Map Handicap: BCG (-1.5) vs SINQU (+1.5)",
@@ -87,8 +87,19 @@
       "stake": 12.402443546831092,
       "entryPrice": 0.775,
       "size": 16.003152963653022,
-      "lastPrice": 0.83,
-      "lastNotifiedAmount": 12.402443546831092
+      "lastPrice": 0.84,
+      "lastNotifiedAmount": 12.402443546831094
+    },
+    "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:1": {
+      "title": "Will Spirit Win BLAST Bounty 2026 Season 2?",
+      "outcome": "No",
+      "slug": "will-spirit-win-blast-bounty-2026-season-2-20260709030045118",
+      "eventSlug": "blast-bounty-2026-season-2-winner-20260709030103861",
+      "stake": 3.5435552990945975,
+      "entryPrice": 0.355,
+      "size": 9.981845912942529,
+      "lastPrice": 0.355,
+      "lastNotifiedAmount": 3.5435552990945975
     }
   }
 }
