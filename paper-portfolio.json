@@ -1,5 +1,5 @@
 {
-  "balance": 252.11928989654288,
+  "balance": 242.89201803768543,
   "realizedPnl": -10.909125645701955,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
@@ -10,7 +10,7 @@
       "stake": 10,
       "entryPrice": 0.635,
       "size": 15.748031496062993,
-      "lastPrice": 0.79,
+      "lastPrice": 0.795,
       "lastNotifiedAmount": 10,
       "entryNotified": true
     },
@@ -106,7 +106,7 @@
       "stake": 3.5435552990945975,
       "entryPrice": 0.355,
       "size": 9.981845912942529,
-      "lastPrice": 0.21,
+      "lastPrice": 0.205,
       "lastNotifiedAmount": 3.6909087435429804,
       "entryNotified": true
     },
@@ -169,6 +169,18 @@
       "lastPrice": 0.785,
       "lastNotifiedAmount": 9.22727185885745,
       "entryNotified": true
+    },
+    "0xac09f0798d21e90728b1ae8f6b0c8318efe44aee5d31b6c5a9dbcceb032135f4:1": {
+      "title": "Valorant: FUT Esports vs Team Vitality (BO3) - VCT EMEA Group Alpha",
+      "outcome": "Team Vitality",
+      "slug": "val-fut1-vit-2026-08-01",
+      "eventSlug": "val-fut1-vit-2026-08-01",
+      "stake": 9.22727185885745,
+      "entryPrice": 0.5649,
+      "size": 16.3343456520755,
+      "lastPrice": 0.5649,
+      "lastNotifiedAmount": 9.22727185885745,
+      "entryNotified": false
     }
   }
 }
