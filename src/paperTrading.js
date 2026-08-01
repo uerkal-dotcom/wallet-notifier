@@ -63,6 +63,7 @@ async function openPosition(paperState, wallet, position, suggestion) {
   const key = positionKey(position);
   const size = stake / position.curPrice;
 
+  const entryNotified = position.initialValue > ENTRY_NOTIFY_THRESHOLD;
   paperState.balance -= stake;
   paperState.positions[key] = {
     title: position.title,
@@ -74,9 +75,10 @@ async function openPosition(paperState, wallet, position, suggestion) {
     size,
     lastPrice: position.curPrice,
     lastNotifiedAmount: stake,
+    entryNotified,
   };
 
-  if (position.initialValue <= ENTRY_NOTIFY_THRESHOLD) return; // sessiz - sadece sanal takip
+  if (!entryNotified) return; // sessiz - sadece sanal takip (henuz 500$ altinda)
 
   await sendTelegramMessage(
     `📝 <b>${wallet.label}</b> Yeni giris (${fmt(position.initialValue)})\n` +
@@ -86,6 +88,18 @@ async function openPosition(paperState, wallet, position, suggestion) {
       `Olay: ${position.eventSlug} — maruziyet: ${fmt(currentEventExposure + stake)} / tavan: ${fmt(cap)}\n` +
       `Onerilen tutar: ${fmt(stake)}`,
     { buttons: notificationButtons(wallet, position.eventSlug, position.slug) }
+  );
+}
+
+// Pozisyon ilk goruldugunde 500$ altinda olup sonradan buyumus olabilir -
+// boyle bir durumda "gec giris" bildirimi gonderilir.
+async function notifyLateEntry(wallet, existing, position) {
+  await sendTelegramMessage(
+    `📝 <b>${wallet.label}</b> Giris tutari 500$'i gecti (${fmt(position.initialValue)})\n` +
+      `${existing.title} — ${existing.outcome}\n` +
+      `Fiyat: ${(position.curPrice * 100).toFixed(1)}c\n` +
+      `Bizim payimiz: ${fmt(existing.stake)}`,
+    { buttons: notificationButtons(wallet, existing.eventSlug, existing.slug) }
   );
 }
 
@@ -144,6 +158,13 @@ export async function checkPaperTrading(paperState, wallet) {
     }
 
     existing.lastPrice = position.curPrice;
+
+    if (!existing.entryNotified && position.initialValue > ENTRY_NOTIFY_THRESHOLD) {
+      await notifyLateEntry(wallet, existing, position);
+      existing.entryNotified = true;
+    } else if (existing.entryNotified === undefined) {
+      existing.entryNotified = position.initialValue > ENTRY_NOTIFY_THRESHOLD;
+    }
 
     // Boyut sabit kalir ama "onerilen tutar" arttiysa kullaniciya bildir
     // (kasa buyudukce veya olay tavaninda yer acildikca artabilir).
