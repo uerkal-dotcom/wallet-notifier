@@ -93,6 +93,7 @@ async function openPosition(paperState, wallet, position, suggestion) {
     lastPrice: position.curPrice,
     lastNotifiedAmount: stake,
     entryNotified,
+    notifiedAt: entryNotified ? Date.now() : null,
   };
 
   if (!entryNotified) return; // sessiz - sadece sanal takip (henuz 500$ altinda)
@@ -138,6 +139,7 @@ async function openHedgePosition(paperState, wallet, position, hedge, hedgeRatio
     lastPrice: position.curPrice,
     lastNotifiedAmount: hedgeStake,
     entryNotified: true,
+    notifiedAt: Date.now(),
     isHedge: true,
   };
 
@@ -248,6 +250,7 @@ export async function checkPaperTrading(paperState, wallet) {
     if (!existing.entryNotified && position.initialValue > ENTRY_NOTIFY_THRESHOLD) {
       await notifyLateEntry(wallet, existing, position);
       existing.entryNotified = true;
+      existing.notifiedAt = Date.now();
     } else if (existing.entryNotified === undefined) {
       existing.entryNotified = position.initialValue > ENTRY_NOTIFY_THRESHOLD;
     }

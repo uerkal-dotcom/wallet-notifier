@@ -4,6 +4,7 @@ import { sendTelegramMessage } from "./telegram.js";
 import { loadState, saveState, getWalletState, updateWalletState } from "./state.js";
 import { loadPaperState, savePaperState } from "./paperState.js";
 import { checkPaperTrading } from "./paperTrading.js";
+import { checkFollowUps } from "./followUp.js";
 
 function formatTrade(walletLabel, trade) {
   const sideEmoji = trade.side === "BUY" ? "🟢" : "🔴";
@@ -62,6 +63,7 @@ async function pollOnce(state, paperState) {
     try {
       if (wallet.paper) {
         await checkPaperTrading(paperState, wallet);
+        await checkFollowUps(paperState, wallet);
       } else {
         await checkWallet(state, wallet);
       }

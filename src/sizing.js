@@ -55,6 +55,11 @@ export function suggestedStake({ title, price, bankroll, currentEventExposure })
   const cappedByEvent = stake > remainingCap;
   if (cappedByEvent) stake = remainingCap;
 
+  // Polymarket'te $9.38 gibi kusuratli tutarlarla giris pratik degil -
+  // onerileri tam dolara yuvarla. Tavan asilmasin diye asagi yuvarla,
+  // ama tavan sorun degilse en yakina yuvarlamak daha dogru boyut verir.
+  stake = cappedByEvent ? Math.floor(stake) : Math.round(stake);
+
   if (stake < MIN_STAKE) {
     return {
       marketType,

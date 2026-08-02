@@ -35,6 +35,9 @@ jobs:
           MIN_USDC_SIZE: ${{ secrets.MIN_USDC_SIZE }}
           PAPER_TRADING_WALLETS: ${{ secrets.PAPER_TRADING_WALLETS }}
           PAPER_START_BALANCE: ${{ secrets.PAPER_START_BALANCE }}
+          MY_WALLET: ${{ secrets.MY_WALLET }}
+          REMINDER_AFTER_MINUTES: ${{ secrets.REMINDER_AFTER_MINUTES }}
+          MAX_SLIPPAGE_PCT: ${{ secrets.MAX_SLIPPAGE_PCT }}
           STATE_PATH: ./state.json
           PAPER_STATE_PATH: ./paper-portfolio.json
           RUN_ONCE: "1"
