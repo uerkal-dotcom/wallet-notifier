@@ -102,7 +102,8 @@
       "lastNotifiedAmount": 4,
       "entryNotified": true,
       "notifiedAt": 1785681195736,
-      "source": "skyman44"
+      "source": "skyman44",
+      "followUpDone": true
     },
     "0x940e7a32c401e552a4cfed3ea6664d817c029801eed77e18242409e8565a52de:0": {
       "title": "Counter-Strike: ShindeN vs BESTIA (BO3) - StarLadder StarSeries South American Qualifier Playoffs",
@@ -132,7 +133,8 @@
       "entryNotified": true,
       "notifiedAt": 1785681198183,
       "isHedge": true,
-      "source": "skyman44"
+      "source": "skyman44",
+      "followUpDone": true
     },
     "0xc08fd6bd7e20269f612d576ff51a92c28d81817a237fb35bb3405ef7a0f52ca8:0": {
       "title": "Map Handicap: NS (-1.5) vs ZETA DIVISION (+1.5)",
@@ -161,7 +163,8 @@
       "lastNotifiedAmount": 4,
       "entryNotified": true,
       "notifiedAt": 1785681200575,
-      "source": "skyman44"
+      "source": "skyman44",
+      "followUpDone": true
     },
     "0x4620b5f7829737a5e546852431ed31be4338aae8bbbaf351454c2204262ad252:1": {
       "title": "Map Handicap: BBL (-1.5) vs Pcific Esports (+1.5)",
