@@ -22,8 +22,14 @@ export function classifyMarketType(title) {
   return "match_winner";
 }
 
+// Trader agirligi: kanit duzeyi farkini boyuta yansitir.
+// joblessfinalboss'un edge'i bootstrap ile her esikte anlamli
+// (%90 GA [+%4.1 , +%23.8], t=2.29); skyman44'unki hicbir esikte
+// sifirdan ayrismiyor (t=1.23). Ayni banda ayni payi vermek bu farki
+// yok sayardi.
 const RULE_SETS = {
   skyman44: {
+    weight: 1,
     // <$500: ham ROI +%13.2 gorunuyor ama en buyuk 3 kazanc toplam karin
     // %92'si; uc degerler ayiklaninca -%3.8, medyan sadece +$7.
     // $500-$1.000: onun EN KOTU dilimi - isabet %49.0 (yazi tura),
@@ -42,6 +48,7 @@ const RULE_SETS = {
     },
   },
   joblessfinalboss: {
+    weight: 2, // kaniti saglam oldugu icin ayni banda 2 kat pay
     // Onda esik daha yukarida olmali: <$500 kumesi uc degerler cikinca
     // -%7.3 (medyan -$0.03, isabet %49.5 = yazi tura) ve $500-$1.000
     // dilimi -%20.2 (n=120). Sinyal ancak $1.000 ustunde basliyor.
@@ -84,10 +91,11 @@ export function suggestedStake({ title, price, bankroll, currentEventExposure, t
     return { marketType, band, stake: 0, skippedReason: `${band} bandi: bu trader icin negatif ROI, atlaniyor` };
   }
 
+  const weight = rules.weight ?? 1;
   let stake =
     marketType === "tournament_winner"
-      ? Math.min(rules.tournamentFixed, bankroll * 0.01)
-      : bankroll * rate;
+      ? Math.min(rules.tournamentFixed * weight, bankroll * 0.01 * weight)
+      : bankroll * rate * weight;
 
   const cap = bankroll * EVENT_CAP_FRACTION;
   const remainingCap = Math.max(0, cap - currentEventExposure);
