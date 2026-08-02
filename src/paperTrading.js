@@ -78,8 +78,8 @@ function findRealLeg(positions, conditionId, outcomeIndex) {
 }
 
 // Sanal takip (bankroll/olay tavani hesabi icin) her zaman sessizce calisir.
-// Telegram bildirimi sadece uc durumda gider: gercek giris 500$ ustundeyse,
-// onerilen tutar arttiysa, veya trader panik yapip satarsa.
+// Bildirim: acilan her pozisyon (esigi gectigi icin), onerilen tutar artisi,
+// panik satis suphesi ve takip hatirlatmasi.
 async function openPosition(paperState, wallet, position, suggestion) {
   const { stake, marketType, band, cap, currentEventExposure } = suggestion;
   const key = positionKey(position);
@@ -103,11 +103,25 @@ async function openPosition(paperState, wallet, position, suggestion) {
     source: wallet.label,
   };
 
+  // Trader'in ORTALAMA giris fiyatina (VWAP) gore neredeyiz? Olculen en
+  // buyuk kayip kalemi buydu: islemlerin %82'sinde ondan pahaliya girilmis
+  // ve bu ayni bahislerde +%5.6'yi -%9.0'a cevirmisti. Ozellikle sonradan
+  // esigi gecen pozisyonlarda fiyat coktan kacmis olabilir.
+  const vwapGapPct = position.avgPrice > 0
+    ? ((position.curPrice - position.avgPrice) / position.avgPrice) * 100
+    : 0;
+  const tooLate = vwapGapPct > config.maxSlippagePct;
+  const vwapLine =
+    `Onun ort. girisi: ${(position.avgPrice * 100).toFixed(1)}c → simdi ${(position.curPrice * 100).toFixed(1)}c ` +
+    `(${vwapGapPct >= 0 ? "+" : ""}%${vwapGapPct.toFixed(1)})`;
+
   await sendTelegramMessage(
-    `📝 <b>${wallet.label}</b> Yeni giris (${fmt(position.initialValue)})\n` +
+    `${tooLate ? "⚠️" : "📝"} <b>${wallet.label}</b> Yeni giris (${fmt(position.initialValue)})\n` +
       `[TÜR: ${marketType}] [BANT: ${band}]\n` +
       `${position.title} — ${position.outcome}\n` +
       `Fiyat: ${(position.curPrice * 100).toFixed(1)}c\n` +
+      `${vwapLine}\n` +
+      (tooLate ? `<b>DIKKAT: onun ortalamasinin cok ustunde, girmemeyi dusun.</b>\n` : "") +
       `Olay: ${position.eventSlug} — maruziyet: ${fmt(currentEventExposure + stake)} / tavan: ${fmt(cap)}\n` +
       `Onerilen tutar: ${fmt(stake)}`,
     { buttons: notificationButtons(wallet, position.eventSlug, position.slug) }
