@@ -1,5 +1,5 @@
 {
-  "balance": 321.7739172638805,
+  "balance": 311.6957112405248,
   "realizedPnl": 23.12824093422696,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
@@ -60,7 +60,7 @@
       "stake": 9.287103029760235,
       "entryPrice": 0.5649,
       "size": 16.440260275730637,
-      "lastPrice": 0.56,
+      "lastPrice": 0.515,
       "lastNotifiedAmount": 10.124410942009398,
       "entryNotified": true
     },
@@ -108,6 +108,18 @@
       "stake": 10.078206023355675,
       "entryPrice": 0.39,
       "size": 25.84155390604019,
+      "lastPrice": 0.395,
+      "lastNotifiedAmount": 10.078206023355675,
+      "entryNotified": true
+    },
+    "0x940e7a32c401e552a4cfed3ea6664d817c029801eed77e18242409e8565a52de:0": {
+      "title": "Counter-Strike: ShindeN vs BESTIA (BO3) - StarLadder StarSeries South American Qualifier Playoffs",
+      "outcome": "ShindeN",
+      "slug": "cs2-shin-bst-2026-08-02",
+      "eventSlug": "cs2-shin-bst-2026-08-02",
+      "stake": 10.078206023355675,
+      "entryPrice": 0.395,
+      "size": 25.514445628748543,
       "lastPrice": 0.395,
       "lastNotifiedAmount": 10.078206023355675,
       "entryNotified": true
