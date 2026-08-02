@@ -1,5 +1,5 @@
 {
-  "balance": 419.5705986434939,
+  "balance": 408.5705986434939,
   "realizedPnl": 59.570598643494016,
   "positions": {
     "0x99c3d9a145eb116fd37f1e165822da6585f85008ca9e3fc9f66d14b0cdde21e7:1": {
@@ -31,6 +31,20 @@
       "notifiedAt": 1785681197019,
       "source": "skyman44",
       "followUpDone": true
+    },
+    "0x473022867207797756cc2c77b5267767cbfa1ccb53c4295061b132e0925db9fc:1": {
+      "title": "Map Handicap: NRG (-1.5) vs SportsBetExpert (+1.5)",
+      "outcome": "SportsBetExpert",
+      "slug": "cs2-nrg-spo-2026-08-02-map-handicap-away-1pt5",
+      "eventSlug": "cs2-nrg-spo-2026-08-02",
+      "stake": 11,
+      "entryPrice": 0.485,
+      "size": 22.68041237113402,
+      "lastPrice": 0.485,
+      "lastNotifiedAmount": 11,
+      "entryNotified": true,
+      "notifiedAt": 1785703346198,
+      "source": "skyman44"
     }
   }
 }
