@@ -1,6 +1,6 @@
 {
-  "balance": 245.1877716165152,
-  "realizedPnl": 13.849358034604588,
+  "balance": 245.1969935043797,
+  "realizedPnl": -0.25090851022884664,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
       "title": "Will Spirit Win BLAST Bounty 2026 Season 2?",
@@ -10,7 +10,7 @@
       "stake": 10,
       "entryPrice": 0.635,
       "size": 15.748031496062993,
-      "lastPrice": 0.3449,
+      "lastPrice": 0.34,
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "isHedge": false
@@ -23,7 +23,7 @@
       "stake": 6,
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
-      "lastPrice": 0.6405,
+      "lastPrice": 0.67,
       "lastNotifiedAmount": 6,
       "entryNotified": true
     },
@@ -35,7 +35,7 @@
       "stake": 3.5435552990945975,
       "entryPrice": 0.355,
       "size": 9.981845912942529,
-      "lastPrice": 0.655,
+      "lastPrice": 0.66,
       "lastNotifiedAmount": 3.8400775403896334,
       "entryNotified": true,
       "isHedge": true
@@ -60,7 +60,7 @@
       "stake": 9.287103029760235,
       "entryPrice": 0.485,
       "size": 19.148666040742754,
-      "lastPrice": 0.55,
+      "lastPrice": 0.545,
       "lastNotifiedAmount": 10.124410942009398,
       "entryNotified": true
     },
@@ -112,18 +112,6 @@
       "lastNotifiedAmount": 10.078206023355675,
       "entryNotified": true
     },
-    "0xb8d71c2c58a149273127275979205e67892196660a2cd8641580228171461294:0": {
-      "title": "Counter-Strike: 9INE vs Brute (BO3) - Stake Pulse Beat I Group C",
-      "outcome": "9INE",
-      "slug": "cs2-9ine-brute-2026-08-02",
-      "eventSlug": "cs2-9ine-brute-2026-08-02",
-      "stake": 14.109488432697944,
-      "entryPrice": 0.765,
-      "size": 18.44377572901692,
-      "lastPrice": 0.0005,
-      "lastNotifiedAmount": 14.109488432697944,
-      "entryNotified": true
-    },
     "0x40e6c60fba757792623d008a1befea73e40ed06c312b72fbf2158105ab981f65:0": {
       "title": "Counter-Strike: Sashi Esport vs Black Phoenix (BO3) - CCT Europe Series #5 Playoffs",
       "outcome": "Sashi Esport",
@@ -156,7 +144,7 @@
       "stake": 10.078206023355671,
       "entryPrice": 0.425,
       "size": 23.713425937307463,
-      "lastPrice": 0.63,
+      "lastPrice": 0.655,
       "lastNotifiedAmount": 10.078206023355671,
       "entryNotified": true
     },
