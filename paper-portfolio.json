@@ -1,5 +1,5 @@
 {
-  "balance": 330.6920750955818,
+  "balance": 337.6920750955818,
   "realizedPnl": 38.69207509558197,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
@@ -42,21 +42,6 @@
       "lastNotifiedAmount": 4,
       "entryNotified": true,
       "notifiedAt": 1785681190105,
-      "source": "skyman44",
-      "followUpDone": true
-    },
-    "0x4b7d150516db043f3a24a2cccde48a80b2536b17ebbce542561b0f1309beb1ab:1": {
-      "title": "Valorant: ZETA DIVISION vs Nongshim RedForce (BO3) - VCT Pacific Group Alpha",
-      "outcome": "Nongshim RedForce",
-      "slug": "val-zeta2-ns1-2026-08-02",
-      "eventSlug": "val-zeta2-ns1-2026-08-02",
-      "stake": 4,
-      "entryPrice": 0.9995,
-      "size": 4.0020010005002495,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 4,
-      "entryNotified": true,
-      "notifiedAt": 1785681192134,
       "source": "skyman44",
       "followUpDone": true
     },
@@ -133,21 +118,6 @@
       "entryNotified": true,
       "notifiedAt": 1785681198183,
       "isHedge": true,
-      "source": "skyman44",
-      "followUpDone": true
-    },
-    "0xc08fd6bd7e20269f612d576ff51a92c28d81817a237fb35bb3405ef7a0f52ca8:0": {
-      "title": "Map Handicap: NS (-1.5) vs ZETA DIVISION (+1.5)",
-      "outcome": "Nongshim RedForce",
-      "slug": "val-zeta2-ns1-2026-08-02-map-handicap-home-1pt5",
-      "eventSlug": "val-zeta2-ns1-2026-08-02",
-      "stake": 3,
-      "entryPrice": 0.0005,
-      "size": 6000,
-      "lastPrice": 0.0005,
-      "lastNotifiedAmount": 3,
-      "entryNotified": true,
-      "notifiedAt": 1785681199342,
       "source": "skyman44",
       "followUpDone": true
     },
