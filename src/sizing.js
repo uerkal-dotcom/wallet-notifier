@@ -24,6 +24,10 @@ export function classifyMarketType(title) {
 
 const RULE_SETS = {
   skyman44: {
+    // <$500 kumesi: ham ROI +%13.2 gorunuyor ama en buyuk 3 kazanc toplam
+    // karin %92'si; uc degerler ayiklaninca -%3.8'e duşuyor, medyan +$7.
+    // Yani sinyal degil gurultu - bu tutarin altina hic girilmiyor.
+    minEntry: 500,
     tournamentFixed: 4,
     // map_number: n=60, -%18.9 - net kaybeden kategori
     skipType: (type) => type === "map_number",
@@ -36,6 +40,10 @@ const RULE_SETS = {
     },
   },
   joblessfinalboss: {
+    // Onda esik daha yukarida olmali: <$500 kumesi uc degerler cikinca
+    // -%7.3 (medyan -$0.03, isabet %49.5 = yazi tura) ve $500-$1.000
+    // dilimi -%20.2 (n=120). Sinyal ancak $1.000 ustunde basliyor.
+    minEntry: 1000,
     tournamentFixed: 3, // n=12, +%0.85 ~ sifir: sadece takip amacli kucuk tutar
     // map_number geneli +%3.5 (n=288) - skyman44'un aksine atlanmiyor.
     // Ama 0.30 altindaki map_number'lari cok kotu: n=10, -%79.6
