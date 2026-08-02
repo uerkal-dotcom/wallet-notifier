@@ -214,7 +214,14 @@ export async function checkPaperTrading(paperState, wallet) {
       const hedge = findHedgeLeg(paperState, position);
       if (hedge) {
         const realExistingLeg = findRealLeg(positions, position.conditionId, hedge.existingOutcomeIndex);
-        if (realExistingLeg && realExistingLeg.initialValue > 0) {
+        // Sadece YENI bacak kucuk olan (yani gercek hedge) ise oranla boyutlandir.
+        // Yeni bacak buyukse bu bir hedge degil, asil pozisyondur - normal
+        // fiyat-bandi akisina birak (oran>1 ile sisirmek yanlis olurdu).
+        if (
+          realExistingLeg &&
+          realExistingLeg.initialValue > 0 &&
+          position.initialValue < realExistingLeg.initialValue
+        ) {
           const hedgeRatio = position.initialValue / realExistingLeg.initialValue;
           await openHedgePosition(paperState, wallet, position, hedge, hedgeRatio);
           continue;
@@ -245,29 +252,38 @@ export async function checkPaperTrading(paperState, wallet) {
       existing.entryNotified = position.initialValue > ENTRY_NOTIFY_THRESHOLD;
     }
 
-    // Kars taraf (hedge) hala aciksa, boyutu fiyat bandina gore degil,
-    // trader'in GUNCEL iki bacaktaki gercek oranina gore takip et - trader
-    // hedge'ini buyutebilir, biz de orantili artiralim. Eski (fix'ten once
-    // acilmis) pozisyonlar icin de burada geriye donuk isHedge etiketlenir.
+    // Kars taraf (hedge) hala aciksa: hedge iliskisi SIMETRIK DEGILDIR.
+    // Buyuk bacak = trader'in asil pozisyonu, kucuk bacak = onun hedge'i.
+    // Oran SADECE kucuk (hedge) bacaga uygulanir; ana bacak kendi fiyat-bandi
+    // boyutunda kalir. Simetrik uygulamak ana pozisyonu oran>1 ile sisirir.
     const sibling = findHedgeLeg(paperState, position);
     if (sibling) {
       const realSibling = findRealLeg(positions, position.conditionId, sibling.existingOutcomeIndex);
       if (realSibling && realSibling.initialValue > 0 && position.initialValue > 0) {
-        const currentRatio = position.initialValue / realSibling.initialValue;
-        const targetStake = sibling.existingLeg.stake * currentRatio;
-        const topUp = targetStake - existing.stake;
+        const isHedgeLeg = position.initialValue < realSibling.initialValue;
 
-        if (targetStake > existing.stake * 1.05 && topUp >= 1 && paperState.balance >= topUp) {
-          paperState.balance -= topUp;
-          existing.size += topUp / position.curPrice;
-          existing.stake = targetStake;
+        if (isHedgeLeg) {
+          const currentRatio = position.initialValue / realSibling.initialValue; // daima < 1
+          // Hedge hicbir kosulda ana bacagin payini asamaz.
+          const targetStake = Math.min(
+            sibling.existingLeg.stake * currentRatio,
+            sibling.existingLeg.stake
+          );
+          const topUp = targetStake - existing.stake;
+
+          if (targetStake > existing.stake * 1.05 && topUp >= 1 && paperState.balance >= topUp) {
+            paperState.balance -= topUp;
+            existing.size += topUp / position.curPrice;
+            existing.stake = targetStake;
+            await notifyHedgeIncrease(wallet, existing, sibling.existingLeg, topUp, currentRatio);
+          }
           existing.isHedge = true;
-          await notifyHedgeIncrease(wallet, existing, sibling.existingLeg, topUp, currentRatio);
-        } else if (!existing.isHedge) {
-          existing.isHedge = true;
+          continue;
         }
+
+        // Ana bacak: hedge mantigi boyutunu DEGISTIRMEZ, normal akisa devam.
+        existing.isHedge = false;
       }
-      continue;
     }
 
     // Boyut sabit kalir ama "onerilen tutar" arttiysa kullaniciya bildir
