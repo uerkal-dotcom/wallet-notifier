@@ -1,5 +1,5 @@
 {
-  "balance": 352.0085353339475,
+  "balance": 321.7739172638805,
   "realizedPnl": 23.12824093422696,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
@@ -23,7 +23,7 @@
       "stake": 6,
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
-      "lastPrice": 0.215,
+      "lastPrice": 0.2145,
       "lastNotifiedAmount": 6,
       "entryNotified": true
     },
@@ -48,7 +48,7 @@
       "stake": 13.00194424166433,
       "entryPrice": 0.795,
       "size": 16.354646844860792,
-      "lastPrice": 0.775,
+      "lastPrice": 0.795,
       "lastNotifiedAmount": 14.174175318813159,
       "entryNotified": true
     },
@@ -72,8 +72,44 @@
       "stake": 9.287103029760235,
       "entryPrice": 0.485,
       "size": 19.148666040742754,
-      "lastPrice": 0.535,
+      "lastPrice": 0.545,
       "lastNotifiedAmount": 10.124410942009398,
+      "entryNotified": true
+    },
+    "0xc08fd6bd7e20269f612d576ff51a92c28d81817a237fb35bb3405ef7a0f52ca8:0": {
+      "title": "Map Handicap: NS (-1.5) vs ZETA DIVISION (+1.5)",
+      "outcome": "Nongshim RedForce",
+      "slug": "val-zeta2-ns1-2026-08-02-map-handicap-home-1pt5",
+      "eventSlug": "val-zeta2-ns1-2026-08-02",
+      "stake": 10.078206023355675,
+      "entryPrice": 0.575,
+      "size": 17.52731482322726,
+      "lastPrice": 0.575,
+      "lastNotifiedAmount": 10.078206023355675,
+      "entryNotified": true
+    },
+    "0x21dcedf29189b5df7f87c3b48b563778dbcde2f87ada50b3d05090a7838f3126:0": {
+      "title": "Counter-Strike: GenOne vs CYBERSHOKE Esports (BO3) - Thunderpick World Championship European Series #2 Playoffs",
+      "outcome": "GenOne",
+      "slug": "cs2-g1-cs1-2026-08-02",
+      "eventSlug": "cs2-g1-cs1-2026-08-02",
+      "stake": 10.078206023355675,
+      "entryPrice": 0.405,
+      "size": 24.88445931692759,
+      "lastPrice": 0.405,
+      "lastNotifiedAmount": 10.078206023355675,
+      "entryNotified": true
+    },
+    "0x4620b5f7829737a5e546852431ed31be4338aae8bbbaf351454c2204262ad252:1": {
+      "title": "Map Handicap: BBL (-1.5) vs Pcific Esports (+1.5)",
+      "outcome": "Pcific Esports",
+      "slug": "val-bbl1-pcfic-2026-08-02-map-handicap-away-1pt5",
+      "eventSlug": "val-bbl1-pcfic-2026-08-02",
+      "stake": 10.078206023355675,
+      "entryPrice": 0.39,
+      "size": 25.84155390604019,
+      "lastPrice": 0.39,
+      "lastNotifiedAmount": 10.078206023355675,
       "entryNotified": true
     }
   }
