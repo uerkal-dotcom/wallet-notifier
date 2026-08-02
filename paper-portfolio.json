@@ -1,22 +1,7 @@
 {
-  "balance": 408.58294432250625,
-  "realizedPnl": 49.582944322506364,
+  "balance": 426.92239386379066,
+  "realizedPnl": 57.922393863790774,
   "positions": {
-    "0x99c3d9a145eb116fd37f1e165822da6585f85008ca9e3fc9f66d14b0cdde21e7:1": {
-      "title": "Valorant: Fnatic vs Team Heretics (BO3) - VCT EMEA Group Omega",
-      "outcome": "Team Heretics",
-      "slug": "val-fnc1-th1-2026-08-02",
-      "eventSlug": "val-fnc1-th1-2026-08-02",
-      "stake": 10,
-      "entryPrice": 0.545,
-      "size": 18.34862385321101,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 11,
-      "entryNotified": true,
-      "notifiedAt": 1785681193334,
-      "source": "skyman44",
-      "followUpDone": true
-    },
     "0x473022867207797756cc2c77b5267767cbfa1ccb53c4295061b132e0925db9fc:1": {
       "title": "Map Handicap: NRG (-1.5) vs SportsBetExpert (+1.5)",
       "outcome": "SportsBetExpert",
