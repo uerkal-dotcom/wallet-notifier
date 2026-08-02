@@ -1,5 +1,5 @@
 {
-  "balance": 326.6920750955818,
+  "balance": 330.6920750955818,
   "realizedPnl": 38.69207509558197,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
@@ -10,7 +10,7 @@
       "stake": 10,
       "entryPrice": 0.635,
       "size": 15.748031496062993,
-      "lastPrice": 0.235,
+      "lastPrice": 0.39,
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "isHedge": false
@@ -23,7 +23,7 @@
       "stake": 15,
       "entryPrice": 0.785,
       "size": 19.108280254777068,
-      "lastPrice": 0.775,
+      "lastPrice": 0.63,
       "lastNotifiedAmount": 15,
       "entryNotified": true,
       "notifiedAt": 1785681189524,
@@ -44,20 +44,6 @@
       "notifiedAt": 1785681190105,
       "source": "skyman44",
       "followUpDone": true
-    },
-    "0x40e6c60fba757792623d008a1befea73e40ed06c312b72fbf2158105ab981f65:0": {
-      "title": "Counter-Strike: Sashi Esport vs Black Phoenix (BO3) - CCT Europe Series #5 Playoffs",
-      "outcome": "Sashi Esport",
-      "slug": "cs2-sashi-blackp-2026-08-02",
-      "eventSlug": "cs2-sashi-blackp-2026-08-02",
-      "stake": 4,
-      "entryPrice": 0.9995,
-      "size": 4.0020010005002495,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 4,
-      "entryNotified": true,
-      "notifiedAt": 1785681190954,
-      "source": "skyman44"
     },
     "0x4b7d150516db043f3a24a2cccde48a80b2536b17ebbce542561b0f1309beb1ab:1": {
       "title": "Valorant: ZETA DIVISION vs Nongshim RedForce (BO3) - VCT Pacific Group Alpha",
@@ -97,7 +83,7 @@
       "stake": 10,
       "entryPrice": 0.505,
       "size": 19.801980198019802,
-      "lastPrice": 0.51,
+      "lastPrice": 0.535,
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1785681194540,
@@ -112,7 +98,7 @@
       "stake": 4,
       "entryPrice": 0.7775,
       "size": 5.144694533762058,
-      "lastPrice": 0.7795,
+      "lastPrice": 0.631,
       "lastNotifiedAmount": 4,
       "entryNotified": true,
       "notifiedAt": 1785681195736,
@@ -141,7 +127,7 @@
       "stake": 4,
       "entryPrice": 0.775,
       "size": 5.161290322580645,
-      "lastPrice": 0.765,
+      "lastPrice": 0.61,
       "lastNotifiedAmount": 4,
       "entryNotified": true,
       "notifiedAt": 1785681198183,
