@@ -1,8 +1,15 @@
+import { config } from "./config.js";
 import { fetchOpenPositions } from "./positions.js";
 import { sendTelegramMessage } from "./telegram.js";
 import { suggestedStake } from "./sizing.js";
 
 const ENTRY_NOTIFY_THRESHOLD = 500; // sadece bunun ustundeki gercek girisler bildirilir
+
+// joblessfinalboss kagit trading'e sonradan eklendi; ondan onceki tum
+// pozisyonlar skyman44'ten geliyordu. `source` alani olmayan eski kayitlari
+// ona atfetmek olgusal olarak dogru.
+const LEGACY_SOURCE = "skyman44";
+const positionSource = (pos) => pos.source || LEGACY_SOURCE;
 
 function fmt(n) {
   return `$${Number(n).toLocaleString("tr-TR", { maximumFractionDigits: 2 })}`;
@@ -94,6 +101,7 @@ async function openPosition(paperState, wallet, position, suggestion) {
     lastNotifiedAmount: stake,
     entryNotified,
     notifiedAt: entryNotified ? Date.now() : null,
+    source: wallet.label,
   };
 
   if (!entryNotified) return; // sessiz - sadece sanal takip (henuz 500$ altinda)
@@ -113,7 +121,8 @@ async function openPosition(paperState, wallet, position, suggestion) {
 // bir sinyal degil, mevcut pozisyonu ayarlama - boyutu trader'in iki
 // bacaktaki gercek oranina gore, bizim mevcut payimizin uzerinden hesaplanir.
 async function openHedgePosition(paperState, wallet, position, hedge, hedgeRatio) {
-  const hedgeStake = hedge.existingLeg.stake * hedgeRatio;
+  // Tam dolara yuvarla - Polymarket'te kusuratli tutarla giris pratik degil.
+  const hedgeStake = Math.round(hedge.existingLeg.stake * hedgeRatio);
   if (hedgeStake < 1) return; // ihmal edilebilir kadar kucuk, sessizce atla
 
   if (paperState.balance < hedgeStake) {
@@ -141,6 +150,7 @@ async function openHedgePosition(paperState, wallet, position, hedge, hedgeRatio
     entryNotified: true,
     notifiedAt: Date.now(),
     isHedge: true,
+    source: wallet.label,
   };
 
   await sendTelegramMessage(
@@ -237,9 +247,22 @@ export async function checkPaperTrading(paperState, wallet) {
         price: position.curPrice,
         bankroll,
         currentEventExposure,
+        trader: wallet.label,
       });
 
-      if (suggestion.stake <= 0) continue; // map_number veya olay tavani - sanal takibe bile girmiyor
+      if (suggestion.stake <= 0) continue; // kural seti atliyor - sanal takibe bile girmiyor
+
+      // Global maruziyet tavani: olay bazli tavandan ayri. Iki trader
+      // birden sinyal uretirken toplam riskin sisi̇mesini engeller.
+      const openExposure = bankroll - paperState.balance;
+      const maxExposure = bankroll * (config.maxTotalExposurePct / 100);
+      if (openExposure + suggestion.stake > maxExposure) {
+        console.log(
+          `[${wallet.label}] global maruziyet tavani: ${position.title.slice(0, 40)} atlandi ` +
+            `(acik ${openExposure.toFixed(0)} + ${suggestion.stake} > tavan ${maxExposure.toFixed(0)})`
+        );
+        continue;
+      }
 
       await openPosition(paperState, wallet, position, suggestion);
       continue;
@@ -268,9 +291,8 @@ export async function checkPaperTrading(paperState, wallet) {
         if (isHedgeLeg) {
           const currentRatio = position.initialValue / realSibling.initialValue; // daima < 1
           // Hedge hicbir kosulda ana bacagin payini asamaz.
-          const targetStake = Math.min(
-            sibling.existingLeg.stake * currentRatio,
-            sibling.existingLeg.stake
+          const targetStake = Math.round(
+            Math.min(sibling.existingLeg.stake * currentRatio, sibling.existingLeg.stake)
           );
           const topUp = targetStake - existing.stake;
 
@@ -298,6 +320,9 @@ export async function checkPaperTrading(paperState, wallet) {
       price: existing.entryPrice,
       bankroll,
       currentEventExposure,
+      // Pozisyonu hangi trader tetiklediyse onun kural setiyle degerlendir -
+      // ayni marketi iki trader da oynuyor olabilir.
+      trader: positionSource(existing),
     });
 
     const lastNotifiedAmount = existing.lastNotifiedAmount ?? existing.stake;
@@ -312,6 +337,12 @@ export async function checkPaperTrading(paperState, wallet) {
   for (const key of Object.keys(paperState.positions)) {
     if (seenKeys.has(key)) continue;
     const existing = paperState.positions[key];
+
+    // paperState iki trader tarafindan PAYLASILIYOR. Bu dongu sadece
+    // "artik gorunmeyen" pozisyonlari kapatir; baska bir trader'in
+    // pozisyonu bu cuzdanin listesinde olmadigi icin dogal olarak
+    // gorunmez - onlari kapatmak yanlis olur.
+    if (positionSource(existing) !== wallet.label) continue;
 
     // Son bilinen fiyat zaten 0c veya 100c'ye çok yakinsa, bu fiyat tek
     // basina cozulmus (kazanmis/kaybetmis) oldugunun guclu kaniti - Gamma'ya

@@ -45,6 +45,10 @@ export const config = {
   maxSlippagePct: Number(process.env.MAX_SLIPPAGE_PCT || 15),
   // Bu kadar dakika gectiyse hatirlatmanin degeri kalmadi, sessizce kapat.
   staleAfterMinutes: Number(process.env.STALE_AFTER_MINUTES || 120),
+  // Ayni anda acik TUM pozisyonlarin kasaya orani bu tavani asamaz.
+  // Olay bazli tavandan (%12.5) ayridir - iki trader birden sinyal
+  // uretmeye baslayinca toplam maruziyet hizla sisebilir.
+  maxTotalExposurePct: Number(process.env.MAX_TOTAL_EXPOSURE_PCT || 60),
 };
 
 if (!config.telegramBotToken) {

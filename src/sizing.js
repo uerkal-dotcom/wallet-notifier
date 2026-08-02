@@ -1,54 +1,83 @@
-// wallet-analytics raporundaki ham (satir bazli, 873 pozisyon) geriye donuk
-// analize dayanan boyutlandirma kurallari: boyut trader'in yatirdigi tutara
-// degil, fiyat bandina ve market tipine gore belirlenir.
-// Bant sinirlari 0.05'lik ince dilimleme + odeme carpani (1/fiyat) capraz
-// kontrolleriyle dogrulandi (bkz. polymarket-sizing-modulu_6.md, bolum 8).
+// Boyutlandirma kurallari TRADER'A OZELDIR - piyasaya genel degil.
+// wallet-analytics'teki ham (satir bazli, cozulmus pozisyon) analiz iki
+// trader'in neredeyse ters profile sahip oldugunu gosterdi:
+//
+//   Bant        joblessfinalboss     skyman44
+//   0.00-0.30   n=65   +%40.3        n=89  -%0.7
+//   0.30-0.60   n=590  +%18.9        n=555 +%9.9
+//   0.60-0.75   n=214  +%11.9        n=207 -%11.4   <- zit
+//   0.75-0.90   n=64   -%14.6        n=44  +%22.8   <- zit
+//   0.90-1.00   n=4    +%10.0        n=8   +%5.7
+//
+// Bu yuzden ayni kural setini ikisine birden uygulamak zarar ettirir.
 
 const EVENT_CAP_FRACTION = 0.125; // kasa'nin %10-15 araliginin ortasi
-const TOURNAMENT_FIXED_STAKE = 4; // sabit kucuk tutar (3-5$ araliginin ortasi)
 const MIN_STAKE = 1; // bu tutarin altindaki oneriler atlanir
 
 export function classifyMarketType(title) {
-  if (/map handicap/i.test(title)) return "map_handicap";
+  if (/handicap/i.test(title)) return "map_handicap";
   if (/map \d+ winner/i.test(title)) return "map_number";
   if (/^will .+ win /i.test(title)) return "tournament_winner";
+  if (/total/i.test(title)) return "totals";
   return "match_winner";
 }
 
-export function priceBandLabel(price) {
-  if (price >= 0.75 && price <= 0.9) return "0.75-0.90";
-  if (price > 0.9) return "0.90-1.00";
-  if (price >= 0.6 && price < 0.75) return "0.60-0.75 (atlanan)";
-  if (price >= 0.3 && price < 0.6) return "0.30-0.60";
-  return "0.00-0.30";
+const RULE_SETS = {
+  skyman44: {
+    tournamentFixed: 4,
+    // map_number: n=60, -%18.9 - net kaybeden kategori
+    skipType: (type) => type === "map_number",
+    band: (p) => {
+      if (p >= 0.75 && p <= 0.9) return { label: "0.75-0.90", rate: 0.035 }; // n=44, +%22.8
+      if (p > 0.9) return { label: "0.90-1.00", rate: 0.01 }; // n=8, zayif ornek
+      if (p >= 0.6) return { label: "0.60-0.75", rate: 0 }; // n=207, -%11.4 -> atla
+      if (p >= 0.3) return { label: "0.30-0.60", rate: 0.025 }; // n=447, ~+%15
+      return { label: "0.00-0.30", rate: 0.0075 }; // n=85, gurultulu
+    },
+  },
+  joblessfinalboss: {
+    tournamentFixed: 3, // n=12, +%0.85 ~ sifir: sadece takip amacli kucuk tutar
+    // map_number geneli +%3.5 (n=288) - skyman44'un aksine atlanmiyor.
+    // Ama 0.30 altindaki map_number'lari cok kotu: n=10, -%79.6
+    skipType: (type, price) => type === "map_number" && price < 0.3,
+    band: (p) => {
+      if (p >= 0.75 && p <= 0.9) return { label: "0.75-0.90", rate: 0 }; // n=64, -%14.6 -> atla
+      if (p > 0.9) return { label: "0.90-1.00", rate: 0.01 }; // n=4, zayif ornek
+      if (p >= 0.6) return { label: "0.60-0.75", rate: 0.02 }; // n=214, +%11.9
+      if (p >= 0.3) return { label: "0.30-0.60", rate: 0.035 }; // n=590, +%18.9 (ana bant)
+      return { label: "0.00-0.30", rate: 0.02 }; // n=65, +%40.3 ama isabet %21.5 (yuksek varyans)
+    },
+  },
+};
+
+export function rulesFor(traderLabel) {
+  return RULE_SETS[String(traderLabel || "").toLowerCase()] || null;
 }
 
-function baseSizeForPrice(price) {
-  if (price >= 0.75 && price <= 0.9) return 0.035; // guclu kanitli bant (~%97.6 isabet, n=42, ROI +%16-24)
-  if (price > 0.9) return 0.01; // zayif ama pozitif, n=6 kucuk ornek (ROI +%4-8)
-  if (price >= 0.6 && price < 0.75) return 0; // n=195, 3 ayri dilimde tutarli negatif ROI (-%4 ila -%24) - atla
-  if (price >= 0.3 && price < 0.6) return 0.025; // n=447, tutarli pozitif (ROI ~%15)
-  return 0.0075; // 0.00-0.30: gurultulu/zayif, n=85
-}
-
-// title/price/bankroll: pozisyonun bilgileri ve kasa buyuklugu.
-// currentEventExposure: bu eventSlug altinda ZATEN acik olan diger
-// pozisyonlarin toplam payi (bu pozisyon haric).
-export function suggestedStake({ title, price, bankroll, currentEventExposure }) {
+// trader: kural setini secen etiket (ör. "skyman44"). Tanimli degilse
+// sessizce atlanir - yanlis kural setiyle boyutlandirmaktansa hic onerme.
+export function suggestedStake({ title, price, bankroll, currentEventExposure, trader }) {
+  const rules = rulesFor(trader);
   const marketType = classifyMarketType(title);
-  const band = priceBandLabel(price);
 
-  if (marketType === "map_number") {
-    return { marketType, band, stake: 0, skippedReason: "map_number: gecmis kayip kategorisi" };
+  if (!rules) {
+    return { marketType, band: "-", stake: 0, skippedReason: `'${trader}' icin kural seti tanimli degil` };
   }
 
-  const rate = baseSizeForPrice(price);
+  const { label: band, rate } = rules.band(price);
+
+  if (rules.skipType(marketType, price)) {
+    return { marketType, band, stake: 0, skippedReason: `${marketType}: bu trader icin kaybeden kategori` };
+  }
+
   if (marketType !== "tournament_winner" && rate === 0) {
-    return { marketType, band, stake: 0, skippedReason: "0.60-0.75 bandi: tutarli negatif ROI (n=195), atlaniyor" };
+    return { marketType, band, stake: 0, skippedReason: `${band} bandi: bu trader icin negatif ROI, atlaniyor` };
   }
 
   let stake =
-    marketType === "tournament_winner" ? Math.min(TOURNAMENT_FIXED_STAKE, bankroll * 0.01) : bankroll * rate;
+    marketType === "tournament_winner"
+      ? Math.min(rules.tournamentFixed, bankroll * 0.01)
+      : bankroll * rate;
 
   const cap = bankroll * EVENT_CAP_FRACTION;
   const remainingCap = Math.max(0, cap - currentEventExposure);

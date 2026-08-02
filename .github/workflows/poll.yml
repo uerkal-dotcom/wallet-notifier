@@ -38,6 +38,7 @@ jobs:
           MY_WALLET: ${{ secrets.MY_WALLET }}
           REMINDER_AFTER_MINUTES: ${{ secrets.REMINDER_AFTER_MINUTES }}
           MAX_SLIPPAGE_PCT: ${{ secrets.MAX_SLIPPAGE_PCT }}
+          MAX_TOTAL_EXPOSURE_PCT: ${{ secrets.MAX_TOTAL_EXPOSURE_PCT }}
           STATE_PATH: ./state.json
           PAPER_STATE_PATH: ./paper-portfolio.json
           RUN_ONCE: "1"
