@@ -1,6 +1,6 @@
 {
-  "balance": 342.34912573000645,
-  "realizedPnl": 16.12649780460686,
+  "balance": 352.0085353339475,
+  "realizedPnl": 23.12824093422696,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
       "title": "Will Spirit Win BLAST Bounty 2026 Season 2?",
@@ -39,18 +39,6 @@
       "lastNotifiedAmount": 3.8400775403896334,
       "entryNotified": true,
       "isHedge": true
-    },
-    "0x662356b8dcc1fbdee87914432e4f446704f32e08520d157c73fb154d68686dff:1": {
-      "title": "Counter-Strike: NRG vs Voca (BO3) - StarLadder StarSeries North American Qualifier Playoffs",
-      "outcome": "Voca",
-      "slug": "cs2-nrg-voc-2026-08-01",
-      "eventSlug": "cs2-nrg-voc-2026-08-01",
-      "stake": 2.657666474320948,
-      "entryPrice": 0.275,
-      "size": 9.664241724803446,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 3.037323282602819,
-      "entryNotified": true
     },
     "0x4b7d150516db043f3a24a2cccde48a80b2536b17ebbce542561b0f1309beb1ab:1": {
       "title": "Valorant: ZETA DIVISION vs Nongshim RedForce (BO3) - VCT Pacific Group Alpha",
