@@ -1,6 +1,6 @@
 {
-  "balance": 375.0995070898941,
-  "realizedPnl": 35.09950708989421,
+  "balance": 394.89158629781485,
+  "realizedPnl": 44.891586297815,
   "positions": {
     "0x99c3d9a145eb116fd37f1e165822da6585f85008ca9e3fc9f66d14b0cdde21e7:1": {
       "title": "Valorant: Fnatic vs Team Heretics (BO3) - VCT EMEA Group Omega",
@@ -14,21 +14,6 @@
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1785681193334,
-      "source": "skyman44",
-      "followUpDone": true
-    },
-    "0x21dcedf29189b5df7f87c3b48b563778dbcde2f87ada50b3d05090a7838f3126:0": {
-      "title": "Counter-Strike: GenOne vs CYBERSHOKE Esports (BO3) - Thunderpick World Championship European Series #2 Playoffs",
-      "outcome": "GenOne",
-      "slug": "cs2-g1-cs1-2026-08-02",
-      "eventSlug": "cs2-g1-cs1-2026-08-02",
-      "stake": 10,
-      "entryPrice": 0.505,
-      "size": 19.801980198019802,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 10,
-      "entryNotified": true,
-      "notifiedAt": 1785681194540,
       "source": "skyman44",
       "followUpDone": true
     },
