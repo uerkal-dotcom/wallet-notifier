@@ -1,5 +1,5 @@
 {
-  "balance": 297.58622280782686,
+  "balance": 283.4767343751289,
   "realizedPnl": 23.12824093422696,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
@@ -60,7 +60,7 @@
       "stake": 9.287103029760235,
       "entryPrice": 0.5649,
       "size": 16.440260275730637,
-      "lastPrice": 0.62,
+      "lastPrice": 0.755,
       "lastNotifiedAmount": 10.124410942009398,
       "entryNotified": true
     },
@@ -132,8 +132,20 @@
       "stake": 14.109488432697944,
       "entryPrice": 0.765,
       "size": 18.44377572901692,
-      "lastPrice": 0.81,
+      "lastPrice": 0.8,
       "lastNotifiedAmount": 14.109488432697944,
+      "entryNotified": true
+    },
+    "0x40e6c60fba757792623d008a1befea73e40ed06c312b72fbf2158105ab981f65:0": {
+      "title": "Counter-Strike: Sashi Esport vs Black Phoenix (BO3) - CCT Europe Series #5 Playoffs",
+      "outcome": "Sashi Esport",
+      "slug": "cs2-sashi-blackp-2026-08-02",
+      "eventSlug": "cs2-sashi-blackp-2026-08-02",
+      "stake": 14.109488432697942,
+      "entryPrice": 0.75,
+      "size": 18.812651243597255,
+      "lastPrice": 0.75,
+      "lastNotifiedAmount": 14.109488432697942,
       "entryNotified": true
     }
   }
