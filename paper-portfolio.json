@@ -1,5 +1,5 @@
 {
-  "balance": 311.6957112405248,
+  "balance": 297.58622280782686,
   "realizedPnl": 23.12824093422696,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
@@ -60,7 +60,7 @@
       "stake": 9.287103029760235,
       "entryPrice": 0.5649,
       "size": 16.440260275730637,
-      "lastPrice": 0.495,
+      "lastPrice": 0.41,
       "lastNotifiedAmount": 10.124410942009398,
       "entryNotified": true
     },
@@ -122,6 +122,18 @@
       "size": 25.514445628748543,
       "lastPrice": 0.405,
       "lastNotifiedAmount": 10.078206023355675,
+      "entryNotified": true
+    },
+    "0xb8d71c2c58a149273127275979205e67892196660a2cd8641580228171461294:0": {
+      "title": "Counter-Strike: 9INE vs Brute (BO3) - Stake Pulse Beat I Group C",
+      "outcome": "9INE",
+      "slug": "cs2-9ine-brute-2026-08-02",
+      "eventSlug": "cs2-9ine-brute-2026-08-02",
+      "stake": 14.109488432697944,
+      "entryPrice": 0.765,
+      "size": 18.44377572901692,
+      "lastPrice": 0.765,
+      "lastNotifiedAmount": 14.109488432697944,
       "entryNotified": true
     }
   }
