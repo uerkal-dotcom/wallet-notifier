@@ -1,6 +1,6 @@
 {
-  "balance": 408.5705986434939,
-  "realizedPnl": 59.570598643494016,
+  "balance": 408.58294432250625,
+  "realizedPnl": 49.582944322506364,
   "positions": {
     "0x99c3d9a145eb116fd37f1e165822da6585f85008ca9e3fc9f66d14b0cdde21e7:1": {
       "title": "Valorant: Fnatic vs Team Heretics (BO3) - VCT EMEA Group Omega",
@@ -14,21 +14,6 @@
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1785681193334,
-      "source": "skyman44",
-      "followUpDone": true
-    },
-    "0x940e7a32c401e552a4cfed3ea6664d817c029801eed77e18242409e8565a52de:0": {
-      "title": "Counter-Strike: ShindeN vs BESTIA (BO3) - StarLadder StarSeries South American Qualifier Playoffs",
-      "outcome": "ShindeN",
-      "slug": "cs2-shin-bst-2026-08-02",
-      "eventSlug": "cs2-shin-bst-2026-08-02",
-      "stake": 10,
-      "entryPrice": 0.405,
-      "size": 24.691358024691358,
-      "lastPrice": 0.0005,
-      "lastNotifiedAmount": 11,
-      "entryNotified": true,
-      "notifiedAt": 1785681197019,
       "source": "skyman44",
       "followUpDone": true
     },
