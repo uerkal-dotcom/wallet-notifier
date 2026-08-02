@@ -1,5 +1,5 @@
 {
-  "balance": 269.36724594243094,
+  "balance": 259.28903991907526,
   "realizedPnl": 23.12824093422696,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
@@ -23,7 +23,7 @@
       "stake": 6,
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
-      "lastPrice": 0.4195,
+      "lastPrice": 0.426,
       "lastNotifiedAmount": 6,
       "entryNotified": true
     },
@@ -48,7 +48,7 @@
       "stake": 13.00194424166433,
       "entryPrice": 0.795,
       "size": 16.354646844860792,
-      "lastPrice": 0.73,
+      "lastPrice": 0.76,
       "lastNotifiedAmount": 14.174175318813159,
       "entryNotified": true
     },
@@ -132,7 +132,7 @@
       "stake": 14.109488432697944,
       "entryPrice": 0.765,
       "size": 18.44377572901692,
-      "lastPrice": 0.38,
+      "lastPrice": 0.315,
       "lastNotifiedAmount": 14.109488432697944,
       "entryNotified": true
     },
@@ -144,7 +144,7 @@
       "stake": 14.109488432697942,
       "entryPrice": 0.75,
       "size": 18.812651243597255,
-      "lastPrice": 0.59,
+      "lastPrice": 0.595,
       "lastNotifiedAmount": 14.109488432697942,
       "entryNotified": true
     },
@@ -158,6 +158,18 @@
       "size": 16.897590937362807,
       "lastPrice": 0.9995,
       "lastNotifiedAmount": 14.109488432697942,
+      "entryNotified": true
+    },
+    "0xeaba3d86f3087db79a8714520894aa57481ed893d18ba708b5cb5e314f704e2e:1": {
+      "title": "Counter-Strike: Spirit vs MOUZ (BO5) - BLAST Bounty Playoffs",
+      "outcome": "MOUZ",
+      "slug": "cs2-ts7-mouz-2026-08-02",
+      "eventSlug": "cs2-ts7-mouz-2026-08-02",
+      "stake": 10.078206023355671,
+      "entryPrice": 0.425,
+      "size": 23.713425937307463,
+      "lastPrice": 0.425,
+      "lastNotifiedAmount": 10.078206023355671,
       "entryNotified": true
     }
   }
