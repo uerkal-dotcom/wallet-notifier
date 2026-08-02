@@ -48,7 +48,7 @@
       "stake": 13.00194424166433,
       "entryPrice": 0.795,
       "size": 16.354646844860792,
-      "lastPrice": 0.795,
+      "lastPrice": 0.805,
       "lastNotifiedAmount": 14.174175318813159,
       "entryNotified": true
     },
@@ -84,7 +84,7 @@
       "stake": 10.078206023355675,
       "entryPrice": 0.575,
       "size": 17.52731482322726,
-      "lastPrice": 0.575,
+      "lastPrice": 0.545,
       "lastNotifiedAmount": 10.078206023355675,
       "entryNotified": true
     },
@@ -96,7 +96,7 @@
       "stake": 10.078206023355675,
       "entryPrice": 0.405,
       "size": 24.88445931692759,
-      "lastPrice": 0.405,
+      "lastPrice": 0.395,
       "lastNotifiedAmount": 10.078206023355675,
       "entryNotified": true
     },
@@ -108,7 +108,7 @@
       "stake": 10.078206023355675,
       "entryPrice": 0.39,
       "size": 25.84155390604019,
-      "lastPrice": 0.39,
+      "lastPrice": 0.395,
       "lastNotifiedAmount": 10.078206023355675,
       "entryNotified": true
     }
