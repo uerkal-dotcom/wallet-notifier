@@ -24,10 +24,12 @@ export function classifyMarketType(title) {
 
 const RULE_SETS = {
   skyman44: {
-    // <$500 kumesi: ham ROI +%13.2 gorunuyor ama en buyuk 3 kazanc toplam
-    // karin %92'si; uc degerler ayiklaninca -%3.8'e duşuyor, medyan +$7.
-    // Yani sinyal degil gurultu - bu tutarin altina hic girilmiyor.
-    minEntry: 500,
+    // <$500: ham ROI +%13.2 gorunuyor ama en buyuk 3 kazanc toplam karin
+    // %92'si; uc degerler ayiklaninca -%3.8, medyan sadece +$7.
+    // $500-$1.000: onun EN KOTU dilimi - isabet %49.0 (yazi tura),
+    // medyan islem -$511, uc degersiz ROI -%14.8.
+    // Ikisi de gurultu, esik $1.000.
+    minEntry: 1000,
     tournamentFixed: 4,
     // map_number: n=60, -%18.9 - net kaybeden kategori
     skipType: (type) => type === "map_number",
