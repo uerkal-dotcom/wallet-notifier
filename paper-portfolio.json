@@ -1,5 +1,5 @@
 {
-  "balance": 283.4767343751289,
+  "balance": 269.36724594243094,
   "realizedPnl": 23.12824093422696,
   "positions": {
     "0x77859ba1af93908465c8ffb724f6eccc48d92f44300df97ec15f47c5d50eb57f:0": {
@@ -10,7 +10,7 @@
       "stake": 10,
       "entryPrice": 0.635,
       "size": 15.748031496062993,
-      "lastPrice": 0.785,
+      "lastPrice": 0.79,
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "isHedge": true
@@ -23,7 +23,7 @@
       "stake": 6,
       "entryPrice": 0.20627065868263472,
       "size": 29.08799554100188,
-      "lastPrice": 0.2155,
+      "lastPrice": 0.2145,
       "lastNotifiedAmount": 6,
       "entryNotified": true
     },
@@ -35,7 +35,7 @@
       "stake": 3.5435552990945975,
       "entryPrice": 0.355,
       "size": 9.981845912942529,
-      "lastPrice": 0.215,
+      "lastPrice": 0.21,
       "lastNotifiedAmount": 3.8400775403896334,
       "entryNotified": true,
       "isHedge": true
@@ -60,7 +60,7 @@
       "stake": 9.287103029760235,
       "entryPrice": 0.5649,
       "size": 16.440260275730637,
-      "lastPrice": 0.68,
+      "lastPrice": 0.58,
       "lastNotifiedAmount": 10.124410942009398,
       "entryNotified": true
     },
@@ -132,7 +132,7 @@
       "stake": 14.109488432697944,
       "entryPrice": 0.765,
       "size": 18.44377572901692,
-      "lastPrice": 0.7,
+      "lastPrice": 0.685,
       "lastNotifiedAmount": 14.109488432697944,
       "entryNotified": true
     },
@@ -144,7 +144,19 @@
       "stake": 14.109488432697942,
       "entryPrice": 0.75,
       "size": 18.812651243597255,
-      "lastPrice": 0.725,
+      "lastPrice": 0.73,
+      "lastNotifiedAmount": 14.109488432697942,
+      "entryNotified": true
+    },
+    "0xc1596bcaa186fac0eeee7992e63ed155072cf69ee66b1b50bf0e466a6889f138:1": {
+      "title": "Map Handicap: TS (-2.5) vs MOUZ (+2.5)",
+      "outcome": "MOUZ",
+      "slug": "cs2-ts7-mouz-2026-08-02-map-handicap-away-2pt5",
+      "eventSlug": "cs2-ts7-mouz-2026-08-02",
+      "stake": 14.109488432697942,
+      "entryPrice": 0.835,
+      "size": 16.897590937362807,
+      "lastPrice": 0.835,
       "lastNotifiedAmount": 14.109488432697942,
       "entryNotified": true
     }
