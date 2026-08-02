@@ -1,6 +1,6 @@
 {
-  "balance": 394.89158629781485,
-  "realizedPnl": 44.891586297815,
+  "balance": 419.5705986434939,
+  "realizedPnl": 59.570598643494016,
   "positions": {
     "0x99c3d9a145eb116fd37f1e165822da6585f85008ca9e3fc9f66d14b0cdde21e7:1": {
       "title": "Valorant: Fnatic vs Team Heretics (BO3) - VCT EMEA Group Omega",
@@ -10,7 +10,7 @@
       "stake": 10,
       "entryPrice": 0.545,
       "size": 18.34862385321101,
-      "lastPrice": 0.945,
+      "lastPrice": 0.955,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1785681193334,
@@ -25,25 +25,10 @@
       "stake": 10,
       "entryPrice": 0.405,
       "size": 24.691358024691358,
-      "lastPrice": 0.215,
+      "lastPrice": 0.155,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1785681197019,
-      "source": "skyman44",
-      "followUpDone": true
-    },
-    "0x4620b5f7829737a5e546852431ed31be4338aae8bbbaf351454c2204262ad252:1": {
-      "title": "Map Handicap: BBL (-1.5) vs Pcific Esports (+1.5)",
-      "outcome": "Pcific Esports",
-      "slug": "val-bbl1-pcfic-2026-08-02-map-handicap-away-1pt5",
-      "eventSlug": "val-bbl1-pcfic-2026-08-02",
-      "stake": 10,
-      "entryPrice": 0.405,
-      "size": 24.691358024691358,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 11,
-      "entryNotified": true,
-      "notifiedAt": 1785681201764,
       "source": "skyman44",
       "followUpDone": true
     }
