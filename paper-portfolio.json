@@ -1,6 +1,6 @@
 {
-  "balance": 393.93373406997625,
-  "realizedPnl": 46.93373406997634,
+  "balance": 425.81108982526763,
+  "realizedPnl": 67.81108982526773,
   "positions": {
     "0x149d28e7f5aaa243c78bd97f670706663b4b34b1aa6b5d466c7f684e91f50b7a:0": {
       "title": "Counter-Strike: ARCRED vs Butterfly (BO3) - NODWIN Clutch Series Playoffs",
@@ -17,21 +17,6 @@
       "source": "skyman44",
       "followUpDone": true
     },
-    "0x1725f6821284f73c84fa2fb4931082f6f4cbaed19800c7a59a901ecffb756620:1": {
-      "title": "Counter-Strike: WW Team vs CYBERSHOKE Prospects (BO3) - NODWIN Clutch Series Playoffs",
-      "outcome": "CYBERSHOKE Prospects",
-      "slug": "cs2-ww-cyb-2026-08-03",
-      "eventSlug": "cs2-ww-cyb-2026-08-03",
-      "stake": 11,
-      "entryPrice": 0.3449,
-      "size": 31.893302406494637,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 11,
-      "entryNotified": true,
-      "notifiedAt": 1785742863634,
-      "source": "skyman44",
-      "followUpDone": true
-    },
     "0x21c9bcab1b6537910c7f6a01198dbe7f6c597b4bcac49ac84789e024ac693b01:0": {
       "title": "Counter-Strike: 1WIN vs ex-RUBY (BO3) - NODWIN Clutch Series Playoffs",
       "outcome": "1WIN",
@@ -40,7 +25,7 @@
       "stake": 11,
       "entryPrice": 0.585,
       "size": 18.803418803418804,
-      "lastPrice": 0.9,
+      "lastPrice": 0.85,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1785755831802,
