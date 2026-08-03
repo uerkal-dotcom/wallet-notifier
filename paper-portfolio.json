@@ -1,21 +1,5 @@
 {
-  "balance": 433.6145086286864,
-  "realizedPnl": 64.61450862868654,
-  "positions": {
-    "0xf6cadf29d248e4fa34c6df1b92b59f2d60f9a2dbbe27a05b5d21e62ad3d52085:1": {
-      "title": "Map Handicap: IMP (-1.5) vs Procyon Gaming (+1.5)",
-      "outcome": "Procyon Gaming",
-      "slug": "cs2-imp11-pcy-2026-08-03-map-handicap-away-1pt5",
-      "eventSlug": "cs2-imp11-pcy-2026-08-03",
-      "stake": 11,
-      "entryPrice": 0.355,
-      "size": 30.985915492957748,
-      "lastPrice": 0.0005,
-      "lastNotifiedAmount": 11,
-      "entryNotified": true,
-      "notifiedAt": 1785778311278,
-      "source": "skyman44",
-      "followUpDone": true
-    }
-  }
+  "balance": 433.63000158643285,
+  "realizedPnl": 53.63000158643302,
+  "positions": {}
 }
