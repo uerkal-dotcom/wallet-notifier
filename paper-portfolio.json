@@ -1,5 +1,20 @@
 {
-  "balance": 426.93373406997625,
+  "balance": 415.93373406997625,
   "realizedPnl": 46.93373406997634,
-  "positions": {}
+  "positions": {
+    "0x149d28e7f5aaa243c78bd97f670706663b4b34b1aa6b5d466c7f684e91f50b7a:0": {
+      "title": "Counter-Strike: ARCRED vs Butterfly (BO3) - NODWIN Clutch Series Playoffs",
+      "outcome": "ARCRED",
+      "slug": "cs2-arc4-btf-2026-08-03",
+      "eventSlug": "cs2-arc4-btf-2026-08-03",
+      "stake": 11,
+      "entryPrice": 0.585,
+      "size": 18.803418803418804,
+      "lastPrice": 0.585,
+      "lastNotifiedAmount": 11,
+      "entryNotified": true,
+      "notifiedAt": 1785742007626,
+      "source": "skyman44"
+    }
+  }
 }
