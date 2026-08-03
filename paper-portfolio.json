@@ -1,22 +1,7 @@
 {
-  "balance": 433.6051069192847,
-  "realizedPnl": 75.60510691928482,
+  "balance": 433.6145086286864,
+  "realizedPnl": 64.61450862868654,
   "positions": {
-    "0x149d28e7f5aaa243c78bd97f670706663b4b34b1aa6b5d466c7f684e91f50b7a:0": {
-      "title": "Counter-Strike: ARCRED vs Butterfly (BO3) - NODWIN Clutch Series Playoffs",
-      "outcome": "ARCRED",
-      "slug": "cs2-arc4-btf-2026-08-03",
-      "eventSlug": "cs2-arc4-btf-2026-08-03",
-      "stake": 11,
-      "entryPrice": 0.585,
-      "size": 18.803418803418804,
-      "lastPrice": 0.0005,
-      "lastNotifiedAmount": 11,
-      "entryNotified": true,
-      "notifiedAt": 1785742007626,
-      "source": "skyman44",
-      "followUpDone": true
-    },
     "0xf6cadf29d248e4fa34c6df1b92b59f2d60f9a2dbbe27a05b5d21e62ad3d52085:1": {
       "title": "Map Handicap: IMP (-1.5) vs Procyon Gaming (+1.5)",
       "outcome": "Procyon Gaming",
@@ -25,7 +10,7 @@
       "stake": 11,
       "entryPrice": 0.355,
       "size": 30.985915492957748,
-      "lastPrice": 0.33,
+      "lastPrice": 0.28,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1785778311278,
