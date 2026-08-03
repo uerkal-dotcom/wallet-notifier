@@ -2,6 +2,20 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { dirname } from "node:path";
 import { config } from "./config.js";
 
+// DIKKAT - state.json SADECE kagit-trading modunda OLMAYAN cuzdanlar icin
+// kullanilir. index.js'te akis su sekilde ayriliyor:
+//
+//   if (wallet.paper) checkPaperTrading(...)  -> paper-portfolio.json
+//   else              checkWallet(state, ...) -> state.json  (burasi)
+//
+// Su anda TUM cuzdanlar (skyman44, joblessfinalboss) kagit modunda oldugu
+// icin bu dosya hicbir cuzdan icin guncellenmiyor ve icerigi BAYAT kalir.
+// Bu normaldir, ariza degildir.
+//
+// 2026-08-03: bu dosyadaki eski lastTimestamp'lere bakilip "bot 82 saattir
+// islem kaciriyor, 87 islem gormemis" diye yanlis bir alarm verildi. Canli
+// durum icin BAKILACAK YER paper-portfolio.json'dir. Yanlis yonlendirmemesi
+// icin bayat icerik temizlendi.
 const MAX_SEEN_HASHES_PER_WALLET = 100;
 
 export function loadState() {
