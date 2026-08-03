@@ -14,7 +14,8 @@
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1785742007626,
-      "source": "skyman44"
+      "source": "skyman44",
+      "followUpDone": true
     },
     "0x1725f6821284f73c84fa2fb4931082f6f4cbaed19800c7a59a901ecffb756620:1": {
       "title": "Counter-Strike: WW Team vs CYBERSHOKE Prospects (BO3) - NODWIN Clutch Series Playoffs",
@@ -24,7 +25,7 @@
       "stake": 11,
       "entryPrice": 0.3449,
       "size": 31.893302406494637,
-      "lastPrice": 0.3449,
+      "lastPrice": 0.335,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1785742863634,
