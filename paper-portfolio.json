@@ -1,5 +1,5 @@
 {
-  "balance": 404.93373406997625,
+  "balance": 393.93373406997625,
   "realizedPnl": 46.93373406997634,
   "positions": {
     "0x149d28e7f5aaa243c78bd97f670706663b4b34b1aa6b5d466c7f684e91f50b7a:0": {
@@ -31,6 +31,20 @@
       "notifiedAt": 1785742863634,
       "source": "skyman44",
       "followUpDone": true
+    },
+    "0x21c9bcab1b6537910c7f6a01198dbe7f6c597b4bcac49ac84789e024ac693b01:0": {
+      "title": "Counter-Strike: 1WIN vs ex-RUBY (BO3) - NODWIN Clutch Series Playoffs",
+      "outcome": "1WIN",
+      "slug": "cs2-1win-ruby1-2026-08-03",
+      "eventSlug": "cs2-1win-ruby1-2026-08-03",
+      "stake": 11,
+      "entryPrice": 0.585,
+      "size": 18.803418803418804,
+      "lastPrice": 0.585,
+      "lastNotifiedAmount": 11,
+      "entryNotified": true,
+      "notifiedAt": 1785755831802,
+      "source": "skyman44"
     }
   }
 }
