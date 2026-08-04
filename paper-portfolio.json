@@ -1,5 +1,5 @@
 {
-  "balance": 407.63000158643285,
+  "balance": 396.63000158643285,
   "realizedPnl": 53.63000158643302,
   "positions": {
     "0xa646707d64c8a5877cc4f018503b70889a01a941769608a3ff7725436e016ca0:1": {
@@ -25,12 +25,26 @@
       "stake": 11,
       "entryPrice": 0.495,
       "size": 22.22222222222222,
-      "lastPrice": 0.405,
+      "lastPrice": 0.68,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1785834061341,
       "source": "skyman44",
       "followUpDone": true
+    },
+    "0xfdb3930a2b6139303ea566c53da4d284233c69ca327563849cb4973693a1abc2:1": {
+      "title": "Counter-Strike: Bushido Wildcats vs Leo Team (BO3) - ESL Challenger League Europe Cup #2 Playoffs",
+      "outcome": "Leo Team",
+      "slug": "cs2-bw-leo2-2026-08-04",
+      "eventSlug": "cs2-bw-leo2-2026-08-04",
+      "stake": 11,
+      "entryPrice": 0.49,
+      "size": 22.448979591836736,
+      "lastPrice": 0.49,
+      "lastNotifiedAmount": 11,
+      "entryNotified": true,
+      "notifiedAt": 1785841947941,
+      "source": "skyman44"
     }
   }
 }
