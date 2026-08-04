@@ -1,5 +1,5 @@
 {
-  "balance": 415.72872770108256,
+  "balance": 400.72872770108256,
   "realizedPnl": 57.7287277010827,
   "positions": {
     "0xca85eaee96994725b136f1ee2e8025fdc18d511bf648cd09599193fc262c977f:1": {
@@ -10,7 +10,7 @@
       "stake": 11,
       "entryPrice": 0.495,
       "size": 22.22222222222222,
-      "lastPrice": 0.745,
+      "lastPrice": 0.75,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1785834061341,
@@ -29,6 +29,21 @@
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1785841947941,
+      "source": "skyman44",
+      "followUpDone": true
+    },
+    "0x0c82093780da4342e47eb5fdae6280bf34a429e086f22c9957906695f6d972c1:0": {
+      "title": "Counter-Strike: BESTIA vs METANOIA WOLVES (BO3) - BetBoom Storm Group Stage",
+      "outcome": "BESTIA",
+      "slug": "cs2-bst-mw-2026-08-04",
+      "eventSlug": "cs2-bst-mw-2026-08-04",
+      "stake": 15,
+      "entryPrice": 0.885,
+      "size": 16.949152542372882,
+      "lastPrice": 0.885,
+      "lastNotifiedAmount": 15,
+      "entryNotified": true,
+      "notifiedAt": 1785842915315,
       "source": "skyman44"
     }
   }
