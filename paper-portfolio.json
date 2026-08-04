@@ -1,5 +1,5 @@
 {
-  "balance": 374.72872770108256,
+  "balance": 363.72872770108256,
   "realizedPnl": 57.7287277010827,
   "positions": {
     "0xca85eaee96994725b136f1ee2e8025fdc18d511bf648cd09599193fc262c977f:1": {
@@ -76,6 +76,20 @@
       "notifiedAt": 1785852391459,
       "source": "skyman44",
       "followUpDone": true
+    },
+    "0xecb461bc1fae46ac3f33b9d4d232c1075e57fcdf4e5bd6db25604f7c45f77b24:1": {
+      "title": "Map Handicap: FNC (-1.5) vs Esport Academy Copenhagen (+1.5)",
+      "outcome": "Esport Academy Copenhagen",
+      "slug": "cs2-fnc-eac-2026-08-04-map-handicap-away-1pt5",
+      "eventSlug": "cs2-fnc-eac-2026-08-04",
+      "stake": 11,
+      "entryPrice": 0.53,
+      "size": 20.754716981132074,
+      "lastPrice": 0.53,
+      "lastNotifiedAmount": 11,
+      "entryNotified": true,
+      "notifiedAt": 1785859707684,
+      "source": "skyman44"
     }
   }
 }
