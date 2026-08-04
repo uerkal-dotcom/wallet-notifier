@@ -1,5 +1,5 @@
 {
-  "balance": 389.72872770108256,
+  "balance": 374.72872770108256,
   "realizedPnl": 57.7287277010827,
   "positions": {
     "0xca85eaee96994725b136f1ee2e8025fdc18d511bf648cd09599193fc262c977f:1": {
@@ -25,7 +25,7 @@
       "stake": 11,
       "entryPrice": 0.49,
       "size": 22.448979591836736,
-      "lastPrice": 0.275,
+      "lastPrice": 0.255,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1785841947941,
@@ -59,6 +59,20 @@
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1785852152415,
+      "source": "skyman44"
+    },
+    "0xa8d6dee5466c21c986c7a8019d56cb2febbee5380b2b19f8c0cfc27d7911d5dd:0": {
+      "title": "Counter-Strike: Liquid vs 9INE (BO3) - Stake Pulse Beat I Playoffs",
+      "outcome": "Liquid",
+      "slug": "cs2-tl1-9ine-2026-08-04",
+      "eventSlug": "cs2-tl1-9ine-2026-08-04",
+      "stake": 15,
+      "entryPrice": 0.775,
+      "size": 19.35483870967742,
+      "lastPrice": 0.775,
+      "lastNotifiedAmount": 15,
+      "entryNotified": true,
+      "notifiedAt": 1785852391459,
       "source": "skyman44"
     }
   }
