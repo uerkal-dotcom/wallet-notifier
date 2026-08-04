@@ -1,6 +1,6 @@
 {
-  "balance": 385.93983881219367,
-  "realizedPnl": 68.93983881219381,
+  "balance": 405.2850001025163,
+  "realizedPnl": 73.28500010251639,
   "positions": {
     "0xfdb3930a2b6139303ea566c53da4d284233c69ca327563849cb4973693a1abc2:1": {
       "title": "Counter-Strike: Bushido Wildcats vs Leo Team (BO3) - ESL Challenger League Europe Cup #2 Playoffs",
@@ -47,21 +47,6 @@
       "source": "skyman44",
       "followUpDone": true
     },
-    "0xa8d6dee5466c21c986c7a8019d56cb2febbee5380b2b19f8c0cfc27d7911d5dd:0": {
-      "title": "Counter-Strike: Liquid vs 9INE (BO3) - Stake Pulse Beat I Playoffs",
-      "outcome": "Liquid",
-      "slug": "cs2-tl1-9ine-2026-08-04",
-      "eventSlug": "cs2-tl1-9ine-2026-08-04",
-      "stake": 15,
-      "entryPrice": 0.775,
-      "size": 19.35483870967742,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 16,
-      "entryNotified": true,
-      "notifiedAt": 1785852391459,
-      "source": "skyman44",
-      "followUpDone": true
-    },
     "0xecb461bc1fae46ac3f33b9d4d232c1075e57fcdf4e5bd6db25604f7c45f77b24:1": {
       "title": "Map Handicap: FNC (-1.5) vs Esport Academy Copenhagen (+1.5)",
       "outcome": "Esport Academy Copenhagen",
@@ -70,7 +55,7 @@
       "stake": 11,
       "entryPrice": 0.53,
       "size": 20.754716981132074,
-      "lastPrice": 0.875,
+      "lastPrice": 0.725,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1785859707684,
