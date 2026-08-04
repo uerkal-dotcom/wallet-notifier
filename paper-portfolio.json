@@ -1,22 +1,7 @@
 {
-  "balance": 363.72872770108256,
-  "realizedPnl": 57.7287277010827,
+  "balance": 385.93983881219367,
+  "realizedPnl": 68.93983881219381,
   "positions": {
-    "0xca85eaee96994725b136f1ee2e8025fdc18d511bf648cd09599193fc262c977f:1": {
-      "title": "Map Handicap: ex-RUSTEC (-1.5) vs NEW VISION (+1.5)",
-      "outcome": "NEW VISION",
-      "slug": "cs2-rustec-newvis-2026-08-04-map-handicap-away-1pt5",
-      "eventSlug": "cs2-rustec-newvis-2026-08-04",
-      "stake": 11,
-      "entryPrice": 0.495,
-      "size": 22.22222222222222,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 11,
-      "entryNotified": true,
-      "notifiedAt": 1785834061341,
-      "source": "skyman44",
-      "followUpDone": true
-    },
     "0xfdb3930a2b6139303ea566c53da4d284233c69ca327563849cb4973693a1abc2:1": {
       "title": "Counter-Strike: Bushido Wildcats vs Leo Team (BO3) - ESL Challenger League Europe Cup #2 Playoffs",
       "outcome": "Leo Team",
