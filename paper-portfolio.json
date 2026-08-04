@@ -1,5 +1,5 @@
 {
-  "balance": 418.63000158643285,
+  "balance": 407.63000158643285,
   "realizedPnl": 53.63000158643302,
   "positions": {
     "0xa646707d64c8a5877cc4f018503b70889a01a941769608a3ff7725436e016ca0:1": {
@@ -10,10 +10,24 @@
       "stake": 15,
       "entryPrice": 0.785,
       "size": 19.108280254777068,
-      "lastPrice": 0.785,
+      "lastPrice": 0.795,
       "lastNotifiedAmount": 15,
       "entryNotified": true,
       "notifiedAt": 1785833916319,
+      "source": "skyman44"
+    },
+    "0xca85eaee96994725b136f1ee2e8025fdc18d511bf648cd09599193fc262c977f:1": {
+      "title": "Map Handicap: ex-RUSTEC (-1.5) vs NEW VISION (+1.5)",
+      "outcome": "NEW VISION",
+      "slug": "cs2-rustec-newvis-2026-08-04-map-handicap-away-1pt5",
+      "eventSlug": "cs2-rustec-newvis-2026-08-04",
+      "stake": 11,
+      "entryPrice": 0.495,
+      "size": 22.22222222222222,
+      "lastPrice": 0.495,
+      "lastNotifiedAmount": 11,
+      "entryNotified": true,
+      "notifiedAt": 1785834061341,
       "source": "skyman44"
     }
   }
