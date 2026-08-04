@@ -1,5 +1,5 @@
 {
-  "balance": 400.72872770108256,
+  "balance": 389.72872770108256,
   "realizedPnl": 57.7287277010827,
   "positions": {
     "0xca85eaee96994725b136f1ee2e8025fdc18d511bf648cd09599193fc262c977f:1": {
@@ -25,7 +25,7 @@
       "stake": 11,
       "entryPrice": 0.49,
       "size": 22.448979591836736,
-      "lastPrice": 0.295,
+      "lastPrice": 0.275,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1785841947941,
@@ -46,6 +46,20 @@
       "notifiedAt": 1785842915315,
       "source": "skyman44",
       "followUpDone": true
+    },
+    "0x002b2e1a3b7284c0a5ee3a710dd26ab053caf87dbcfe0c88a121a841464cfaca:1": {
+      "title": "Map Handicap: JustP (-1.5) vs ENJOY (+1.5)",
+      "outcome": "ENJOY",
+      "slug": "cs2-justpl-enjoy-2026-08-04-map-handicap-away-1pt5",
+      "eventSlug": "cs2-justpl-enjoy-2026-08-04",
+      "stake": 11,
+      "entryPrice": 0.5,
+      "size": 22,
+      "lastPrice": 0.5,
+      "lastNotifiedAmount": 11,
+      "entryNotified": true,
+      "notifiedAt": 1785852152415,
+      "source": "skyman44"
     }
   }
 }
