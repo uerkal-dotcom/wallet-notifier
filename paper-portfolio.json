@@ -1,5 +1,20 @@
 {
-  "balance": 433.63000158643285,
+  "balance": 418.63000158643285,
   "realizedPnl": 53.63000158643302,
-  "positions": {}
+  "positions": {
+    "0xa646707d64c8a5877cc4f018503b70889a01a941769608a3ff7725436e016ca0:1": {
+      "title": "Counter-Strike: G2 Ares vs Johnny Speeds (BO3) - Stake Pulse Beat I Playoffs",
+      "outcome": "Johnny Speeds",
+      "slug": "cs2-g2a-js1-2026-08-04",
+      "eventSlug": "cs2-g2a-js1-2026-08-04",
+      "stake": 15,
+      "entryPrice": 0.785,
+      "size": 19.108280254777068,
+      "lastPrice": 0.785,
+      "lastNotifiedAmount": 15,
+      "entryNotified": true,
+      "notifiedAt": 1785833916319,
+      "source": "skyman44"
+    }
+  }
 }
