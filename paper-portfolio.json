@@ -1,22 +1,7 @@
 {
-  "balance": 405.2850001025163,
-  "realizedPnl": 73.28500010251639,
+  "balance": 405.29622459231217,
+  "realizedPnl": 62.29622459231231,
   "positions": {
-    "0xfdb3930a2b6139303ea566c53da4d284233c69ca327563849cb4973693a1abc2:1": {
-      "title": "Counter-Strike: Bushido Wildcats vs Leo Team (BO3) - ESL Challenger League Europe Cup #2 Playoffs",
-      "outcome": "Leo Team",
-      "slug": "cs2-bw-leo2-2026-08-04",
-      "eventSlug": "cs2-bw-leo2-2026-08-04",
-      "stake": 11,
-      "entryPrice": 0.49,
-      "size": 22.448979591836736,
-      "lastPrice": 0.0005,
-      "lastNotifiedAmount": 11,
-      "entryNotified": true,
-      "notifiedAt": 1785841947941,
-      "source": "skyman44",
-      "followUpDone": true
-    },
     "0x0c82093780da4342e47eb5fdae6280bf34a429e086f22c9957906695f6d972c1:0": {
       "title": "Counter-Strike: BESTIA vs METANOIA WOLVES (BO3) - BetBoom Storm Group Stage",
       "outcome": "BESTIA",
@@ -55,7 +40,7 @@
       "stake": 11,
       "entryPrice": 0.53,
       "size": 20.754716981132074,
-      "lastPrice": 0.315,
+      "lastPrice": 0.53,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1785859707684,
