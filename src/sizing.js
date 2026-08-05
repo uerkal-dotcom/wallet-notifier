@@ -30,12 +30,34 @@ export function classifyMarketType(title) {
 const RULE_SETS = {
   skyman44: {
     weight: 1,
-    // <$500: ham ROI +%13.2 gorunuyor ama en buyuk 3 kazanc toplam karin
-    // %92'si; uc degerler ayiklaninca -%3.8, medyan sadece +$7.
-    // $500-$1.000: onun EN KOTU dilimi - isabet %49.0 (yazi tura),
-    // medyan islem -$511, uc degersiz ROI -%14.8.
-    // Ikisi de gurultu, esik $1.000.
-    minEntry: 1000,
+    // ⚠️ 1000 -> 0 (2026-08-06). ESKI GEREKCE YANLIS CERCEVEDEYDI.
+    //
+    // Eski not soyle diyordu: "<$500: ham ROI +%13.2 gorunuyor ama en buyuk
+    // 3 kazanc toplam karin %92'si; uc degerler ayiklaninca -%3.8.
+    // $500-$1.000: EN KOTU dilim, isabet %49.0, medyan islem -$511."
+    //
+    // Sorun: o rakamlar ONUN DOLAR P&L'ine gore. Biz onun dolarini degil,
+    // KENDI KASAMIZIN yuzdesini yatiriyoruz (band rate) - yani bizim icin
+    // dogru olcu ISLEM BASI ROI, esit agirlikli. O cerceveyle olculdu
+    // (netted.json, 929 cozulmus pozisyon):
+    //
+    //   full kopya (filtresiz)          n=929  ROI  +%9.49
+    //   3 filtre (mevcut kural)         n=528  ROI +%15.44
+    //   minEntry KALDIRILMIS (2 filtre) n=663  ROI +%15.64
+    //
+    //   ELENEN islemler: stake<$1000 -> n=196, isabet %56.1, ROI +%15.69
+    //   (yani ORTALAMANIN USTUNDE - filtre iyi islemleri kesiyordu)
+    //
+    // Esige gore (diger iki filtre acikken): 0$ +%15.64, 500$ +%16.29,
+    // 1000$ +%15.44, 2000$ +%15.86, 5000$ +%11.75 - 0..2000 arasi DUZ.
+    // Yani degeri ureten sey 0.60-0.75 bandi (+3.60 puan) ve map_number
+    // (+1.93 puan) filtreleri; minEntry katki yapmadan islem sayisini
+    // %20 kisiyordu (663 -> 528).
+    //
+    // ⚠️ Bu olcum ORNEKLEM ICI: filtreler bu ayni veriden cikarildi.
+    // Gercek sinav canli kagit trading. Bu yuzden degisiklik kagit
+    // modunda yapiliyor - gercek para riski YOK.
+    minEntry: 0,
     tournamentFixed: 4,
     // map_number: n=60, -%18.9 - net kaybeden kategori
     skipType: (type) => type === "map_number",
