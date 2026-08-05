@@ -1,5 +1,5 @@
 {
-  "balance": 382.6072968139211,
+  "balance": 352.6072968139211,
   "realizedPnl": 49.60729681392121,
   "positions": {
     "0x04cadb7bd569ba62a6240fe4dbd85040c8e78f43ba6eeade06ddbe810774c2b5:1": {
@@ -25,7 +25,7 @@
       "stake": 15,
       "entryPrice": 0.835,
       "size": 17.964071856287426,
-      "lastPrice": 0.9855,
+      "lastPrice": 0.9865,
       "lastNotifiedAmount": 15,
       "entryNotified": true,
       "notifiedAt": 1785917447442,
@@ -61,6 +61,20 @@
       "notifiedAt": 1785948646165,
       "source": "skyman44",
       "followUpDone": true
+    },
+    "0x71cc5dd0766e0306f331cb61a56419ca1aa24e65c9a5b3abdd79172aa1123a9e:0": {
+      "title": "Chicago White Sox vs. Boston Red Sox",
+      "outcome": "Chicago White Sox",
+      "slug": "mlb-cws-bos-2026-08-05",
+      "eventSlug": "mlb-cws-bos-2026-08-05",
+      "stake": 30,
+      "entryPrice": 0.435,
+      "size": 68.96551724137932,
+      "lastPrice": 0.435,
+      "lastNotifiedAmount": 30,
+      "entryNotified": true,
+      "notifiedAt": 1785970474460,
+      "source": "joblessfinalboss"
     }
   }
 }
