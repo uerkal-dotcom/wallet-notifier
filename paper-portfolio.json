@@ -1,5 +1,5 @@
 {
-  "balance": 409.0681898268144,
+  "balance": 394.0681898268144,
   "realizedPnl": 51.06818982681448,
   "positions": {
     "0xe771bcb92de78dca7b25966787bd268a22b68d73a4cfe0eab35cf106599aae76:0": {
@@ -10,7 +10,7 @@
       "stake": 11,
       "entryPrice": 0.59,
       "size": 18.64406779661017,
-      "lastPrice": 0.615,
+      "lastPrice": 0.635,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1785910247324,
@@ -29,6 +29,21 @@
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1785916474312,
+      "source": "skyman44",
+      "followUpDone": true
+    },
+    "0x4aa79e35f3816968ae998be717edb1720c178d65e678af1c390be7e52287bd45:0": {
+      "title": "Counter-Strike: Imperial vs ALKA (BO3) - BetBoom Storm Group Stage",
+      "outcome": "Imperial",
+      "slug": "cs2-imp11-alkaa-2026-08-05",
+      "eventSlug": "cs2-imp11-alkaa-2026-08-05",
+      "stake": 15,
+      "entryPrice": 0.835,
+      "size": 17.964071856287426,
+      "lastPrice": 0.835,
+      "lastNotifiedAmount": 15,
+      "entryNotified": true,
+      "notifiedAt": 1785917447442,
       "source": "skyman44"
     }
   }
