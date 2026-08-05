@@ -1,6 +1,6 @@
 {
-  "balance": 394.3176019508028,
-  "realizedPnl": 40.317601950802874,
+  "balance": 414.1275118607127,
+  "realizedPnl": 49.12751186071279,
   "positions": {
     "0x0c82093780da4342e47eb5fdae6280bf34a429e086f22c9957906695f6d972c1:0": {
       "title": "Counter-Strike: BESTIA vs METANOIA WOLVES (BO3) - BetBoom Storm Group Stage",
@@ -14,21 +14,6 @@
       "lastNotifiedAmount": 16,
       "entryNotified": true,
       "notifiedAt": 1785842915315,
-      "source": "skyman44",
-      "followUpDone": true
-    },
-    "0x6c9f87e467519b3823e34ce7803a59c98f8ca6ab14a6ab6875d14857dcf873b2:1": {
-      "title": "Map Handicap: GLS (-1.5) vs MEIA NOITE (+1.5)",
-      "outcome": "MEIA NOITE",
-      "slug": "cs2-gls1-meiano-2026-08-04-map-handicap-away-1pt5",
-      "eventSlug": "cs2-gls1-meiano-2026-08-04",
-      "stake": 11,
-      "entryPrice": 0.555,
-      "size": 19.819819819819816,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 11,
-      "entryNotified": true,
-      "notifiedAt": 1785866788447,
       "source": "skyman44",
       "followUpDone": true
     }
