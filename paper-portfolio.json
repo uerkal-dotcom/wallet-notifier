@@ -1,5 +1,20 @@
 {
-  "balance": 431.0681898268144,
+  "balance": 420.0681898268144,
   "realizedPnl": 51.06818982681448,
-  "positions": {}
+  "positions": {
+    "0xe771bcb92de78dca7b25966787bd268a22b68d73a4cfe0eab35cf106599aae76:0": {
+      "title": "Counter-Strike: ARCRED vs Just Players (BO3) - CCT Europe Series #6 Playoffs",
+      "outcome": "ARCRED",
+      "slug": "cs2-arc4-justpl-2026-08-05",
+      "eventSlug": "cs2-arc4-justpl-2026-08-05",
+      "stake": 11,
+      "entryPrice": 0.59,
+      "size": 18.64406779661017,
+      "lastPrice": 0.59,
+      "lastNotifiedAmount": 11,
+      "entryNotified": true,
+      "notifiedAt": 1785910247324,
+      "source": "skyman44"
+    }
+  }
 }
