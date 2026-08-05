@@ -1,5 +1,5 @@
 {
-  "balance": 420.0681898268144,
+  "balance": 409.0681898268144,
   "realizedPnl": 51.06818982681448,
   "positions": {
     "0xe771bcb92de78dca7b25966787bd268a22b68d73a4cfe0eab35cf106599aae76:0": {
@@ -16,6 +16,20 @@
       "notifiedAt": 1785910247324,
       "source": "skyman44",
       "followUpDone": true
+    },
+    "0x04cadb7bd569ba62a6240fe4dbd85040c8e78f43ba6eeade06ddbe810774c2b5:1": {
+      "title": "Counter-Strike: Butterfly vs ex-RUSTEC (BO3) - NODWIN Clutch Series Playoffs",
+      "outcome": "ex-RUSTEC",
+      "slug": "cs2-btf-rustec-2026-08-05",
+      "eventSlug": "cs2-btf-rustec-2026-08-05",
+      "stake": 11,
+      "entryPrice": 0.425,
+      "size": 25.88235294117647,
+      "lastPrice": 0.425,
+      "lastNotifiedAmount": 11,
+      "entryNotified": true,
+      "notifiedAt": 1785916474312,
+      "source": "skyman44"
     }
   }
 }
