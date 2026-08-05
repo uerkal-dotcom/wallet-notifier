@@ -1,6 +1,6 @@
 {
-  "balance": 331.07751186071266,
-  "realizedPnl": 40.07751186071279,
+  "balance": 331.0897340829349,
+  "realizedPnl": 29.08973408293501,
   "positions": {
     "0x04cadb7bd569ba62a6240fe4dbd85040c8e78f43ba6eeade06ddbe810774c2b5:1": {
       "title": "Counter-Strike: Butterfly vs ex-RUSTEC (BO3) - NODWIN Clutch Series Playoffs",
@@ -25,25 +25,10 @@
       "stake": 15,
       "entryPrice": 0.835,
       "size": 17.964071856287426,
-      "lastPrice": 0.845,
+      "lastPrice": 0.835,
       "lastNotifiedAmount": 15,
       "entryNotified": true,
       "notifiedAt": 1785917447442,
-      "source": "skyman44",
-      "followUpDone": true
-    },
-    "0x29c6d98a72e0ba2e32ead086105f9671b200930f73687038a2e1675de8515f68:1": {
-      "title": "Counter-Strike: Butterfly vs Rune Eaters (BO3) - CCT Europe Series #6 Playoffs",
-      "outcome": "Rune Eaters",
-      "slug": "cs2-btf-run2-2026-08-05",
-      "eventSlug": "cs2-btf-run2-2026-08-05",
-      "stake": 11,
-      "entryPrice": 0.45,
-      "size": 24.444444444444443,
-      "lastPrice": 0.0005,
-      "lastNotifiedAmount": 11,
-      "entryNotified": true,
-      "notifiedAt": 1785917913359,
       "source": "skyman44",
       "followUpDone": true
     },
@@ -100,7 +85,7 @@
       "stake": 15,
       "entryPrice": 0.795,
       "size": 18.867924528301884,
-      "lastPrice": 0.6949,
+      "lastPrice": 0.76,
       "lastNotifiedAmount": 15,
       "entryNotified": true,
       "notifiedAt": 1785942153170,
