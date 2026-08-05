@@ -1,5 +1,5 @@
 {
-  "balance": 346.07751186071266,
+  "balance": 331.07751186071266,
   "realizedPnl": 40.07751186071279,
   "positions": {
     "0x04cadb7bd569ba62a6240fe4dbd85040c8e78f43ba6eeade06ddbe810774c2b5:1": {
@@ -91,6 +91,20 @@
       "notifiedAt": 1785935065910,
       "source": "skyman44",
       "followUpDone": true
+    },
+    "0x15729342cc865cb9d96f9d1b91464a489125bc70c6cc0569fe0d5d214a7fcece:0": {
+      "title": "Counter-Strike: Nuclear TigeRES vs CYBERSHOKE Prospects (BO3) - NODWIN Clutch Series Playoffs",
+      "outcome": "Nuclear TigeRES",
+      "slug": "cs2-ntr-cyb-2026-08-05",
+      "eventSlug": "cs2-ntr-cyb-2026-08-05",
+      "stake": 15,
+      "entryPrice": 0.795,
+      "size": 18.867924528301884,
+      "lastPrice": 0.795,
+      "lastNotifiedAmount": 15,
+      "entryNotified": true,
+      "notifiedAt": 1785942153170,
+      "source": "skyman44"
     }
   }
 }
