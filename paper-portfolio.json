@@ -1,5 +1,5 @@
 {
-  "balance": 394.0681898268144,
+  "balance": 383.0681898268144,
   "realizedPnl": 51.06818982681448,
   "positions": {
     "0xe771bcb92de78dca7b25966787bd268a22b68d73a4cfe0eab35cf106599aae76:0": {
@@ -44,6 +44,20 @@
       "lastNotifiedAmount": 15,
       "entryNotified": true,
       "notifiedAt": 1785917447442,
+      "source": "skyman44"
+    },
+    "0x29c6d98a72e0ba2e32ead086105f9671b200930f73687038a2e1675de8515f68:1": {
+      "title": "Counter-Strike: Butterfly vs Rune Eaters (BO3) - CCT Europe Series #6 Playoffs",
+      "outcome": "Rune Eaters",
+      "slug": "cs2-btf-run2-2026-08-05",
+      "eventSlug": "cs2-btf-run2-2026-08-05",
+      "stake": 11,
+      "entryPrice": 0.45,
+      "size": 24.444444444444443,
+      "lastPrice": 0.45,
+      "lastNotifiedAmount": 11,
+      "entryNotified": true,
+      "notifiedAt": 1785917913359,
       "source": "skyman44"
     }
   }
