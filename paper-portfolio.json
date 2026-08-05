@@ -1,5 +1,5 @@
 {
-  "balance": 352.6202379903917,
+  "balance": 337.6202379903917,
   "realizedPnl": 38.6202379903918,
   "positions": {
     "0x4aa79e35f3816968ae998be717edb1720c178d65e678af1c390be7e52287bd45:0": {
@@ -55,12 +55,26 @@
       "stake": 30,
       "entryPrice": 0.435,
       "size": 68.96551724137932,
-      "lastPrice": 0.315,
+      "lastPrice": 0.295,
       "lastNotifiedAmount": 30,
       "entryNotified": true,
       "notifiedAt": 1785970474460,
       "source": "joblessfinalboss",
       "followUpDone": true
+    },
+    "0x95e77a87569e5f450dfbc075e7a5138cabeaf82f59a616a4d393320cda5136f5:0": {
+      "title": "Counter-Strike: BESTIA vs Grêmio Esports (BO3) - BetBoom Storm Group Stage",
+      "outcome": "BESTIA",
+      "slug": "cs2-bst-grmioe-2026-08-05",
+      "eventSlug": "cs2-bst-grmioe-2026-08-05",
+      "stake": 15,
+      "entryPrice": 0.89,
+      "size": 16.853932584269664,
+      "lastPrice": 0.89,
+      "lastNotifiedAmount": 15,
+      "entryNotified": true,
+      "notifiedAt": 1785973342894,
+      "source": "skyman44"
     }
   }
 }
