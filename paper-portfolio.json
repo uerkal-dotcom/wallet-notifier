@@ -1,6 +1,6 @@
 {
-  "balance": 359.93822464897266,
-  "realizedPnl": 37.93822464897275,
+  "balance": 382.6072968139211,
+  "realizedPnl": 49.60729681392121,
   "positions": {
     "0x04cadb7bd569ba62a6240fe4dbd85040c8e78f43ba6eeade06ddbe810774c2b5:1": {
       "title": "Counter-Strike: Butterfly vs ex-RUSTEC (BO3) - NODWIN Clutch Series Playoffs",
@@ -25,25 +25,10 @@
       "stake": 15,
       "entryPrice": 0.835,
       "size": 17.964071856287426,
-      "lastPrice": 0.79,
+      "lastPrice": 0.86,
       "lastNotifiedAmount": 15,
       "entryNotified": true,
       "notifiedAt": 1785917447442,
-      "source": "skyman44",
-      "followUpDone": true
-    },
-    "0xe0fa6a029732f742f86ae954f5f38939bd3c55d4f3bfec26be23e8078928efaa:1": {
-      "title": "Map Handicap: UNO (-1.5) vs ODDIK Academy (+1.5)",
-      "outcome": "ODDIK Academy",
-      "slug": "cs2-uno-odka-2026-08-05-map-handicap-away-1pt5",
-      "eventSlug": "cs2-uno-odka-2026-08-05",
-      "stake": 11,
-      "entryPrice": 0.485,
-      "size": 22.68041237113402,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 11,
-      "entryNotified": true,
-      "notifiedAt": 1785918660727,
       "source": "skyman44",
       "followUpDone": true
     },
