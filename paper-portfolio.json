@@ -1,5 +1,5 @@
 {
-  "balance": 361.0681898268144,
+  "balance": 346.0681898268144,
   "realizedPnl": 51.06818982681448,
   "positions": {
     "0xe771bcb92de78dca7b25966787bd268a22b68d73a4cfe0eab35cf106599aae76:0": {
@@ -25,7 +25,7 @@
       "stake": 11,
       "entryPrice": 0.425,
       "size": 25.88235294117647,
-      "lastPrice": 0.445,
+      "lastPrice": 0.455,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1785916474312,
@@ -40,7 +40,7 @@
       "stake": 15,
       "entryPrice": 0.835,
       "size": 17.964071856287426,
-      "lastPrice": 0.835,
+      "lastPrice": 0.825,
       "lastNotifiedAmount": 15,
       "entryNotified": true,
       "notifiedAt": 1785917447442,
@@ -55,7 +55,7 @@
       "stake": 11,
       "entryPrice": 0.45,
       "size": 24.444444444444443,
-      "lastPrice": 0.27,
+      "lastPrice": 0.225,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1785917913359,
@@ -70,7 +70,7 @@
       "stake": 11,
       "entryPrice": 0.485,
       "size": 22.68041237113402,
-      "lastPrice": 0.465,
+      "lastPrice": 0.46,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1785918660727,
@@ -91,6 +91,20 @@
       "notifiedAt": 1785930040197,
       "source": "skyman44",
       "followUpDone": true
+    },
+    "0xdf81e7d8988eb38bea52982e1ce34fc08ea197993c103b4e28535924f6ffd2db:0": {
+      "title": "Counter-Strike: Liquid vs fnatic (BO3) - Stake Pulse Beat I Playoffs",
+      "outcome": "Liquid",
+      "slug": "cs2-tl1-fnc-2026-08-05",
+      "eventSlug": "cs2-tl1-fnc-2026-08-05",
+      "stake": 15,
+      "entryPrice": 0.75,
+      "size": 20,
+      "lastPrice": 0.75,
+      "lastNotifiedAmount": 15,
+      "entryNotified": true,
+      "notifiedAt": 1785935065910,
+      "source": "skyman44"
     }
   }
 }
