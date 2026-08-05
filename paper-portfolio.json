@@ -1,5 +1,5 @@
 {
-  "balance": 351.0797340829349,
+  "balance": 341.0797340829349,
   "realizedPnl": 34.07973408293501,
   "positions": {
     "0x04cadb7bd569ba62a6240fe4dbd85040c8e78f43ba6eeade06ddbe810774c2b5:1": {
@@ -70,12 +70,26 @@
       "stake": 15,
       "entryPrice": 0.795,
       "size": 18.867924528301884,
-      "lastPrice": 0.931,
+      "lastPrice": 0.9525,
       "lastNotifiedAmount": 15,
       "entryNotified": true,
       "notifiedAt": 1785942153170,
       "source": "skyman44",
       "followUpDone": true
+    },
+    "0xcd3b9cce0ee71e14b6183eac958aa206978606192d9fddb225a94a61a2486f1c:0": {
+      "title": "Counter-Strike: Yawara Esports vs Isurus (BO3) - BetBoom Storm Group Stage",
+      "outcome": "Yawara Esports",
+      "slug": "cs2-yaw-isg-2026-08-06",
+      "eventSlug": "cs2-yaw-isg-2026-08-06",
+      "stake": 10,
+      "entryPrice": 0.445,
+      "size": 22.47191011235955,
+      "lastPrice": 0.445,
+      "lastNotifiedAmount": 10,
+      "entryNotified": true,
+      "notifiedAt": 1785948646165,
+      "source": "skyman44"
     }
   }
 }
