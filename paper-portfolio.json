@@ -1,6 +1,6 @@
 {
-  "balance": 386.58023310458293,
-  "realizedPnl": 31.580233104583044,
+  "balance": 403.4257387225605,
+  "realizedPnl": 33.425738722560574,
   "positions": {
     "0xcd3b9cce0ee71e14b6183eac958aa206978606192d9fddb225a94a61a2486f1c:0": {
       "title": "Counter-Strike: Yawara Esports vs Isurus (BO3) - BetBoom Storm Group Stage",
@@ -14,21 +14,6 @@
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1785948646165,
-      "source": "skyman44",
-      "followUpDone": true
-    },
-    "0x95e77a87569e5f450dfbc075e7a5138cabeaf82f59a616a4d393320cda5136f5:0": {
-      "title": "Counter-Strike: BESTIA vs Grêmio Esports (BO3) - BetBoom Storm Group Stage",
-      "outcome": "BESTIA",
-      "slug": "cs2-bst-grmioe-2026-08-05",
-      "eventSlug": "cs2-bst-grmioe-2026-08-05",
-      "stake": 15,
-      "entryPrice": 0.89,
-      "size": 16.853932584269664,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 15,
-      "entryNotified": true,
-      "notifiedAt": 1785973342894,
       "source": "skyman44",
       "followUpDone": true
     }
