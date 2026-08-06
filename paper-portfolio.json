@@ -55,11 +55,12 @@
       "stake": 10,
       "entryPrice": 0.5649,
       "size": 17.70224818551956,
-      "lastPrice": 0.595,
+      "lastPrice": 0.59,
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1786000355608,
-      "source": "skyman44"
+      "source": "skyman44",
+      "followUpDone": true
     }
   }
 }
