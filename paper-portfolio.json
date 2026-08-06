@@ -1,5 +1,5 @@
 {
-  "balance": 403.4257387225605,
+  "balance": 393.4257387225605,
   "realizedPnl": 33.425738722560574,
   "positions": {
     "0xcd3b9cce0ee71e14b6183eac958aa206978606192d9fddb225a94a61a2486f1c:0": {
@@ -16,6 +16,20 @@
       "notifiedAt": 1785948646165,
       "source": "skyman44",
       "followUpDone": true
+    },
+    "0xe5f681975a5f707e96c12f63454eba2f3180487e07bda7c938c967e59ad06ddf:1": {
+      "title": "Counter-Strike: Sashi Esport vs Nuclear TigeRES (BO3) - NODWIN Clutch Series Playoffs",
+      "outcome": "Nuclear TigeRES",
+      "slug": "cs2-sashi-ntr-2026-08-06",
+      "eventSlug": "cs2-sashi-ntr-2026-08-06",
+      "stake": 10,
+      "entryPrice": 0.485,
+      "size": 20.61855670103093,
+      "lastPrice": 0.485,
+      "lastNotifiedAmount": 10,
+      "entryNotified": true,
+      "notifiedAt": 1785996388317,
+      "source": "skyman44"
     }
   }
 }
