@@ -1,5 +1,5 @@
 {
-  "balance": 370.4257387225605,
+  "balance": 360.4257387225605,
   "realizedPnl": 33.425738722560574,
   "positions": {
     "0xcd3b9cce0ee71e14b6183eac958aa206978606192d9fddb225a94a61a2486f1c:0": {
@@ -76,6 +76,20 @@
       "notifiedAt": 1786017664365,
       "source": "skyman44",
       "followUpDone": true
+    },
+    "0xc79af7c0ade4b7db08b95282e1a9513848657e03a050f0b4ea4e636f21369e40:0": {
+      "title": "Counter-Strike: 1WIN vs Butterfly (BO3) - NODWIN Clutch Series Playoffs",
+      "outcome": "1WIN",
+      "slug": "cs2-1win-btf-2026-08-06",
+      "eventSlug": "cs2-1win-btf-2026-08-06",
+      "stake": 10,
+      "entryPrice": 0.5699,
+      "size": 17.54693805930865,
+      "lastPrice": 0.5699,
+      "lastNotifiedAmount": 10,
+      "entryNotified": true,
+      "notifiedAt": 1786019787649,
+      "source": "skyman44"
     }
   }
 }
