@@ -1,5 +1,5 @@
 {
-  "balance": 380.4257387225605,
+  "balance": 370.4257387225605,
   "realizedPnl": 33.425738722560574,
   "positions": {
     "0xcd3b9cce0ee71e14b6183eac958aa206978606192d9fddb225a94a61a2486f1c:0": {
@@ -61,6 +61,20 @@
       "notifiedAt": 1786000355608,
       "source": "skyman44",
       "followUpDone": true
+    },
+    "0xab6d84f218c77b458b1b9bd425340ca5069182d06931c0546f544691609a8ad3:1": {
+      "title": "Map Handicap: GLS (-1.5) vs BORRACHEIROS (+1.5)",
+      "outcome": "BORRACHEIROS",
+      "slug": "cs2-gls1-chama-2026-08-06-map-handicap-away-1pt5",
+      "eventSlug": "cs2-gls1-chama-2026-08-06",
+      "stake": 10,
+      "entryPrice": 0.425,
+      "size": 23.529411764705884,
+      "lastPrice": 0.425,
+      "lastNotifiedAmount": 10,
+      "entryNotified": true,
+      "notifiedAt": 1786017664365,
+      "source": "skyman44"
     }
   }
 }
