@@ -1,6 +1,6 @@
 {
-  "balance": 386.54575034596223,
-  "realizedPnl": 61.545750345962354,
+  "balance": 386.58023310458293,
+  "realizedPnl": 31.580233104583044,
   "positions": {
     "0xcd3b9cce0ee71e14b6183eac958aa206978606192d9fddb225a94a61a2486f1c:0": {
       "title": "Counter-Strike: Yawara Esports vs Isurus (BO3) - BetBoom Storm Group Stage",
@@ -15,21 +15,6 @@
       "entryNotified": true,
       "notifiedAt": 1785948646165,
       "source": "skyman44",
-      "followUpDone": true
-    },
-    "0x71cc5dd0766e0306f331cb61a56419ca1aa24e65c9a5b3abdd79172aa1123a9e:0": {
-      "title": "Chicago White Sox vs. Boston Red Sox",
-      "outcome": "Chicago White Sox",
-      "slug": "mlb-cws-bos-2026-08-05",
-      "eventSlug": "mlb-cws-bos-2026-08-05",
-      "stake": 30,
-      "entryPrice": 0.435,
-      "size": 68.96551724137932,
-      "lastPrice": 0.0005,
-      "lastNotifiedAmount": 31,
-      "entryNotified": true,
-      "notifiedAt": 1785970474460,
-      "source": "joblessfinalboss",
       "followUpDone": true
     },
     "0x95e77a87569e5f450dfbc075e7a5138cabeaf82f59a616a4d393320cda5136f5:0": {
