@@ -1,5 +1,5 @@
 {
-  "balance": 390.4257387225605,
+  "balance": 380.4257387225605,
   "realizedPnl": 33.425738722560574,
   "positions": {
     "0xcd3b9cce0ee71e14b6183eac958aa206978606192d9fddb225a94a61a2486f1c:0": {
@@ -46,6 +46,20 @@
       "notifiedAt": 1785996865341,
       "source": "skyman44",
       "followUpDone": true
+    },
+    "0x017b566e606d58e152648dfe66dc371eb8be3184542e98047c0194d6dcfdc076:1": {
+      "title": "Counter-Strike: paiN Academy vs MEIA NOITE (BO3) - BetBoom Storm Group Stage",
+      "outcome": "MEIA NOITE",
+      "slug": "cs2-paina-meiano-2026-08-06",
+      "eventSlug": "cs2-paina-meiano-2026-08-06",
+      "stake": 10,
+      "entryPrice": 0.5649,
+      "size": 17.70224818551956,
+      "lastPrice": 0.5649,
+      "lastNotifiedAmount": 10,
+      "entryNotified": true,
+      "notifiedAt": 1786000355608,
+      "source": "skyman44"
     }
   }
 }
