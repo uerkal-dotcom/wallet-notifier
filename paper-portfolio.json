@@ -89,7 +89,8 @@
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1786019787649,
-      "source": "skyman44"
+      "source": "skyman44",
+      "followUpDone": true
     }
   }
 }
