@@ -1,5 +1,5 @@
 {
-  "balance": 393.4257387225605,
+  "balance": 390.4257387225605,
   "realizedPnl": 33.425738722560574,
   "positions": {
     "0xcd3b9cce0ee71e14b6183eac958aa206978606192d9fddb225a94a61a2486f1c:0": {
@@ -29,6 +29,20 @@
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1785996388317,
+      "source": "skyman44"
+    },
+    "0xef452b0b5f8a0cd97e25a8dd989d13e2d9816c0fa8a372b8aceb96307f950d68:1": {
+      "title": "Counter-Strike: Walczaki vs UNiTY esports (BO3) - CCT Europe Series #6 Playoffs",
+      "outcome": "UNiTY esports",
+      "slug": "cs2-wal2-unity-2026-08-06",
+      "eventSlug": "cs2-wal2-unity-2026-08-06",
+      "stake": 3,
+      "entryPrice": 0.275,
+      "size": 10.909090909090908,
+      "lastPrice": 0.275,
+      "lastNotifiedAmount": 3,
+      "entryNotified": true,
+      "notifiedAt": 1785996865341,
       "source": "skyman44"
     }
   }
