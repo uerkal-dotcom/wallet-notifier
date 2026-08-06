@@ -1,52 +1,7 @@
 {
-  "balance": 381.0339861452409,
-  "realizedPnl": 44.03398614524099,
+  "balance": 388.87734112787973,
+  "realizedPnl": 29.877341127879767,
   "positions": {
-    "0xcd3b9cce0ee71e14b6183eac958aa206978606192d9fddb225a94a61a2486f1c:0": {
-      "title": "Counter-Strike: Yawara Esports vs Isurus (BO3) - BetBoom Storm Group Stage",
-      "outcome": "Yawara Esports",
-      "slug": "cs2-yaw-isg-2026-08-06",
-      "eventSlug": "cs2-yaw-isg-2026-08-06",
-      "stake": 10,
-      "entryPrice": 0.445,
-      "size": 22.47191011235955,
-      "lastPrice": 0.475,
-      "lastNotifiedAmount": 11,
-      "entryNotified": true,
-      "notifiedAt": 1785948646165,
-      "source": "skyman44",
-      "followUpDone": true
-    },
-    "0xef452b0b5f8a0cd97e25a8dd989d13e2d9816c0fa8a372b8aceb96307f950d68:1": {
-      "title": "Counter-Strike: Walczaki vs UNiTY esports (BO3) - CCT Europe Series #6 Playoffs",
-      "outcome": "UNiTY esports",
-      "slug": "cs2-wal2-unity-2026-08-06",
-      "eventSlug": "cs2-wal2-unity-2026-08-06",
-      "stake": 3,
-      "entryPrice": 0.275,
-      "size": 10.909090909090908,
-      "lastPrice": 0.245,
-      "lastNotifiedAmount": 3,
-      "entryNotified": true,
-      "notifiedAt": 1785996865341,
-      "source": "skyman44",
-      "followUpDone": true
-    },
-    "0x017b566e606d58e152648dfe66dc371eb8be3184542e98047c0194d6dcfdc076:1": {
-      "title": "Counter-Strike: paiN Academy vs MEIA NOITE (BO3) - BetBoom Storm Group Stage",
-      "outcome": "MEIA NOITE",
-      "slug": "cs2-paina-meiano-2026-08-06",
-      "eventSlug": "cs2-paina-meiano-2026-08-06",
-      "stake": 10,
-      "entryPrice": 0.5649,
-      "size": 17.70224818551956,
-      "lastPrice": 0.31,
-      "lastNotifiedAmount": 11,
-      "entryNotified": true,
-      "notifiedAt": 1786000355608,
-      "source": "skyman44",
-      "followUpDone": true
-    },
     "0xab6d84f218c77b458b1b9bd425340ca5069182d06931c0546f544691609a8ad3:1": {
       "title": "Map Handicap: GLS (-1.5) vs BORRACHEIROS (+1.5)",
       "outcome": "BORRACHEIROS",
@@ -55,27 +10,26 @@
       "stake": 10,
       "entryPrice": 0.425,
       "size": 23.529411764705884,
-      "lastPrice": 0.495,
+      "lastPrice": 0.55,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786017664365,
       "source": "skyman44",
       "followUpDone": true
     },
-    "0xc79af7c0ade4b7db08b95282e1a9513848657e03a050f0b4ea4e636f21369e40:0": {
-      "title": "Counter-Strike: 1WIN vs Butterfly (BO3) - NODWIN Clutch Series Playoffs",
-      "outcome": "1WIN",
-      "slug": "cs2-1win-btf-2026-08-06",
-      "eventSlug": "cs2-1win-btf-2026-08-06",
-      "stake": 10,
-      "entryPrice": 0.5699,
-      "size": 17.54693805930865,
-      "lastPrice": 0.0005,
+    "0x38b6636918322a4191ec0081286f0d64310e2404c2a295ad1b2e45b921f28401:1": {
+      "title": "Counter-Strike: SAW vs Esport Academy Copenhagen (BO3) - Esports World Cup Open Qualifier Group 3",
+      "outcome": "Esport Academy Copenhagen",
+      "slug": "cs2-saw2-eac-2026-08-07",
+      "eventSlug": "cs2-saw2-eac-2026-08-07",
+      "stake": 11,
+      "entryPrice": 0.325,
+      "size": 33.84615384615385,
+      "lastPrice": 0.325,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
-      "notifiedAt": 1786019787649,
-      "source": "skyman44",
-      "followUpDone": true
+      "notifiedAt": 1786057396882,
+      "source": "skyman44"
     }
   }
 }
