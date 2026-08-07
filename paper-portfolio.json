@@ -1,22 +1,7 @@
 {
-  "balance": 388.87734112787973,
-  "realizedPnl": 29.877341127879767,
+  "balance": 388.8891058337621,
+  "realizedPnl": 19.88910583376212,
   "positions": {
-    "0xab6d84f218c77b458b1b9bd425340ca5069182d06931c0546f544691609a8ad3:1": {
-      "title": "Map Handicap: GLS (-1.5) vs BORRACHEIROS (+1.5)",
-      "outcome": "BORRACHEIROS",
-      "slug": "cs2-gls1-chama-2026-08-06-map-handicap-away-1pt5",
-      "eventSlug": "cs2-gls1-chama-2026-08-06",
-      "stake": 10,
-      "entryPrice": 0.425,
-      "size": 23.529411764705884,
-      "lastPrice": 0.0005,
-      "lastNotifiedAmount": 11,
-      "entryNotified": true,
-      "notifiedAt": 1786017664365,
-      "source": "skyman44",
-      "followUpDone": true
-    },
     "0x38b6636918322a4191ec0081286f0d64310e2404c2a295ad1b2e45b921f28401:1": {
       "title": "Counter-Strike: SAW vs Esport Academy Copenhagen (BO3) - Esports World Cup Open Qualifier Group 3",
       "outcome": "Esport Academy Copenhagen",
