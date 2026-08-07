@@ -1,5 +1,5 @@
 {
-  "balance": 371.8891058337621,
+  "balance": 361.8891058337621,
   "realizedPnl": 19.88910583376212,
   "positions": {
     "0x38b6636918322a4191ec0081286f0d64310e2404c2a295ad1b2e45b921f28401:1": {
@@ -40,10 +40,24 @@
       "stake": 3,
       "entryPrice": 0.18,
       "size": 16.666666666666668,
-      "lastPrice": 0.235,
+      "lastPrice": 0.24,
       "lastNotifiedAmount": 3,
       "entryNotified": true,
       "notifiedAt": 1786084112877,
+      "source": "skyman44"
+    },
+    "0x69277dfa5e1d5c0ab50feca85c78e26aa955538a7b2bf7200f9ac4bfb41b8067:1": {
+      "title": "Map Handicap: IS (-1.5) vs 6666 (+1.5)",
+      "outcome": "6666",
+      "slug": "cs2-is-6666-2026-08-07-map-handicap-away-1pt5",
+      "eventSlug": "cs2-is-6666-2026-08-07",
+      "stake": 10,
+      "entryPrice": 0.405,
+      "size": 24.691358024691358,
+      "lastPrice": 0.405,
+      "lastNotifiedAmount": 10,
+      "entryNotified": true,
+      "notifiedAt": 1786084947887,
       "source": "skyman44"
     }
   }
