@@ -56,7 +56,7 @@
       "stake": 10,
       "entryPrice": 0.405,
       "size": 24.691358024691358,
-      "lastPrice": 0.63,
+      "lastPrice": 0.64,
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1786084947887,
@@ -136,7 +136,8 @@
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1786090107309,
-      "source": "skyman44"
+      "source": "skyman44",
+      "followUpDone": true
     },
     "0xcecd0909a9c4ebf006bb6031eb786e085af010db3f459042abce4f8b2e413e52:1": {
       "title": "Map Handicap: MZP (-1.5) vs Prestige (+1.5)",
