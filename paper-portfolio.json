@@ -1,6 +1,6 @@
 {
-  "balance": 280.8891058337621,
-  "realizedPnl": 19.88910583376212,
+  "balance": 299.4228806681992,
+  "realizedPnl": 24.422880668199205,
   "positions": {
     "0x38b6636918322a4191ec0081286f0d64310e2404c2a295ad1b2e45b921f28401:1": {
       "title": "Counter-Strike: SAW vs Esport Academy Copenhagen (BO3) - Esports World Cup Open Qualifier Group 3",
@@ -17,21 +17,6 @@
       "source": "skyman44",
       "followUpDone": true,
       "isHedge": true
-    },
-    "0xab7867677c0ae3e46e5374073ff2420e87bf943e799341141e53ad2f9816487b:0": {
-      "title": "Valorant: All Gamers vs Trace Esports (BO3) - VCT China Stage 2 Play-Ins",
-      "outcome": "All Gamers",
-      "slug": "val-ag1-te-2026-08-07",
-      "eventSlug": "val-ag1-te-2026-08-07",
-      "stake": 14,
-      "entryPrice": 0.755,
-      "size": 18.543046357615893,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 14,
-      "entryNotified": true,
-      "notifiedAt": 1786072704327,
-      "source": "skyman44",
-      "followUpDone": true
     },
     "0x5f039920db03863d8212fa109419ac990936a49a9e316f069e8867869c93b085:0": {
       "title": "Counter-Strike: Prestige vs Metizport (BO3) - Esports World Cup Open Qualifier Group 12",
@@ -71,7 +56,7 @@
       "stake": 10,
       "entryPrice": 0.445,
       "size": 22.47191011235955,
-      "lastPrice": 0.475,
+      "lastPrice": 0.47,
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1786085441109,
