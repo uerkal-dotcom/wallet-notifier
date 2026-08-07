@@ -40,11 +40,12 @@
       "stake": 3,
       "entryPrice": 0.18,
       "size": 16.666666666666668,
-      "lastPrice": 0.24,
+      "lastPrice": 0.22,
       "lastNotifiedAmount": 3,
       "entryNotified": true,
       "notifiedAt": 1786084112877,
-      "source": "skyman44"
+      "source": "skyman44",
+      "followUpDone": true
     },
     "0x69277dfa5e1d5c0ab50feca85c78e26aa955538a7b2bf7200f9ac4bfb41b8067:1": {
       "title": "Map Handicap: IS (-1.5) vs 6666 (+1.5)",
@@ -54,7 +55,7 @@
       "stake": 10,
       "entryPrice": 0.405,
       "size": 24.691358024691358,
-      "lastPrice": 0.405,
+      "lastPrice": 0.365,
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1786084947887,
