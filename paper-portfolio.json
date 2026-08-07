@@ -1,5 +1,5 @@
 {
-  "balance": 359.47023259729184,
+  "balance": 349.47023259729184,
   "realizedPnl": 26.470232597291822,
   "positions": {
     "0xf3bf886343ebc994126c19414730eb8e9528f54aa3e5056c1486d5075c73467e:1": {
@@ -25,7 +25,7 @@
       "stake": 3,
       "entryPrice": 0.215,
       "size": 13.953488372093023,
-      "lastPrice": 0.16,
+      "lastPrice": 0.135,
       "lastNotifiedAmount": 3,
       "entryNotified": true,
       "notifiedAt": 1786086388909,
@@ -55,7 +55,7 @@
       "stake": 10,
       "entryPrice": 0.475,
       "size": 21.05263157894737,
-      "lastPrice": 0.385,
+      "lastPrice": 0.33,
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1786090107309,
@@ -76,6 +76,20 @@
       "notifiedAt": 1786102585709,
       "source": "skyman44",
       "followUpDone": true
+    },
+    "0x988d762b3ab9da34efe25019114d549821149f69552e2bd3f4e8dc7ba1e6377d:1": {
+      "title": "Map Handicap: G2 (-1.5) vs LOUD (+1.5)",
+      "outcome": "LOUD",
+      "slug": "val-g21-loud-2026-08-07-map-handicap-away-1pt5",
+      "eventSlug": "val-g21-loud-2026-08-07",
+      "stake": 10,
+      "entryPrice": 0.445,
+      "size": 22.47191011235955,
+      "lastPrice": 0.445,
+      "lastNotifiedAmount": 10,
+      "entryNotified": true,
+      "notifiedAt": 1786133672290,
+      "source": "skyman44"
     }
   }
 }
