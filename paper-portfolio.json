@@ -1,5 +1,5 @@
 {
-  "balance": 361.8891058337621,
+  "balance": 351.8891058337621,
   "realizedPnl": 19.88910583376212,
   "positions": {
     "0x38b6636918322a4191ec0081286f0d64310e2404c2a295ad1b2e45b921f28401:1": {
@@ -59,6 +59,20 @@
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1786084947887,
+      "source": "skyman44"
+    },
+    "0xf3bf886343ebc994126c19414730eb8e9528f54aa3e5056c1486d5075c73467e:1": {
+      "title": "Counter-Strike: CYBERSHOKE Esports vs GenOne (BO3) - CCT Europe Series #6 Playoffs",
+      "outcome": "GenOne",
+      "slug": "cs2-cs1-g1-2026-08-07",
+      "eventSlug": "cs2-cs1-g1-2026-08-07",
+      "stake": 10,
+      "entryPrice": 0.445,
+      "size": 22.47191011235955,
+      "lastPrice": 0.445,
+      "lastNotifiedAmount": 10,
+      "entryNotified": true,
+      "notifiedAt": 1786085441109,
       "source": "skyman44"
     }
   }
