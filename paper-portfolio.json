@@ -1,5 +1,5 @@
 {
-  "balance": 314.8891058337621,
+  "balance": 304.8891058337621,
   "realizedPnl": 19.88910583376212,
   "positions": {
     "0x38b6636918322a4191ec0081286f0d64310e2404c2a295ad1b2e45b921f28401:1": {
@@ -56,7 +56,7 @@
       "stake": 10,
       "entryPrice": 0.405,
       "size": 24.691358024691358,
-      "lastPrice": 0.665,
+      "lastPrice": 0.65,
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1786084947887,
@@ -132,10 +132,24 @@
       "stake": 10,
       "entryPrice": 0.475,
       "size": 21.05263157894737,
-      "lastPrice": 0.475,
+      "lastPrice": 0.525,
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1786090107309,
+      "source": "skyman44"
+    },
+    "0xcecd0909a9c4ebf006bb6031eb786e085af010db3f459042abce4f8b2e413e52:1": {
+      "title": "Map Handicap: MZP (-1.5) vs Prestige (+1.5)",
+      "outcome": "Prestige",
+      "slug": "cs2-pre-mzp-2026-08-07-map-handicap-home-1pt5",
+      "eventSlug": "cs2-pre-mzp-2026-08-07",
+      "stake": 10,
+      "entryPrice": 0.455,
+      "size": 21.978021978021978,
+      "lastPrice": 0.455,
+      "lastNotifiedAmount": 10,
+      "entryNotified": true,
+      "notifiedAt": 1786090240010,
       "source": "skyman44"
     }
   }
