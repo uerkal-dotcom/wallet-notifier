@@ -1,5 +1,5 @@
 {
-  "balance": 324.8891058337621,
+  "balance": 314.8891058337621,
   "realizedPnl": 19.88910583376212,
   "positions": {
     "0x38b6636918322a4191ec0081286f0d64310e2404c2a295ad1b2e45b921f28401:1": {
@@ -56,7 +56,7 @@
       "stake": 10,
       "entryPrice": 0.405,
       "size": 24.691358024691358,
-      "lastPrice": 0.66,
+      "lastPrice": 0.665,
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1786084947887,
@@ -123,6 +123,20 @@
       "notifiedAt": 1786086506397,
       "source": "skyman44",
       "followUpDone": true
+    },
+    "0x3998d13020a05d71d6fa8d47c8db0feef076cb0418fb1f6b60e69d67f2e0bd1e:1": {
+      "title": "Map Handicap: BST (-1.5) vs Yawara Esports (+1.5)",
+      "outcome": "Yawara Esports",
+      "slug": "cs2-bst-yaw-2026-08-07-map-handicap-away-1pt5",
+      "eventSlug": "cs2-bst-yaw-2026-08-07",
+      "stake": 10,
+      "entryPrice": 0.475,
+      "size": 21.05263157894737,
+      "lastPrice": 0.475,
+      "lastNotifiedAmount": 10,
+      "entryNotified": true,
+      "notifiedAt": 1786090107309,
+      "source": "skyman44"
     }
   }
 }
