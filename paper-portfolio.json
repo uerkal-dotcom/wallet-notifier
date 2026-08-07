@@ -1,37 +1,7 @@
 {
-  "balance": 367.77297182032186,
-  "realizedPnl": 20.772971820321857,
+  "balance": 402.76158871138676,
+  "realizedPnl": 42.761588711386736,
   "positions": {
-    "0x077cd7841dc0fbb98486a16501cbb6df027092e79066ebb603e0ab92c0f7e509:1": {
-      "title": "Counter-Strike: BESTIA vs Yawara Esports (BO3) - BetBoom Storm Group Stage",
-      "outcome": "Yawara Esports",
-      "slug": "cs2-bst-yaw-2026-08-07",
-      "eventSlug": "cs2-bst-yaw-2026-08-07",
-      "stake": 3,
-      "entryPrice": 0.215,
-      "size": 13.953488372093023,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 3,
-      "entryNotified": true,
-      "notifiedAt": 1786086388909,
-      "source": "skyman44",
-      "followUpDone": true
-    },
-    "0x3998d13020a05d71d6fa8d47c8db0feef076cb0418fb1f6b60e69d67f2e0bd1e:1": {
-      "title": "Map Handicap: BST (-1.5) vs Yawara Esports (+1.5)",
-      "outcome": "Yawara Esports",
-      "slug": "cs2-bst-yaw-2026-08-07-map-handicap-away-1pt5",
-      "eventSlug": "cs2-bst-yaw-2026-08-07",
-      "stake": 10,
-      "entryPrice": 0.475,
-      "size": 21.05263157894737,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 10,
-      "entryNotified": true,
-      "notifiedAt": 1786090107309,
-      "source": "skyman44",
-      "followUpDone": true
-    },
     "0xc98651beab779411988d573bcfa233cab37cb77e58c934a3069a4afaddf57289:1": {
       "title": "Map Handicap: 100T (-1.5) vs Cloud9 (+1.5)",
       "outcome": "Cloud9",
