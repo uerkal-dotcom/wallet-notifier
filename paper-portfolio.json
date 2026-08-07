@@ -1,5 +1,5 @@
 {
-  "balance": 388.8891058337621,
+  "balance": 374.8891058337621,
   "realizedPnl": 19.88910583376212,
   "positions": {
     "0x38b6636918322a4191ec0081286f0d64310e2404c2a295ad1b2e45b921f28401:1": {
@@ -16,6 +16,20 @@
       "notifiedAt": 1786057396882,
       "source": "skyman44",
       "followUpDone": true
+    },
+    "0xab7867677c0ae3e46e5374073ff2420e87bf943e799341141e53ad2f9816487b:0": {
+      "title": "Valorant: All Gamers vs Trace Esports (BO3) - VCT China Stage 2 Play-Ins",
+      "outcome": "All Gamers",
+      "slug": "val-ag1-te-2026-08-07",
+      "eventSlug": "val-ag1-te-2026-08-07",
+      "stake": 14,
+      "entryPrice": 0.755,
+      "size": 18.543046357615893,
+      "lastPrice": 0.755,
+      "lastNotifiedAmount": 14,
+      "entryNotified": true,
+      "notifiedAt": 1786072704327,
+      "source": "skyman44"
     }
   }
 }
