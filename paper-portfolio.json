@@ -1,6 +1,6 @@
 {
-  "balance": 334.77189790729045,
-  "realizedPnl": 24.771897907290462,
+  "balance": 359.4509102529695,
+  "realizedPnl": 39.45091025296948,
   "positions": {
     "0x5f039920db03863d8212fa109419ac990936a49a9e316f069e8867869c93b085:0": {
       "title": "Counter-Strike: Prestige vs Metizport (BO3) - Esports World Cup Open Qualifier Group 12",
@@ -14,21 +14,6 @@
       "lastNotifiedAmount": 3,
       "entryNotified": true,
       "notifiedAt": 1786084112877,
-      "source": "skyman44",
-      "followUpDone": true
-    },
-    "0x69277dfa5e1d5c0ab50feca85c78e26aa955538a7b2bf7200f9ac4bfb41b8067:1": {
-      "title": "Map Handicap: IS (-1.5) vs 6666 (+1.5)",
-      "outcome": "6666",
-      "slug": "cs2-is-6666-2026-08-07-map-handicap-away-1pt5",
-      "eventSlug": "cs2-is-6666-2026-08-07",
-      "stake": 10,
-      "entryPrice": 0.405,
-      "size": 24.691358024691358,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 10,
-      "entryNotified": true,
-      "notifiedAt": 1786084947887,
       "source": "skyman44",
       "followUpDone": true
     },
