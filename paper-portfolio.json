@@ -1,23 +1,7 @@
 {
-  "balance": 299.4228806681992,
-  "realizedPnl": 24.422880668199205,
+  "balance": 316.23812307285334,
+  "realizedPnl": 20.238123072853377,
   "positions": {
-    "0x38b6636918322a4191ec0081286f0d64310e2404c2a295ad1b2e45b921f28401:1": {
-      "title": "Counter-Strike: SAW vs Esport Academy Copenhagen (BO3) - Esports World Cup Open Qualifier Group 3",
-      "outcome": "Esport Academy Copenhagen",
-      "slug": "cs2-saw2-eac-2026-08-07",
-      "eventSlug": "cs2-saw2-eac-2026-08-07",
-      "stake": 11,
-      "entryPrice": 0.325,
-      "size": 33.84615384615385,
-      "lastPrice": 0.0005,
-      "lastNotifiedAmount": 11,
-      "entryNotified": true,
-      "notifiedAt": 1786057396882,
-      "source": "skyman44",
-      "followUpDone": true,
-      "isHedge": true
-    },
     "0x5f039920db03863d8212fa109419ac990936a49a9e316f069e8867869c93b085:0": {
       "title": "Counter-Strike: Prestige vs Metizport (BO3) - Esports World Cup Open Qualifier Group 12",
       "outcome": "Prestige",
@@ -61,22 +45,6 @@
       "entryNotified": true,
       "notifiedAt": 1786085441109,
       "source": "skyman44",
-      "followUpDone": true
-    },
-    "0x38b6636918322a4191ec0081286f0d64310e2404c2a295ad1b2e45b921f28401:0": {
-      "title": "Counter-Strike: SAW vs Esport Academy Copenhagen (BO3) - Esports World Cup Open Qualifier Group 3",
-      "outcome": "SAW",
-      "slug": "cs2-saw2-eac-2026-08-07",
-      "eventSlug": "cs2-saw2-eac-2026-08-07",
-      "stake": 10,
-      "entryPrice": 0.595,
-      "size": 16.80672268907563,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 10,
-      "entryNotified": true,
-      "notifiedAt": 1786085546819,
-      "source": "skyman44",
-      "isHedge": false,
       "followUpDone": true
     },
     "0x077cd7841dc0fbb98486a16501cbb6df027092e79066ebb603e0ab92c0f7e509:1": {
