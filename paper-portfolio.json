@@ -10,7 +10,7 @@
       "stake": 11,
       "entryPrice": 0.325,
       "size": 33.84615384615385,
-      "lastPrice": 0.405,
+      "lastPrice": 0.385,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786057396882,
@@ -41,7 +41,7 @@
       "stake": 3,
       "entryPrice": 0.18,
       "size": 16.666666666666668,
-      "lastPrice": 0.22,
+      "lastPrice": 0.215,
       "lastNotifiedAmount": 3,
       "entryNotified": true,
       "notifiedAt": 1786084112877,
@@ -84,11 +84,12 @@
       "stake": 10,
       "entryPrice": 0.595,
       "size": 16.80672268907563,
-      "lastPrice": 0.595,
+      "lastPrice": 0.615,
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1786085546819,
-      "source": "skyman44"
+      "source": "skyman44",
+      "isHedge": false
     }
   }
 }
