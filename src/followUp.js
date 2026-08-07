@@ -29,6 +29,12 @@ async function fetchMyPositionKeys() {
 }
 
 export async function checkFollowUps(paperState, wallet) {
+  // REMINDER_AFTER_MINUTES=0 -> takip hatirlatmasi TAMAMEN KAPALI
+  // (kullanici istegi, 2026-08-08 gece: "hala almadin bildirimini kapat").
+  // Slipaj korumasi bu modulde degil; o davranis degismez.
+  if (!config.reminderAfterMinutes || config.reminderAfterMinutes <= 0) {
+    return;
+  }
   if (!config.myWallet) return;
 
   let myKeys;
