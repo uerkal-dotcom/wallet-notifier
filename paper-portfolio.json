@@ -1,5 +1,5 @@
 {
-  "balance": 351.8891058337621,
+  "balance": 341.8891058337621,
   "realizedPnl": 19.88910583376212,
   "positions": {
     "0x38b6636918322a4191ec0081286f0d64310e2404c2a295ad1b2e45b921f28401:1": {
@@ -15,7 +15,8 @@
       "entryNotified": true,
       "notifiedAt": 1786057396882,
       "source": "skyman44",
-      "followUpDone": true
+      "followUpDone": true,
+      "isHedge": true
     },
     "0xab7867677c0ae3e46e5374073ff2420e87bf943e799341141e53ad2f9816487b:0": {
       "title": "Valorant: All Gamers vs Trace Esports (BO3) - VCT China Stage 2 Play-Ins",
@@ -55,7 +56,7 @@
       "stake": 10,
       "entryPrice": 0.405,
       "size": 24.691358024691358,
-      "lastPrice": 0.365,
+      "lastPrice": 0.355,
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1786084947887,
@@ -69,10 +70,24 @@
       "stake": 10,
       "entryPrice": 0.445,
       "size": 22.47191011235955,
-      "lastPrice": 0.445,
+      "lastPrice": 0.465,
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1786085441109,
+      "source": "skyman44"
+    },
+    "0x38b6636918322a4191ec0081286f0d64310e2404c2a295ad1b2e45b921f28401:0": {
+      "title": "Counter-Strike: SAW vs Esport Academy Copenhagen (BO3) - Esports World Cup Open Qualifier Group 3",
+      "outcome": "SAW",
+      "slug": "cs2-saw2-eac-2026-08-07",
+      "eventSlug": "cs2-saw2-eac-2026-08-07",
+      "stake": 10,
+      "entryPrice": 0.595,
+      "size": 16.80672268907563,
+      "lastPrice": 0.595,
+      "lastNotifiedAmount": 10,
+      "entryNotified": true,
+      "notifiedAt": 1786085546819,
       "source": "skyman44"
     }
   }
