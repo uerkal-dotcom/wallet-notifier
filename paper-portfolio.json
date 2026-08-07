@@ -1,5 +1,5 @@
 {
-  "balance": 374.8891058337621,
+  "balance": 371.8891058337621,
   "realizedPnl": 19.88910583376212,
   "positions": {
     "0x38b6636918322a4191ec0081286f0d64310e2404c2a295ad1b2e45b921f28401:1": {
@@ -31,6 +31,20 @@
       "notifiedAt": 1786072704327,
       "source": "skyman44",
       "followUpDone": true
+    },
+    "0x5f039920db03863d8212fa109419ac990936a49a9e316f069e8867869c93b085:0": {
+      "title": "Counter-Strike: Prestige vs Metizport (BO3) - Esports World Cup Open Qualifier Group 12",
+      "outcome": "Prestige",
+      "slug": "cs2-pre-mzp-2026-08-07",
+      "eventSlug": "cs2-pre-mzp-2026-08-07",
+      "stake": 3,
+      "entryPrice": 0.18,
+      "size": 16.666666666666668,
+      "lastPrice": 0.18,
+      "lastNotifiedAmount": 3,
+      "entryNotified": true,
+      "notifiedAt": 1786084112877,
+      "source": "skyman44"
     }
   }
 }
