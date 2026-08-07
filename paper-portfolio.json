@@ -1,5 +1,5 @@
 {
-  "balance": 338.8891058337621,
+  "balance": 324.8891058337621,
   "realizedPnl": 19.88910583376212,
   "positions": {
     "0x38b6636918322a4191ec0081286f0d64310e2404c2a295ad1b2e45b921f28401:1": {
@@ -91,7 +91,8 @@
       "entryNotified": true,
       "notifiedAt": 1786085546819,
       "source": "skyman44",
-      "isHedge": false
+      "isHedge": false,
+      "followUpDone": true
     },
     "0x077cd7841dc0fbb98486a16501cbb6df027092e79066ebb603e0ab92c0f7e509:1": {
       "title": "Counter-Strike: BESTIA vs Yawara Esports (BO3) - BetBoom Storm Group Stage",
@@ -101,10 +102,24 @@
       "stake": 3,
       "entryPrice": 0.215,
       "size": 13.953488372093023,
-      "lastPrice": 0.215,
+      "lastPrice": 0.23,
       "lastNotifiedAmount": 3,
       "entryNotified": true,
       "notifiedAt": 1786086388909,
+      "source": "skyman44"
+    },
+    "0x0df3d9bea30cc1ad25c644adb82c82e44e605bb01aa86ea1730064a797990cb5:1": {
+      "title": "Counter-Strike: Grêmio Esports vs Keyd (BO3) - BetBoom Storm Group Stage",
+      "outcome": "Keyd",
+      "slug": "cs2-grmioe-keyd-2026-08-07",
+      "eventSlug": "cs2-grmioe-keyd-2026-08-07",
+      "stake": 14,
+      "entryPrice": 0.765,
+      "size": 18.30065359477124,
+      "lastPrice": 0.765,
+      "lastNotifiedAmount": 14,
+      "entryNotified": true,
+      "notifiedAt": 1786086506397,
       "source": "skyman44"
     }
   }
