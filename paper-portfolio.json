@@ -1,5 +1,5 @@
 {
-  "balance": 304.8891058337621,
+  "balance": 294.8891058337621,
   "realizedPnl": 19.88910583376212,
   "positions": {
     "0x38b6636918322a4191ec0081286f0d64310e2404c2a295ad1b2e45b921f28401:1": {
@@ -10,7 +10,7 @@
       "stake": 11,
       "entryPrice": 0.325,
       "size": 33.84615384615385,
-      "lastPrice": 0.265,
+      "lastPrice": 0.295,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786057396882,
@@ -86,7 +86,7 @@
       "stake": 10,
       "entryPrice": 0.595,
       "size": 16.80672268907563,
-      "lastPrice": 0.735,
+      "lastPrice": 0.705,
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1786085546819,
@@ -153,6 +153,20 @@
       "notifiedAt": 1786090240010,
       "source": "skyman44",
       "followUpDone": true
+    },
+    "0xc98651beab779411988d573bcfa233cab37cb77e58c934a3069a4afaddf57289:1": {
+      "title": "Map Handicap: 100T (-1.5) vs Cloud9 (+1.5)",
+      "outcome": "Cloud9",
+      "slug": "val-100t1-c9-2026-08-07-map-handicap-away-1pt5",
+      "eventSlug": "val-100t1-c9-2026-08-07",
+      "stake": 10,
+      "entryPrice": 0.335,
+      "size": 29.850746268656714,
+      "lastPrice": 0.335,
+      "lastNotifiedAmount": 10,
+      "entryNotified": true,
+      "notifiedAt": 1786102585709,
+      "source": "skyman44"
     }
   }
 }
