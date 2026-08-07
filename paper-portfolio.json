@@ -1,6 +1,6 @@
 {
-  "balance": 316.23812307285334,
-  "realizedPnl": 20.238123072853377,
+  "balance": 334.77189790729045,
+  "realizedPnl": 24.771897907290462,
   "positions": {
     "0x5f039920db03863d8212fa109419ac990936a49a9e316f069e8867869c93b085:0": {
       "title": "Counter-Strike: Prestige vs Metizport (BO3) - Esports World Cup Open Qualifier Group 12",
@@ -119,21 +119,6 @@
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1786102585709,
-      "source": "skyman44",
-      "followUpDone": true
-    },
-    "0x42d11b11aaf8f5bdc1aa44c9a8df618df8bbb01eb564b96e84031bcb78f8d038:0": {
-      "title": "Counter-Strike: BC.Game Esports vs BASEMENT BOYS (BO3) - Esports World Cup Open Qualifier Group 6",
-      "outcome": "BC.Game Esports",
-      "slug": "cs2-bcg-bmb-2026-08-07",
-      "eventSlug": "cs2-bcg-bmb-2026-08-07",
-      "stake": 14,
-      "entryPrice": 0.755,
-      "size": 18.543046357615893,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 14,
-      "entryNotified": true,
-      "notifiedAt": 1786103788200,
       "source": "skyman44",
       "followUpDone": true
     }
