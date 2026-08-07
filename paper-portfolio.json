@@ -56,7 +56,7 @@
       "stake": 10,
       "entryPrice": 0.405,
       "size": 24.691358024691358,
-      "lastPrice": 0.385,
+      "lastPrice": 0.39,
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1786084947887,
@@ -106,7 +106,8 @@
       "lastNotifiedAmount": 3,
       "entryNotified": true,
       "notifiedAt": 1786086388909,
-      "source": "skyman44"
+      "source": "skyman44",
+      "followUpDone": true
     },
     "0x0df3d9bea30cc1ad25c644adb82c82e44e605bb01aa86ea1730064a797990cb5:1": {
       "title": "Counter-Strike: Grêmio Esports vs Keyd (BO3) - BetBoom Storm Group Stage",
