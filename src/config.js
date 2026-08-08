@@ -40,7 +40,12 @@ export const config = {
   // sadece pozisyon listesi cekilir; hicbir islem acilmaz).
   myWallet: (process.env.MY_WALLET || "").toLowerCase(),
   // Sinyalden bu kadar dakika sonra hala girmemissem hatirlat.
-  reminderAfterMinutes: Number(process.env.REMINDER_AFTER_MINUTES || 15),
+  // Varsayilan 0 = takip hatirlatmasi KAPALI (kullanici istegi 2026-08-08:
+  // "hala girmedin" bildirimi artik gelmesin). Not: bot GitHub Actions'ta
+  // kosuyor ve orada .env YOK - env'e dayali kapatma lokalde calisip
+  // GitHub'da calismiyordu, o yuzden kapali olan artik VARSAYILAN.
+  // Geri acmak isteyen REMINDER_AFTER_MINUTES=15 versin.
+  reminderAfterMinutes: Number(process.env.REMINDER_AFTER_MINUTES || 0),
   // Fiyat sinyal anindan bu kadar (goreli %) kaydiysa "girme" uyarisi ver.
   maxSlippagePct: Number(process.env.MAX_SLIPPAGE_PCT || 15),
   // Bu kadar dakika gectiyse hatirlatmanin degeri kalmadi, sessizce kapat.
