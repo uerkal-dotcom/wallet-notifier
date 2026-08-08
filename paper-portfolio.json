@@ -1,5 +1,5 @@
 {
-  "balance": 319.0580837642125,
+  "balance": 308.0580837642125,
   "realizedPnl": 75.0580837642125,
   "positions": {
     "0x0f0da51927fc7b605171b237422b01f26c6f48b2cd2626c6fe3eef402e32a503:1": {
@@ -172,6 +172,20 @@
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786176060477,
+      "source": "skyman44"
+    },
+    "0xf426bc9988e4f722f7fde061446be46298b4c8210ca489ec31168d76531c9735:0": {
+      "title": "Counter-Strike: JiJieHao vs Virtus.pro (BO3) - Esports World Cup Open Qualifier Group 16",
+      "outcome": "JiJieHao",
+      "slug": "cs2-jjh-vp-2026-08-08",
+      "eventSlug": "cs2-jjh-vp-2026-08-08",
+      "stake": 11,
+      "entryPrice": 0.375,
+      "size": 29.333333333333332,
+      "lastPrice": 0.375,
+      "lastNotifiedAmount": 11,
+      "entryNotified": true,
+      "notifiedAt": 1786178550583,
       "source": "skyman44"
     }
   }
