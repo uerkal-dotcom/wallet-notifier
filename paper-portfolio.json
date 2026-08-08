@@ -1,5 +1,5 @@
 {
-  "balance": 361.77353342987556,
+  "balance": 351.77353342987556,
   "realizedPnl": 29.77353342987548,
   "positions": {
     "0x5e398c45374ed01f1533098fe486696324c9c00a3c7d3c763d8252d1f5ac1b3d:0": {
@@ -56,6 +56,20 @@
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786172792046,
+      "source": "skyman44"
+    },
+    "0xa9243b84df27d2b26a2bc522556011692f28f67e5de64edefc2a664ce0b4a1aa:0": {
+      "title": "Counter-Strike: Sinners vs EYEBALLERS (BO3) - Esports World Cup Open Qualifier Play-Ins",
+      "outcome": "Sinners",
+      "slug": "cs2-sin2-eye-2026-08-09",
+      "eventSlug": "cs2-sin2-eye-2026-08-09",
+      "stake": 10,
+      "entryPrice": 0.505,
+      "size": 19.801980198019802,
+      "lastPrice": 0.505,
+      "lastNotifiedAmount": 10,
+      "entryNotified": true,
+      "notifiedAt": 1786214440176,
       "source": "skyman44"
     }
   }
