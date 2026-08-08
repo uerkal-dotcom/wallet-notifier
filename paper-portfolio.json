@@ -1,5 +1,5 @@
 {
-  "balance": 330.0580837642125,
+  "balance": 319.0580837642125,
   "realizedPnl": 75.0580837642125,
   "positions": {
     "0x0f0da51927fc7b605171b237422b01f26c6f48b2cd2626c6fe3eef402e32a503:1": {
@@ -158,6 +158,20 @@
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786172792046,
+      "source": "skyman44"
+    },
+    "0x3399ba260c86c45723761b1c6a90c63dd4df24ac7b781f19f5e17e1cb251a8fe:0": {
+      "title": "Valorant: DRX vs T1 (BO3) - VCT Pacific Group Omega",
+      "outcome": "DRX",
+      "slug": "val-drx1-t1-2026-08-08",
+      "eventSlug": "val-drx1-t1-2026-08-08",
+      "stake": 11,
+      "entryPrice": 0.335,
+      "size": 32.83582089552239,
+      "lastPrice": 0.335,
+      "lastNotifiedAmount": 11,
+      "entryNotified": true,
+      "notifiedAt": 1786176060477,
       "source": "skyman44"
     }
   }
