@@ -1,22 +1,7 @@
 {
-  "balance": 358.76158871138676,
-  "realizedPnl": 42.761588711386736,
+  "balance": 377.59740960690914,
+  "realizedPnl": 62.597409606909125,
   "positions": {
-    "0xc98651beab779411988d573bcfa233cab37cb77e58c934a3069a4afaddf57289:1": {
-      "title": "Map Handicap: 100T (-1.5) vs Cloud9 (+1.5)",
-      "outcome": "Cloud9",
-      "slug": "val-100t1-c9-2026-08-07-map-handicap-away-1pt5",
-      "eventSlug": "val-100t1-c9-2026-08-07",
-      "stake": 10,
-      "entryPrice": 0.335,
-      "size": 29.850746268656714,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 11,
-      "entryNotified": true,
-      "notifiedAt": 1786102585709,
-      "source": "skyman44",
-      "followUpDone": true
-    },
     "0x988d762b3ab9da34efe25019114d549821149f69552e2bd3f4e8dc7ba1e6377d:1": {
       "title": "Map Handicap: G2 (-1.5) vs LOUD (+1.5)",
       "outcome": "LOUD",
@@ -83,10 +68,24 @@
       "stake": 11,
       "entryPrice": 0.5649,
       "size": 19.472473004071517,
-      "lastPrice": 0.5649,
+      "lastPrice": 0.605,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786152268019,
+      "source": "skyman44"
+    },
+    "0xc975f54ce967c109897b3b8ad3b5e8b3d4282fcd5925c649b9b94bb515ec09a0:1": {
+      "title": "Counter-Strike: K27 vs Sinners (BO3) - Esports World Cup Open Qualifier Group 15",
+      "outcome": "Sinners",
+      "slug": "cs2-k271-sin2-2026-08-08",
+      "eventSlug": "cs2-k271-sin2-2026-08-08",
+      "stake": 11,
+      "entryPrice": 0.485,
+      "size": 22.68041237113402,
+      "lastPrice": 0.485,
+      "lastNotifiedAmount": 11,
+      "entryNotified": true,
+      "notifiedAt": 1786152387811,
       "source": "skyman44"
     }
   }
