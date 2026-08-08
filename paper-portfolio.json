@@ -40,11 +40,12 @@
       "stake": 11,
       "entryPrice": 0.515,
       "size": 21.359223300970875,
-      "lastPrice": 0.505,
+      "lastPrice": 0.51,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786151545480,
-      "source": "skyman44"
+      "source": "skyman44",
+      "followUpDone": true
     },
     "0x4092bb8eff1a01dbadb925d69072db475e0e5bf69efc2852eb1a4e1caf4698c9:0": {
       "title": "Counter-Strike: Sashi Esport vs FOKUS (BO3) - Esports World Cup Open Qualifier Group 13",
@@ -82,7 +83,7 @@
       "stake": 11,
       "entryPrice": 0.485,
       "size": 22.68041237113402,
-      "lastPrice": 0.485,
+      "lastPrice": 0.505,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786152387811,
