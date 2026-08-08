@@ -1,6 +1,6 @@
 {
-  "balance": 276.08584188084586,
-  "realizedPnl": 53.08584188084582,
+  "balance": 296.85467304967705,
+  "realizedPnl": 57.85467304967699,
   "positions": {
     "0x0f0da51927fc7b605171b237422b01f26c6f48b2cd2626c6fe3eef402e32a503:1": {
       "title": "Counter-Strike: EYEBALLERS vs Phantom (BO3) - Esports World Cup Open Qualifier Group 10",
@@ -158,20 +158,6 @@
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786178550583,
-      "source": "skyman44"
-    },
-    "0xdaa7a8331ec684fcf2020ccb27b7eccb70244e5520383b191df26e98966fef7e:0": {
-      "title": "Counter-Strike: Liquid vs Metizport (BO3) - Esports World Cup Open Qualifier Group 12",
-      "outcome": "Liquid",
-      "slug": "cs2-tl1-mzp-2026-08-08",
-      "eventSlug": "cs2-tl1-mzp-2026-08-08",
-      "stake": 16,
-      "entryPrice": 0.77,
-      "size": 20.77922077922078,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 16,
-      "entryNotified": true,
-      "notifiedAt": 1786179748395,
       "source": "skyman44"
     },
     "0x4509e7915f1502cdee781cdd693ee92604d9770356402c616fc090fbcf88bb4e:0": {
