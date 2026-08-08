@@ -1,6 +1,6 @@
 {
-  "balance": 306.344436034475,
-  "realizedPnl": 44.34443603447494,
+  "balance": 326.46015930491524,
+  "realizedPnl": 48.460159304915194,
   "positions": {
     "0x0f0da51927fc7b605171b237422b01f26c6f48b2cd2626c6fe3eef402e32a503:1": {
       "title": "Counter-Strike: EYEBALLERS vs Phantom (BO3) - Esports World Cup Open Qualifier Group 10",
@@ -116,20 +116,6 @@
       "notifiedAt": 1786172792046,
       "source": "skyman44"
     },
-    "0x4509e7915f1502cdee781cdd693ee92604d9770356402c616fc090fbcf88bb4e:0": {
-      "title": "Valorant: Global Esports vs ZETA DIVISION (BO3) - VCT Pacific Group Alpha",
-      "outcome": "Global Esports",
-      "slug": "val-ge1-zeta2-2026-08-08",
-      "eventSlug": "val-ge1-zeta2-2026-08-08",
-      "stake": 16,
-      "entryPrice": 0.795,
-      "size": 20.12578616352201,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 16,
-      "entryNotified": true,
-      "notifiedAt": 1786185868852,
-      "source": "skyman44"
-    },
     "0x3faf1a6cb30344019796851b6a41e7a08925e45431f6422ee39211b8bacf5a15:1": {
       "title": "Counter-Strike: Black Phoenix vs CYBERSHOKE Esports (BO3) - CCT Europe Series #6 Playoffs",
       "outcome": "CYBERSHOKE Esports",
@@ -138,7 +124,7 @@
       "stake": 10,
       "entryPrice": 0.595,
       "size": 16.80672268907563,
-      "lastPrice": 0.435,
+      "lastPrice": 0.365,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786196439480,
