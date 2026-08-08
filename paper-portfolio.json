@@ -1,5 +1,5 @@
 {
-  "balance": 351.59740960690914,
+  "balance": 340.59740960690914,
   "realizedPnl": 62.597409606909125,
   "positions": {
     "0x988d762b3ab9da34efe25019114d549821149f69552e2bd3f4e8dc7ba1e6377d:1": {
@@ -25,7 +25,7 @@
       "stake": 11,
       "entryPrice": 0.405,
       "size": 27.160493827160494,
-      "lastPrice": 0.475,
+      "lastPrice": 0.465,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786150345321,
@@ -40,7 +40,7 @@
       "stake": 11,
       "entryPrice": 0.515,
       "size": 21.359223300970875,
-      "lastPrice": 0.505,
+      "lastPrice": 0.515,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786151545480,
@@ -55,11 +55,12 @@
       "stake": 11,
       "entryPrice": 0.445,
       "size": 24.719101123595504,
-      "lastPrice": 0.485,
+      "lastPrice": 0.475,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786152154962,
-      "source": "skyman44"
+      "source": "skyman44",
+      "followUpDone": true
     },
     "0xe51522bf0755a8e9935822baabaf89b84ecb8ca5aa7fea2981ada4ad0f7118d8:1": {
       "title": "Counter-Strike: Acend vs NRG (BO3) - Esports World Cup Open Qualifier Group 14",
@@ -97,7 +98,7 @@
       "stake": 11,
       "entryPrice": 0.595,
       "size": 18.487394957983195,
-      "lastPrice": 0.63,
+      "lastPrice": 0.615,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786152652078,
@@ -115,6 +116,20 @@
       "lastNotifiedAmount": 15,
       "entryNotified": true,
       "notifiedAt": 1786152747143,
+      "source": "skyman44"
+    },
+    "0x508aaf59eceeb391d379f78a0625cd723e672bf59d37d6d1f7889d9d371e0c04:1": {
+      "title": "Map Handicap: SEN (-1.5) vs KRÜ Esports (+1.5)",
+      "outcome": "KRÜ Esports",
+      "slug": "val-kru1-sen-2026-08-08-map-handicap-home-1pt5",
+      "eventSlug": "val-kru1-sen-2026-08-08",
+      "stake": 11,
+      "entryPrice": 0.535,
+      "size": 20.5607476635514,
+      "lastPrice": 0.535,
+      "lastNotifiedAmount": 11,
+      "entryNotified": true,
+      "notifiedAt": 1786153105835,
       "source": "skyman44"
     }
   }
