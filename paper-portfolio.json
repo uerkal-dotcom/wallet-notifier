@@ -1,21 +1,7 @@
 {
-  "balance": 331.77353342987556,
-  "realizedPnl": 29.77353342987548,
+  "balance": 351.37157264556186,
+  "realizedPnl": 34.371572645561756,
   "positions": {
-    "0x5e398c45374ed01f1533098fe486696324c9c00a3c7d3c763d8252d1f5ac1b3d:0": {
-      "title": "Counter-Strike: 1WIN vs BASEMENT BOYS (BO3) - Esports World Cup Open Qualifier Group 6",
-      "outcome": "1WIN",
-      "slug": "cs2-1win-bmb-2026-08-08",
-      "eventSlug": "cs2-1win-bmb-2026-08-08",
-      "stake": 15,
-      "entryPrice": 0.765,
-      "size": 19.607843137254903,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 16,
-      "entryNotified": true,
-      "notifiedAt": 1786152747143,
-      "source": "skyman44"
-    },
     "0x508aaf59eceeb391d379f78a0625cd723e672bf59d37d6d1f7889d9d371e0c04:1": {
       "title": "Map Handicap: SEN (-1.5) vs KRÜ Esports (+1.5)",
       "outcome": "KRÜ Esports",
@@ -66,7 +52,7 @@
       "stake": 10,
       "entryPrice": 0.505,
       "size": 19.801980198019802,
-      "lastPrice": 0.51,
+      "lastPrice": 0.505,
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1786214440176,
@@ -80,7 +66,7 @@
       "stake": 10,
       "entryPrice": 0.5,
       "size": 20,
-      "lastPrice": 0.665,
+      "lastPrice": 0.405,
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1786214545526,
