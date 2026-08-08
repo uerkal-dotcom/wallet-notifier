@@ -1,6 +1,6 @@
 {
-  "balance": 326.46015930491524,
-  "realizedPnl": 48.460159304915194,
+  "balance": 326.4708389165657,
+  "realizedPnl": 37.47083891656568,
   "positions": {
     "0x0f0da51927fc7b605171b237422b01f26c6f48b2cd2626c6fe3eef402e32a503:1": {
       "title": "Counter-Strike: EYEBALLERS vs Phantom (BO3) - Esports World Cup Open Qualifier Group 10",
@@ -14,21 +14,6 @@
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786150345321,
-      "source": "skyman44",
-      "followUpDone": true
-    },
-    "0x5d6d3751e92c2eaaf1672ed096fdf9b6658bcd3631e4a5486d6e795722c25910:1": {
-      "title": "Counter-Strike: ECHO vs OG (BO3) - Esports World Cup Open Qualifier Group 9",
-      "outcome": "OG",
-      "slug": "cs2-echo-og1-2026-08-08",
-      "eventSlug": "cs2-echo-og1-2026-08-08",
-      "stake": 11,
-      "entryPrice": 0.515,
-      "size": 21.359223300970875,
-      "lastPrice": 0.0005,
-      "lastNotifiedAmount": 11,
-      "entryNotified": true,
-      "notifiedAt": 1786151545480,
       "source": "skyman44",
       "followUpDone": true
     },
@@ -54,7 +39,7 @@
       "stake": 15,
       "entryPrice": 0.765,
       "size": 19.607843137254903,
-      "lastPrice": 0.785,
+      "lastPrice": 0.775,
       "lastNotifiedAmount": 16,
       "entryNotified": true,
       "notifiedAt": 1786152747143,
@@ -110,7 +95,7 @@
       "stake": 11,
       "entryPrice": 0.59,
       "size": 18.64406779661017,
-      "lastPrice": 0.595,
+      "lastPrice": 0.59,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786172792046,
