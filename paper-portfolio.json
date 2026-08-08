@@ -1,6 +1,6 @@
 {
-  "balance": 326.4844191634793,
-  "realizedPnl": 26.484419163479263,
+  "balance": 326.49706284164023,
+  "realizedPnl": 15.497062841640183,
   "positions": {
     "0xd3c0718c7f001408f5b89872ac44ea64a9df3f9bd828faf7a1301612dae0bd1a:0": {
       "title": "Counter-Strike: SAW vs Esport Academy Copenhagen (BO3) - Esports World Cup Open Qualifier Group 3",
@@ -56,20 +56,6 @@
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786153241489,
-      "source": "skyman44"
-    },
-    "0xa2900cbb09a89d2400f75a525f32fe20a4e98caa6a6c6e4c379cb49daaf21ea5:1": {
-      "title": "Counter-Strike: Butterfly vs BET-M 33 (BO3) - CCT Europe Series #6 Playoffs",
-      "outcome": "BET-M 33",
-      "slug": "cs2-btf-33-2026-08-08",
-      "eventSlug": "cs2-btf-33-2026-08-08",
-      "stake": 11,
-      "entryPrice": 0.435,
-      "size": 25.28735632183908,
-      "lastPrice": 0.0005,
-      "lastNotifiedAmount": 11,
-      "entryNotified": true,
-      "notifiedAt": 1786154908455,
       "source": "skyman44"
     },
     "0xd2ca0e2a15139d412968efdef9ce8d66201cc6ea07a1346b159da0f6314305c5:1": {
