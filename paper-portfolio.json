@@ -1,5 +1,5 @@
 {
-  "balance": 338.37157264556186,
+  "balance": 328.37157264556186,
   "realizedPnl": 34.371572645561756,
   "positions": {
     "0x508aaf59eceeb391d379f78a0625cd723e672bf59d37d6d1f7889d9d371e0c04:1": {
@@ -66,7 +66,7 @@
       "stake": 10,
       "entryPrice": 0.5,
       "size": 20,
-      "lastPrice": 0.465,
+      "lastPrice": 0.45,
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1786214545526,
@@ -108,10 +108,24 @@
       "stake": 3,
       "entryPrice": 0.28,
       "size": 10.714285714285714,
-      "lastPrice": 0.3449,
+      "lastPrice": 0.34,
       "lastNotifiedAmount": 3,
       "entryNotified": true,
       "notifiedAt": 1786215042822,
+      "source": "skyman44"
+    },
+    "0x00d1d0f59bf296463c712a39eb877ae7207fa17581f82a1540b28761dac2a1a5:0": {
+      "title": "Counter-Strike: 1WIN vs Liquid (BO3) - Esports World Cup Open Qualifier Play-Ins",
+      "outcome": "1WIN",
+      "slug": "cs2-1win-tl1-2026-08-09",
+      "eventSlug": "cs2-1win-tl1-2026-08-09",
+      "stake": 10,
+      "entryPrice": 0.325,
+      "size": 30.769230769230766,
+      "lastPrice": 0.325,
+      "lastNotifiedAmount": 10,
+      "entryNotified": true,
+      "notifiedAt": 1786215507509,
       "source": "skyman44"
     }
   }
