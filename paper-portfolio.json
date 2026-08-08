@@ -1,5 +1,5 @@
 {
-  "balance": 380.76158871138676,
+  "balance": 369.76158871138676,
   "realizedPnl": 42.761588711386736,
   "positions": {
     "0xc98651beab779411988d573bcfa233cab37cb77e58c934a3069a4afaddf57289:1": {
@@ -59,6 +59,20 @@
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786151545480,
+      "source": "skyman44"
+    },
+    "0x4092bb8eff1a01dbadb925d69072db475e0e5bf69efc2852eb1a4e1caf4698c9:0": {
+      "title": "Counter-Strike: Sashi Esport vs FOKUS (BO3) - Esports World Cup Open Qualifier Group 13",
+      "outcome": "Sashi Esport",
+      "slug": "cs2-sashi-fokus-2026-08-08",
+      "eventSlug": "cs2-sashi-fokus-2026-08-08",
+      "stake": 11,
+      "entryPrice": 0.445,
+      "size": 24.719101123595504,
+      "lastPrice": 0.445,
+      "lastNotifiedAmount": 11,
+      "entryNotified": true,
+      "notifiedAt": 1786152154962,
       "source": "skyman44"
     }
   }
