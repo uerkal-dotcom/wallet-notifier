@@ -1,5 +1,5 @@
 {
-  "balance": 369.76158871138676,
+  "balance": 358.76158871138676,
   "realizedPnl": 42.761588711386736,
   "positions": {
     "0xc98651beab779411988d573bcfa233cab37cb77e58c934a3069a4afaddf57289:1": {
@@ -69,10 +69,24 @@
       "stake": 11,
       "entryPrice": 0.445,
       "size": 24.719101123595504,
-      "lastPrice": 0.445,
+      "lastPrice": 0.47,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786152154962,
+      "source": "skyman44"
+    },
+    "0xe51522bf0755a8e9935822baabaf89b84ecb8ca5aa7fea2981ada4ad0f7118d8:1": {
+      "title": "Counter-Strike: Acend vs NRG (BO3) - Esports World Cup Open Qualifier Group 14",
+      "outcome": "NRG",
+      "slug": "cs2-ace1-nrg-2026-08-08",
+      "eventSlug": "cs2-ace1-nrg-2026-08-08",
+      "stake": 11,
+      "entryPrice": 0.5649,
+      "size": 19.472473004071517,
+      "lastPrice": 0.5649,
+      "lastNotifiedAmount": 11,
+      "entryNotified": true,
+      "notifiedAt": 1786152268019,
       "source": "skyman44"
     }
   }
