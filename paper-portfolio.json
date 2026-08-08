@@ -1,5 +1,5 @@
 {
-  "balance": 341.77353342987556,
+  "balance": 331.77353342987556,
   "realizedPnl": 29.77353342987548,
   "positions": {
     "0x5e398c45374ed01f1533098fe486696324c9c00a3c7d3c763d8252d1f5ac1b3d:0": {
@@ -66,7 +66,7 @@
       "stake": 10,
       "entryPrice": 0.505,
       "size": 19.801980198019802,
-      "lastPrice": 0.505,
+      "lastPrice": 0.51,
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1786214440176,
@@ -80,10 +80,24 @@
       "stake": 10,
       "entryPrice": 0.5,
       "size": 20,
-      "lastPrice": 0.5,
+      "lastPrice": 0.665,
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1786214545526,
+      "source": "skyman44"
+    },
+    "0x9e640d27662f310be2f7a8576e74cec12b3f22078b9608980e67b44aff042255:1": {
+      "title": "Counter-Strike: Virtus.pro vs Sashi Esport (BO3) - Esports World Cup Open Qualifier Play-Ins",
+      "outcome": "Sashi Esport",
+      "slug": "cs2-vp-sashi-2026-08-09",
+      "eventSlug": "cs2-vp-sashi-2026-08-09",
+      "stake": 10,
+      "entryPrice": 0.455,
+      "size": 21.978021978021978,
+      "lastPrice": 0.455,
+      "lastNotifiedAmount": 10,
+      "entryNotified": true,
+      "notifiedAt": 1786214667588,
       "source": "skyman44"
     }
   }
