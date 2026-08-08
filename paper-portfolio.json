@@ -1,5 +1,5 @@
 {
-  "balance": 296.8816992669055,
+  "balance": 286.8816992669055,
   "realizedPnl": 35.88169926690546,
   "positions": {
     "0x0f0da51927fc7b605171b237422b01f26c6f48b2cd2626c6fe3eef402e32a503:1": {
@@ -143,6 +143,20 @@
       "lastNotifiedAmount": 16,
       "entryNotified": true,
       "notifiedAt": 1786185868852,
+      "source": "skyman44"
+    },
+    "0x3faf1a6cb30344019796851b6a41e7a08925e45431f6422ee39211b8bacf5a15:1": {
+      "title": "Counter-Strike: Black Phoenix vs CYBERSHOKE Esports (BO3) - CCT Europe Series #6 Playoffs",
+      "outcome": "CYBERSHOKE Esports",
+      "slug": "cs2-blackp-cs1-2026-08-08",
+      "eventSlug": "cs2-blackp-cs1-2026-08-08",
+      "stake": 10,
+      "entryPrice": 0.595,
+      "size": 16.80672268907563,
+      "lastPrice": 0.595,
+      "lastNotifiedAmount": 10,
+      "entryNotified": true,
+      "notifiedAt": 1786196439480,
       "source": "skyman44"
     }
   }
