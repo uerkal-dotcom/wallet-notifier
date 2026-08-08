@@ -1,5 +1,5 @@
 {
-  "balance": 341.0580837642125,
+  "balance": 330.0580837642125,
   "realizedPnl": 75.0580837642125,
   "positions": {
     "0x0f0da51927fc7b605171b237422b01f26c6f48b2cd2626c6fe3eef402e32a503:1": {
@@ -144,6 +144,20 @@
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786154908455,
+      "source": "skyman44"
+    },
+    "0xd2ca0e2a15139d412968efdef9ce8d66201cc6ea07a1346b159da0f6314305c5:1": {
+      "title": "Map Handicap: ALKA (-1.5) vs paiN Academy (+1.5)",
+      "outcome": "paiN Academy",
+      "slug": "cs2-alkaa-paina-2026-08-08-map-handicap-away-1pt5",
+      "eventSlug": "cs2-alkaa-paina-2026-08-08",
+      "stake": 11,
+      "entryPrice": 0.59,
+      "size": 18.64406779661017,
+      "lastPrice": 0.59,
+      "lastNotifiedAmount": 11,
+      "entryNotified": true,
+      "notifiedAt": 1786172792046,
       "source": "skyman44"
     }
   }
