@@ -1,6 +1,6 @@
 {
-  "balance": 276.07450167466027,
-  "realizedPnl": 64.07450167466025,
+  "balance": 276.08584188084586,
+  "realizedPnl": 53.08584188084582,
   "positions": {
     "0x0f0da51927fc7b605171b237422b01f26c6f48b2cd2626c6fe3eef402e32a503:1": {
       "title": "Counter-Strike: EYEBALLERS vs Phantom (BO3) - Esports World Cup Open Qualifier Group 10",
@@ -62,20 +62,6 @@
       "source": "skyman44",
       "followUpDone": true
     },
-    "0xc975f54ce967c109897b3b8ad3b5e8b3d4282fcd5925c649b9b94bb515ec09a0:1": {
-      "title": "Counter-Strike: K27 vs Sinners (BO3) - Esports World Cup Open Qualifier Group 15",
-      "outcome": "Sinners",
-      "slug": "cs2-k271-sin2-2026-08-08",
-      "eventSlug": "cs2-k271-sin2-2026-08-08",
-      "stake": 11,
-      "entryPrice": 0.485,
-      "size": 22.68041237113402,
-      "lastPrice": 0.0005,
-      "lastNotifiedAmount": 11,
-      "entryNotified": true,
-      "notifiedAt": 1786152387811,
-      "source": "skyman44"
-    },
     "0xd3c0718c7f001408f5b89872ac44ea64a9df3f9bd828faf7a1301612dae0bd1a:0": {
       "title": "Counter-Strike: SAW vs Esport Academy Copenhagen (BO3) - Esports World Cup Open Qualifier Group 3",
       "outcome": "SAW",
@@ -112,7 +98,7 @@
       "stake": 11,
       "entryPrice": 0.535,
       "size": 20.5607476635514,
-      "lastPrice": 0.56,
+      "lastPrice": 0.555,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786153105835,
@@ -140,7 +126,7 @@
       "stake": 11,
       "entryPrice": 0.435,
       "size": 25.28735632183908,
-      "lastPrice": 0.105,
+      "lastPrice": 0.14,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786154908455,
