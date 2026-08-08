@@ -1,5 +1,5 @@
 {
-  "balance": 340.59740960690914,
+  "balance": 329.59740960690914,
   "realizedPnl": 62.597409606909125,
   "positions": {
     "0x988d762b3ab9da34efe25019114d549821149f69552e2bd3f4e8dc7ba1e6377d:1": {
@@ -55,7 +55,7 @@
       "stake": 11,
       "entryPrice": 0.445,
       "size": 24.719101123595504,
-      "lastPrice": 0.475,
+      "lastPrice": 0.48,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786152154962,
@@ -74,7 +74,8 @@
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786152268019,
-      "source": "skyman44"
+      "source": "skyman44",
+      "followUpDone": true
     },
     "0xc975f54ce967c109897b3b8ad3b5e8b3d4282fcd5925c649b9b94bb515ec09a0:1": {
       "title": "Counter-Strike: K27 vs Sinners (BO3) - Esports World Cup Open Qualifier Group 15",
@@ -98,7 +99,7 @@
       "stake": 11,
       "entryPrice": 0.595,
       "size": 18.487394957983195,
-      "lastPrice": 0.615,
+      "lastPrice": 0.62,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786152652078,
@@ -126,10 +127,24 @@
       "stake": 11,
       "entryPrice": 0.535,
       "size": 20.5607476635514,
-      "lastPrice": 0.535,
+      "lastPrice": 0.555,
       "lastNotifiedAmount": 11,
       "entryNotified": true,
       "notifiedAt": 1786153105835,
+      "source": "skyman44"
+    },
+    "0x15f42ade01b7ccf3e13abe8f0de8923d4a5463822233b3d1f673ec5e3391993c:0": {
+      "title": "Valorant: Leviatán Esports vs MIBR (BO3) - VCT Americas Stage 2 Group Alpha",
+      "outcome": "Leviatán Esports",
+      "slug": "val-lev1-mibr-2026-08-08",
+      "eventSlug": "val-lev1-mibr-2026-08-08",
+      "stake": 11,
+      "entryPrice": 0.595,
+      "size": 18.487394957983195,
+      "lastPrice": 0.595,
+      "lastNotifiedAmount": 11,
+      "entryNotified": true,
+      "notifiedAt": 1786153241489,
       "source": "skyman44"
     }
   }
