@@ -1,22 +1,7 @@
 {
-  "balance": 318.59740960690914,
-  "realizedPnl": 62.597409606909125,
+  "balance": 341.0580837642125,
+  "realizedPnl": 75.0580837642125,
   "positions": {
-    "0x988d762b3ab9da34efe25019114d549821149f69552e2bd3f4e8dc7ba1e6377d:1": {
-      "title": "Map Handicap: G2 (-1.5) vs LOUD (+1.5)",
-      "outcome": "LOUD",
-      "slug": "val-g21-loud-2026-08-07-map-handicap-away-1pt5",
-      "eventSlug": "val-g21-loud-2026-08-07",
-      "stake": 10,
-      "entryPrice": 0.445,
-      "size": 22.47191011235955,
-      "lastPrice": 0.9995,
-      "lastNotifiedAmount": 11,
-      "entryNotified": true,
-      "notifiedAt": 1786133672290,
-      "source": "skyman44",
-      "followUpDone": true
-    },
     "0x0f0da51927fc7b605171b237422b01f26c6f48b2cd2626c6fe3eef402e32a503:1": {
       "title": "Counter-Strike: EYEBALLERS vs Phantom (BO3) - Esports World Cup Open Qualifier Group 10",
       "outcome": "Phantom",
@@ -113,7 +98,7 @@
       "stake": 15,
       "entryPrice": 0.765,
       "size": 19.607843137254903,
-      "lastPrice": 0.775,
+      "lastPrice": 0.785,
       "lastNotifiedAmount": 15,
       "entryNotified": true,
       "notifiedAt": 1786152747143,
