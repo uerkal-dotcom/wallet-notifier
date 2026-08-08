@@ -1,5 +1,5 @@
 {
-  "balance": 351.37157264556186,
+  "balance": 341.37157264556186,
   "realizedPnl": 34.371572645561756,
   "positions": {
     "0x508aaf59eceeb391d379f78a0625cd723e672bf59d37d6d1f7889d9d371e0c04:1": {
@@ -66,7 +66,7 @@
       "stake": 10,
       "entryPrice": 0.5,
       "size": 20,
-      "lastPrice": 0.405,
+      "lastPrice": 0.455,
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1786214545526,
@@ -84,6 +84,20 @@
       "lastNotifiedAmount": 10,
       "entryNotified": true,
       "notifiedAt": 1786214667588,
+      "source": "skyman44"
+    },
+    "0x3f9e23fe89763934539f89d10beac82a87562f45ed4a5b692fe7972728a91999:1": {
+      "title": "Counter-Strike: K27 vs SAW (BO3) - Esports World Cup Open Qualifier Play-Ins",
+      "outcome": "SAW",
+      "slug": "cs2-k271-saw2-2026-08-09",
+      "eventSlug": "cs2-k271-saw2-2026-08-09",
+      "stake": 10,
+      "entryPrice": 0.35,
+      "size": 28.571428571428573,
+      "lastPrice": 0.35,
+      "lastNotifiedAmount": 10,
+      "entryNotified": true,
+      "notifiedAt": 1786214910951,
       "source": "skyman44"
     }
   }
